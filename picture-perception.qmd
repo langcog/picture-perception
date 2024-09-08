@@ -1,0 +1,86 @@
+---
+title: "Picture perception analysis"
+format: html
+---
+
+```{r}
+library(here)
+library(tidyverse)
+library(lme4)
+```
+
+```{r}
+d <- read_csv(here("data","kisumu vocab data.csv"))
+```
+# visualization
+
+```{r}
+ms <- d |>
+  group_by(child, condition, age) |>
+  summarise(accuracy = mean(accuracy))
+```
+
+```{r}
+ggplot(ms, aes(x = age, y = accuracy, col = condition)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth()
+```
+
+
+
+
+# preregistered analyses
+
+```{r}
+data$condition <- relevel(factor(data$condition), ref = "obj")
+
+mod <- glmer(accuracy ~ condition + (condition | child) + (condition | target_word),
+             data = data, family = "binomial")
+summary(mod)
+
+mod2 <- glmer(accuracy ~ condition * age + (condition | child) + (condition * age | target_word), 
+              data = data, family = "binomial")
+summary(mod2)
+```
+
+
+# exploratory analyses 
+
+relevel to black and white
+
+```{r}
+data$condition <- relevel(factor(data$condition), ref = "bw")
+
+mod3 <- glmer(accuracy ~ condition + (condition | child) + (condition | target_word), data = data, family = "binomial")
+summary(mod3)
+
+mod4 <- glmer(accuracy ~ condition * age + (condition | child) + (condition * age | target_word), data = data, family = "binomial")
+summary(mod4)
+```
+
+
+# exploratory analyses 
+
+without random slopes
+
+```{r}
+
+mod.simple <-glm(accuracy~condition*age, data=data, family = "binomial")
+summary(mod.simple)
+
+
+install.packages("dplyr")
+library(dplyr)
+agg<- group_by(data, condition)
+bw <- subset(agg, condition == "bw")
+cartoon <- subset(agg, condition == "cartoon")
+photo <- subset(agg, condition == "photo")
+obj <- subset(agg, condition == "obj")
+
+mean(obj$accuracy)
+mean(bw$accuracy)
+mean(cartoon$accuracy)
+mean(photo$accuracy)
+
+
+```
