@@ -15,7 +15,6 @@ d <- read_csv(here("data","kisumu vocab data.csv"))
 # visualization
 
 ```{r}
-#comment
 ms <- d |>
   group_by(child, condition, age) |>
   summarise(accuracy = mean(accuracy))
