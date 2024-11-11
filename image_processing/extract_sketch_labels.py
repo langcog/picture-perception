@@ -21,7 +21,7 @@ def run_ocr(reader, img_dir, file):
 def match_first_n_page_pattern(s):
     """Match any string that ends with '-001' to '-004'."""
 
-    pattern = r"-00[1-4]\.png$"
+    pattern = r"-00[0-4]\.png$"
     return bool(re.search(pattern, s))
 
 def extract_labels(base_dir):
@@ -38,6 +38,7 @@ def extract_labels(base_dir):
         pid = file.split("-")[0]
         labels['file'] = file
         labels['participant_id'] = pid
+        labels['page'] = file.split("-")[1].replace(".png", "")
         print(labels)
         label_df.append(labels)
     
