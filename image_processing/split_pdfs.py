@@ -38,5 +38,5 @@ def rotate_vertical_pdfs(img_dir):
 if __name__ == "__main__":
     pdf_dir = "../Kisumu 2024 Drawings and Consents"
     img_dir = "../drawing_images"
-    # split_pdfs(pdf_dir, img_dir)
+    split_pdfs(pdf_dir, img_dir)
     rotate_vertical_pdfs(img_dir)
