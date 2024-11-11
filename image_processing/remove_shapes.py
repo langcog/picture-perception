@@ -1,41 +1,41 @@
 import cv2
 import numpy as np
+import os
 
-# Load the image
-image = cv2.imread("image.jpg")
+def remove_text_and_shapes_from_img(image_path):
+    image = cv2.imread(image_path)
 
-# Convert the image to grayscale
-gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# Initialize HOG Descriptor
-hog = cv2.HOGDescriptor()
+    # mask with upper and lower bound for gray intensity
+    lower_grayscale_bound = 50  
+    upper_grayscale_bound = 170
+    mask = cv2.inRange(grayscale_image, lower_grayscale_bound, upper_grayscale_bound)
 
-# Compute HOG features
-hog_features = hog.compute(gray_image)
+    # add dilation to fill small gaps within shapes / words
+    kernel = np.ones((3, 3), np.uint8)
+    mask = cv2.dilate(mask, kernel, iterations=1)
 
-# Reshape the HOG features to get an approximation of the HOG visualization
-# (This may not look exactly like the visual HOG but gives an idea of edges)
-h, w = gray_image.shape
-hog_image = hog_features.reshape(h // 8, w // 8, 9).sum(axis=2)
-hog_image = cv2.resize(hog_image, (w, h))  # Resize back to original image size
+    # process detected contours
+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    for contour in contours:
+        area = cv2.contourArea(contour)
+        if 30 < area < 3000: # can change if shapes if too big/small for shapes
+            cv2.drawContours(image, [contour], -1, (255, 255, 255), thickness=cv2.FILLED)
 
-# Normalize the HOG image for better contrast
-hog_image = cv2.normalize(hog_image, None, 0, 255, cv2.NORM_MINMAX, dtype=cv2.CV_8U)
+    return image
 
-# Threshold to create a binary mask from HOG visualization
-_, mask = cv2.threshold(hog_image, 50, 255, cv2.THRESH_BINARY)
 
-# Optional: Dilate the mask to ensure coverage of the whole sketch
-kernel = np.ones((3, 3), np.uint8)
-mask_dilated = cv2.dilate(mask, kernel, iterations=1)
+def process_images(image_dir, output_dir):
+    for image_file in sorted(os.listdir(image_dir)):
+        image_path = os.path.join(image_dir, image_file)
+        image = remove_text_and_shapes_from_img(image_path)
+        output_path = os.path.join(output_dir, image_file)
+        cv2.imwrite(output_path, image)
 
-# Apply the mask to the original image to set the blue sketch area to white
-image_result = image.copy()
-image_result[mask_dilated > 0] = [255, 255, 255]  # Set masked areas to white
+        print(output_path)
 
-# Display the result
-cv2.imshow("Original Image", image)
-cv2.imshow("HOG Visualization Mask", mask_dilated)
-cv2.imshow("Image without Blue Sketch", image_result)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+if __name__ == "__main__":
+    image_dir = "../drawing_images"
+    output_dir = "../processed_drawing_images"
+    process_images(image_dir, output_dir)
