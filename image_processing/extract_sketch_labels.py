@@ -12,7 +12,7 @@ def run_ocr(reader, img_dir, file):
         if i == 0:
             labels["english"] = text
             labels["english_ocr_confidence"] = confidence
-        else:
+        elif i == 1:
             labels["swahili"] = text
             labels["swahili_ocr_confidence"] = confidence
 
