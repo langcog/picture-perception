@@ -4,9 +4,16 @@ format: html
 ---
 
 ```{r}
+install.packages("emmeans")
+install.packages("brms")
+install.packages("tidybayes")
+
 library(here)
 library(tidyverse)
 library(lme4)
+library(emmeans)
+library(brms)
+library(tidybayes)
 ```
 
 ```{r}
@@ -111,3 +118,75 @@ ggplot(filter(ms, condition != "obj"),
   xlab("Age (months)")
 ```
 This confirms our analysis above. 
+
+Now running exploratory Bayesian analyses with full models - first in pre-registered model without age
+```{r}
+bayes_mod <- brm(formula = accuracy ~ condition + (condition | child) + (condition | target_word),
+                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+joint_tests(bayes_mod)
+
+#no effect of condition in model without age
+
+```
+Get posterior estimates + 95% credible intervals
+
+```{r}
+bayes.mod %>%
+  as_draws_df() %>%
+  select(starts_with("b_")) %>% 
+  mutate(obj = b_Intercept, 
+         bw = b_Intercept + b_conditionbw, 
+     	   cartoon = b_Intercept + b_conditioncartoon,
+         photo = b_Intercept + b_conditionphoto) %>%
+  select(obj, photo, cartoon, bw) %>%
+  mean_hdi() %>%
+  pivot_longer(cols = -c(.width:.interval),
+               names_to = "index",
+               values_to = "value") %>% 
+  select(index, value) %>% 
+  mutate(index = ifelse(str_detect(index, fixed(".")), index, str_c(index, ".mean"))) %>% 
+  separate(index, into = c("parameter", "type"), sep = "\\.") %>% 
+  pivot_wider(names_from = type, 
+              values_from = value) %>%
+  mutate_at(vars(2:4), plogis)
+```
+
+Second, running exploratory Bayesian analyses with full model with age
+```{r}
+bayes_mod_age <- brm(formula = accuracy ~ condition * age_centered + 
+                   (condition | child) + 
+                   (condition * age_centered | target_word),
+                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+joint_tests(bayes_mod_age)
+
+#main effect of age, no effect of condition
+
+#model term             df1 df2 F.ratio  Chisq p.value
+#condition                3 Inf   1.536  4.608  0.2027
+#age_centered             1 Inf  15.569 15.569  0.0001
+#condition:age_centered   3 Inf   1.594  4.782  0.1886
+```
+
+Get posterior estimates + 95% credible intervals
+```{r}
+bayes_mod_age %>%
+  as_draws_df() %>%
+  select(starts_with("b_")) %>% 
+  mutate(obj = b_Intercept, 
+         bw = b_Intercept + b_conditionbw, 
+     	   cartoon = b_Intercept + b_conditioncartoon,
+         photo = b_Intercept + b_conditionphoto) %>%
+  select(obj, photo, cartoon, bw) %>%
+  mean_hdi() %>%
+  pivot_longer(cols = -c(.width:.interval),
+               names_to = "index",
+               values_to = "value") %>% 
+  select(index, value) %>% 
+  mutate(index = ifelse(str_detect(index, fixed(".")), index, str_c(index, ".mean"))) %>% 
+  separate(index, into = c("parameter", "type"), sep = "\\.") %>% 
+  pivot_wider(names_from = type, 
+              values_from = value) %>%
+  mutate_at(vars(2:4), plogis)
+```
