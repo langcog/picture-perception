@@ -132,7 +132,7 @@ joint_tests(bayes_mod)
 Get posterior estimates + 95% credible intervals
 
 ```{r}
-bayes.mod %>%
+bayes_mod %>%
   as_draws_df() %>%
   select(starts_with("b_")) %>% 
   mutate(obj = b_Intercept, 
@@ -150,6 +150,8 @@ bayes.mod %>%
   pivot_wider(names_from = type, 
               values_from = value) %>%
   mutate_at(vars(2:4), plogis)
+
+bayes_mod%>% emmeans(specs = pairwise~condition)
 ```
 
 Second, running exploratory Bayesian analyses with full model with age
@@ -189,4 +191,6 @@ bayes_mod_age %>%
   pivot_wider(names_from = type, 
               values_from = value) %>%
   mutate_at(vars(2:4), plogis)
+
+bayes_mod_age%>% emmeans(specs = pairwise~condition)
 ```
