@@ -7,6 +7,7 @@ format: html
 install.packages("emmeans")
 install.packages("brms")
 install.packages("tidybayes")
+install.packages("broom.mixed")
 
 library(here)
 library(tidyverse)
@@ -14,6 +15,7 @@ library(lme4)
 library(emmeans)
 library(brms)
 library(tidybayes)
+library(broom.mixed)
 ```
 
 ```{r}
@@ -71,6 +73,9 @@ We remove random effects following our general lab protocol. This results in cro
 mod_pruned <- glmer(accuracy ~ condition + (1 | child) + (1 | target_word), 
              data = d, family = "binomial")
 summary(mod_pruned)
+
+tidy(mod_pruned,conf.int=TRUE,exponentiate=TRUE,effects="fixed")
+
 ```
 
 This shows pretty clearly that age is worse.
@@ -93,6 +98,8 @@ mod_age_pruned <- glmer(accuracy ~ condition * age_centered +
                    (1 | target_word), 
               data = d, family = "binomial")
 summary(mod_age_pruned)
+
+tidy(mod_age_pruned,conf.int=TRUE,exponentiate=TRUE,effects="fixed")
 ```
 
 You also get a pretty clear age interaction: BW is worse and grows more slowly. 
