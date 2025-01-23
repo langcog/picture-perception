@@ -5,22 +5,22 @@ csl: apa6.csl
 document-params: "10pt, letterpaper"
 
 author-information: > 
-    \author{{\large \bf Morton Ann Gernsbacher (MAG@Macc.Wisc.Edu)} \\ Department of Psychology, 1202 W. Johnson Street \\ Madison, WI 53706 USA
+  \author{{\large \bf Morton Ann Gernsbacher (MAG@Macc.Wisc.Edu)} \\ Department of Psychology, 1202 W. Johnson Street \\ Madison, WI 53706 USA
     \AND {\large \bf Sharon J.~Derry (SDJ@Macc.Wisc.Edu)} \\ Department of Educational Psychology, 1025 W. Johnson Street \\ Madison, WI 53706 USA}
-
+    
 abstract: >
-  The most common assessments of early cognitive and linguistic abilities typically involve pictures stimuli. As these assessments spread worldwide, researchers make an implicit assumption: that children across contexts understand pictures in the same way, at the same developmental timepoint. What if this assumption does not hold for some or all kinds of pictures? In the present research, a preregistered sample of 128 3- to 7-year-olds from Kisumu, Kenya participated in a Swahili vocabulary assessment. Using a within-subjects design, each participant completed vocabulary trials in four formats (i.e., objects, photographs, cartoons, black-and-white line drawings). Preregistered analyses showed that children performed equally accurately across object, photograph, and cartoon formats, but less accurately in the black-and-white line drawing format. However, further exploratory analyses suggested that a subset of black-and-white drawings drove this difference. These findings suggest that caution is necessary in the use of picture stimuli and that assessments involving line drawings may sometimes underestimate children’s capacities.
+    The most common assessments of early cognitive and linguistic abilities typically involve pictures stimuli. As these assessments spread worldwide, researchers make an implicit assumption: that children across contexts understand pictures in the same way, at the same developmental timepoint. What if this assumption does not hold for some or all kinds of pictures? In the present research, a preregistered sample of 128 3- to 7-year-olds from Kisumu, Kenya participated in a Swahili vocabulary assessment. Using a within-subjects design, each participant completed vocabulary trials in four formats (i.e., objects, photographs, cartoons, black-and-white line drawings). Preregistered analyses showed that children performed equally accurately across object, photograph, and cartoon formats, but less accurately in the black-and-white line drawing format. However, further exploratory analyses suggested that a subset of black-and-white drawings drove this difference. These findings suggest that caution is necessary in the use of picture stimuli and that assessments involving line drawings may sometimes underestimate children’s capacities.
     
 keywords: >
     cognitive development, picture comprehension, cross-cultural research, measurement
-    
+
 output: cogsci2024::cogsci_paper
 #final-submission: \cogscifinalcopy
 ---
 
 
-```{r echo=F, warning = F, cache = F, message=F, sanitize = T, include=F}
-                      
+```{r echo=F, warning = F, cache = F, message=F, sanitize = T}
+
 library(here)
 library(tidyverse)
 library(lme4)
@@ -29,13 +29,13 @@ library(brms)
 library(tidybayes)
 library(broom.mixed)
 
-knitr::opts_chunk$set(fig.width=3, fig.height=3, fig.crop = F, 
+knitr::opts_chunk$set(fig.crop = F, 
                       fig.pos = "tb", fig.path='figs/',
                       echo=F, warning=F, cache=F, 
-                      message=F, sanitize = T, include=F)
+                      message=F, sanitize = T)
 
 # .font <- "Source Sans Pro"
-theme_set(theme_bw(base_size = 14))
+theme_set(theme_bw())
 theme_update(panel.grid = element_blank(),
              strip.background = element_blank(),
              legend.key = element_blank(),
@@ -61,7 +61,12 @@ Moreover, previous cross-cultural work on children's picture comprehension contr
 
 
 ```{r read_data}
-d <- read_csv(here("data","kisumu vocab data.csv"))
+d <- read_csv(here("data","kisumu vocab data.csv"))|>
+  mutate(condition_label = fct_recode(condition, 
+                                      "Object" = "obj", 
+                                        "Photo" = "photo", 
+                                        "Cartoon" = "cartoon", 
+                                        "B&W Drawing" = "bw"))
 ```
 
 ## Open Science Statement
@@ -85,7 +90,7 @@ Target words were selected from Swahili Communicative Development Inventory (CDI
 
 In addition to the target word, each array consisted of one near distractor and two random distractors. Near and random distractors were all artifacts that Kisumu children were relatively familiar with. Many distractors were items on the Swahili CDI (Alcock et al., 2015) or used in previous research with Kenyan preschoolers (Zhu et al, 2024). Furthermore, local SWAP employees again confirmed that all artifacts were familiar to Kisumu children. Similarity scores were calculated through correlations from the THINGS database (Hebart et al., 2019). Near distractors were conceptually similar to, and had high correlations with, target items (average correlation = 0.82, range = 0.66-0.95). Random distractors were less conceptually similar to, and had lower correlations with, target items (average correlation = 0.36, range = 0.17-0.53).
 
-```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nyoneshi mpira) across the four conditions."}
+```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nyoneshi mpira) across the four conditions.", out.width="6in", fig.align = "center"}
 
 knitr::include_graphics(here("paper","fig1.png"))
 
@@ -98,16 +103,18 @@ Using a within-subjects design, each participant completed all sixteen vocabular
 
 # Results
 
-```{r fig2, fig.cap="Proportion of accurate responses across conditions and age."}
+```{r fig2, fig.env="figure*", fig.cap="Proportion of accurate responses across conditions and age.", out.width = "4in", fig.width = "4in", fig.align = "center"}
 ms <- d |>
-  group_by(child, condition, age) |>
-  summarise(accuracy = mean(accuracy))
+  group_by(child, condition_label, age) |>
+  summarise(accuracy = mean(accuracy)) 
 
-ggplot(ms, aes(x = age, y = accuracy, col = condition)) + 
+ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) + 
   geom_jitter(alpha = .5, height = .02, width = 0) + 
   geom_smooth(method = "lm") + 
+  ggthemes::scale_color_solarized(name="Condition") + 
   ylab("Accuracy") +
-  xlab("Age (months)")
+  xlab("Age (months)") + 
+  theme(legend.position = "bottom")
 ```
 
 Figure 2 shows 
@@ -119,10 +126,11 @@ Figure 2 shows
 d$condition <- relevel(factor(d$condition), ref = "obj")
 d$age_centered <- scale(d$age, scale = FALSE, center = TRUE)[,1]
 
+
 # mod <- glmer(accuracy ~ condition + (condition | child) + (condition | target_word),
-             # data = d, family = "binomial")
+# data = d, family = "binomial")
 mod_pruned <- glmer(accuracy ~ condition + (1 | child) + (1 | target_word), 
-             data = d, family = "binomial")
+                    data = d, family = "binomial")
 #summary(mod_pruned)
 
 cc <- confint(mod_pruned,parm="beta_",method="Wald")
@@ -141,10 +149,10 @@ rtab <- exp(ctab)
 # summary(mod_age)
 
 mod_age_pruned <- glmer(accuracy ~ condition * age_centered + 
-                   (1 | child) + 
-                   (1 | target_word), 
-              data = d, family = "binomial")
-s# ummary(mod_age_pruned)
+                          (1 | child) + 
+                          (1 | target_word), 
+                        data = d, family = "binomial")
+# summary(mod_age_pruned)
 
 cc_age <- confint(mod_age_pruned,parm="beta_",method="Wald")
 ctab_age <- cbind(est=fixef(mod_age_pruned),cc_age)
@@ -159,19 +167,24 @@ We also ran a second preregistered mixed-effects model including child age as an
 
 ## Exploratory Analyses
 
-```{r fig3, fig.cap="Response accuracy by item and condition."}
-ms <- ms |>
-  group_by(child) |>
-  mutate(effect = accuracy - accuracy[condition == "obj"])
+```{r fig3, fig.cap="Response accuracy by item and condition. Error bars are binomial 95\\% confidence intervals.", fig.env="figure*", out.width = "4in", fig.width = "4in", fig.align = "center"}
+msi <- d |>
+  group_by(condition_label, target_word) |>
+  summarise(mean= mean(accuracy, na.rm=TRUE),
+            ci.lower = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$lower,
+            ci.upper = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$upper) |>
+  mutate(target_word = fct_reorder(target_word, mean, .desc=TRUE))
 
-ggplot(filter(ms, condition != "obj"),
-       aes(x = age, y = effect)) + 
-  geom_jitter(alpha = .3, height = .02, width = 0) + 
-  geom_smooth(method = "lm") + 
-  geom_hline(yintercept = 0, lty = 2) + 
-  facet_wrap(~condition) + 
-  ylab("Accuracy compared to object") +
-  xlab("Age (months)")
+ggplot(msi,
+       aes(x = target_word, y = mean, col = condition_label)) + 
+  geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
+                  position = position_dodge(width = .3)) + 
+  geom_line() + 
+  coord_flip() + 
+  ggthemes::scale_color_solarized(name = "Condition") +
+  ylab("Accuracy") +
+  xlab("Age (months)") + 
+  theme(legend.position = "bottom")
 ```
 
 Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package (Burkner, 2016) using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
