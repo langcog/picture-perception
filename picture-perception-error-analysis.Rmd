@@ -17,7 +17,7 @@ library(ggplot2)
 * `condition`: stimulus presentation modality
 
 ```{r}
-errors <- read_csv('data_processing/all_selection_df.csv')
+errors <- read_csv('data_processing/error_trials_only.csv')
 errors$condition <- relevel(factor(errors$condition), ref = "object") # set object to the reference level
 head(errors)
 ```
