@@ -1,5 +1,8 @@
-# History files
+*/__pycache__/
 .ipynb_checkpoints
+*.log
+
+# History files
 .Rhistory
 .Rapp.history
 
