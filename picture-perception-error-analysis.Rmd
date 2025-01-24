@@ -2,24 +2,117 @@
 title: "picture-perception-error-analysis"
 author: "Arnav Verma"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(dev = "svg", echo = TRUE)
 library(tidyverse)
 library(lme4)
 library(ggplot2)
 ```
 
-## Load in error trial-only dataframe created in `incorrect_analysis.ipynb` and take a peek
-* `is_random`: TRUE if the far distractor was chosen; FALSE otherwise
-* `condition`: stimulus presentation modality
+## Load in data
+* Do a little bit of cleanup
+* Set the object condition to be the reference level
+* Also apply age binning
 
 ```{r}
-errors <- read_csv('data_processing/error_trials_only.csv')
-errors$condition <- relevel(factor(errors$condition), ref = "object") # set object to the reference level
-head(errors)
+trialdata <- read_csv('data/all_df.csv') %>% select(-"Unnamed: 0")
+
+trialdata$condition <- relevel(factor(trialdata$condition), ref = "obj") # set object to the reference level
+
+trialdata <- trialdata %>% 
+              mutate(rounded_age = factor(round(age))) %>% # bin age in two ways 
+              mutate(floored_age = factor(floor(age))) %>%
+              mutate(response_type = fct_recode(response_type, # also recode response type
+                                   "near" = "Near Distractor",
+                                   "far" = "Random",
+                                   "target" = "Target")) %>%
+              mutate(response_type = factor(response_type,
+                                            levels = c("far", "near","target"),
+                                            ordered = TRUE)) %>%
+              mutate(condition = fct_recode(factor(condition), # recode condition and set levels
+                                 "monochrome" = "bw",
+                                 "object" = "obj",
+                                 "photo" = "photo",
+                                 "cartoon" = "cartoon")) %>% 
+              mutate(condition = factor(condition,
+                                        levels = c("object", "photo","cartoon", "monochrome"),
+                                        ordered = FALSE))
+
+
+trialdata$condition <- relevel(factor(trialdata$condition), ref = "object") # set object to the reference level
+
+```
+
+## Visualizing variation in ALL response types across conditions, and broken out by age
+
+```{r}
+respplot <- ggplot(trialdata, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) +
+     theme_minimal() +
+     theme(
+       text = element_text(size = 14),          # Base text size
+       axis.text = element_text(size = 12),     # Axis labels
+       strip.text = element_text(size = 14),    # Facet labels
+       legend.text = element_text(size = 12),    # Legend text
+       aspect.ratio = 4,
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2")
+
+respplot
+
+## use this bit to control how figure image is saved to disk
+ggsave('paper/figs/response_type_by_condition_and_age.pdf',
+       plot = respplot, device = "pdf",
+       width = 12, height = 6, useDingbats = FALSE)
+```
+
+## Visualizing variation in ONLY ERRONEOUS responses across conditions, and broken out by age
+
+```{r}
+errors <- trialdata %>%
+    filter(response_type %in% c("near","far")) %>% 
+    mutate(is_far = response_type=="far")
+ 
+errplot <- ggplot(errors, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) + 
+  geom_hline(yintercept = 0.33, linetype = "dashed", color = "black") +
+     theme_minimal() +
+     theme(
+       text = element_text(size = 14),          # Base text size
+       axis.text = element_text(size = 12),     # Axis labels
+       strip.text = element_text(size = 14),    # Facet labels
+       legend.text = element_text(size = 12),    # Legend text
+       aspect.ratio = 4,
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2")
+
+errplot
+
+## use this bit to control how figure image is saved to disk
+ggsave('paper/figs/error_type_by_condition_and_age.pdf',
+       plot = errplot, device = "pdf",
+       width = 12, height = 6, useDingbats = FALSE)
 ```
 
 
@@ -29,13 +122,13 @@ First attempt uses well motivated but complex random-effects structure. Converge
 
 ```{r}
 # base_model <- glmer(
-#     is_random ~ 1  + (condition | child) + (condition * age | target_word), 
+#     is_far ~ 1  + (condition | child) + (condition * floored_age | target_word), 
 #     data=errors, 
 #     family = "binomial"
 # )
 # 
 # condition_model <- glmer(
-#     is_random ~ condition * age + (condition | child) + (condition * age | target_word), 
+#     is_far ~ condition * age + (condition | child) + (condition * floored_age | target_word), 
 #     data=errors, 
 #     family = "binomial"
 # )
@@ -46,36 +139,60 @@ Second attempt uses simpler random-effects structure. Still there are convergenc
 
 ```{r}
 base_model <- glmer(
-    is_random ~ 1  + (condition | child), 
+    is_far ~ 1  + (condition | child), 
     data=errors, 
     family = "binomial"
 )
 
 condition_model <- glmer(
-     is_random ~ condition + (condition | child), 
+     is_far ~ condition + (condition | child), 
      data=errors, 
      family = "binomial"
 )
 
 anova(base_model, condition_model, test = "Chisq")
 ```
+
 Third attempt uses even simpler random-effects structure. Now we get convergence.
 
 ```{r}
 base_model <- glmer(
-    is_random ~ 1  + (1 | child), 
+    is_far ~ 1  + (1 | child), 
     data=errors, 
     family = "binomial"
 )
 
 condition_model <- glmer(
-     is_random ~ condition + (1 | child), 
+     is_far ~ condition + (1 | child), 
      data=errors, 
      family = "binomial"
 )
 
 ```
-Summary of condition model
+
+
+Now let's get a little more ambitious and add age in as a fixed effect, with the interaction
+```{r}
+age_condition_model <- glmer(
+     is_far ~ condition*age + (1 | child), 
+     data=errors, 
+     family = "binomial"
+)
+
+age_condition_model_nointeraction <- glmer(
+     is_far ~ condition + age + (1 | child), 
+     data=errors, 
+     family = "binomial"
+)
+```
+
+Summary of `age` * `condition` model
+
+```{r}
+summary(age_condition_model)
+```
+
+Summary of `condition` only model
 ```{r}
 summary(condition_model)
 ```
@@ -83,6 +200,6 @@ summary(condition_model)
 
 Test for reliability of effect of condition
 ```{r}
-anova(base_model, condition_model, test = "Chisq")
+anova(base_model, condition_model, age_condition_model)
 ```
 
