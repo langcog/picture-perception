@@ -198,7 +198,7 @@ summary(condition_model)
 ```
 
 
-Test for reliability of effect of condition
+Test for reliability of effect of condition and age
 ```{r}
 anova(base_model, condition_model, age_condition_model)
 ```
