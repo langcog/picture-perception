@@ -1,0 +1,88 @@
+---
+title: "picture-perception-error-analysis"
+author: "Arnav Verma"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lme4)
+library(ggplot2)
+```
+
+## Load in error trial-only dataframe created in `incorrect_analysis.ipynb` and take a peek
+* `is_random`: TRUE if the far distractor was chosen; FALSE otherwise
+* `condition`: stimulus presentation modality
+
+```{r}
+errors <- read_csv('data_processing/all_selection_df.csv')
+errors$condition <- relevel(factor(errors$condition), ref = "object") # set object to the reference level
+head(errors)
+```
+
+
+## Evaluating effect of condition on type of error (far vs. near)
+
+First attempt uses well motivated but complex random-effects structure. Convergence issues. Commented out because it is painful to watch/wait for this one.
+
+```{r}
+# base_model <- glmer(
+#     is_random ~ 1  + (condition | child) + (condition * age | target_word), 
+#     data=errors, 
+#     family = "binomial"
+# )
+# 
+# condition_model <- glmer(
+#     is_random ~ condition * age + (condition | child) + (condition * age | target_word), 
+#     data=errors, 
+#     family = "binomial"
+# )
+
+```
+
+Second attempt uses simpler random-effects structure. Still there are convergence issues.
+
+```{r}
+base_model <- glmer(
+    is_random ~ 1  + (condition | child), 
+    data=errors, 
+    family = "binomial"
+)
+
+condition_model <- glmer(
+     is_random ~ condition + (condition | child), 
+     data=errors, 
+     family = "binomial"
+)
+
+anova(base_model, condition_model, test = "Chisq")
+```
+Third attempt uses even simpler random-effects structure. Now we get convergence.
+
+```{r}
+base_model <- glmer(
+    is_random ~ 1  + (1 | child), 
+    data=errors, 
+    family = "binomial"
+)
+
+condition_model <- glmer(
+     is_random ~ condition + (1 | child), 
+     data=errors, 
+     family = "binomial"
+)
+
+```
+Summary of condition model
+```{r}
+summary(condition_model)
+```
+
+
+Test for reliability of effect of condition
+```{r}
+anova(base_model, condition_model, test = "Chisq")
+```
+
