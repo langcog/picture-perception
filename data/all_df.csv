@@ -1,0 +1,2049 @@
+,accuracy,condition,child,target_word,age,Unnamed: 0,Target,Near Distractor,Random 1,Random 2,aoa,response,response_type
+0,1,bw,1,comb,6.854794521,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1,1,bw,2,comb,6.82739726,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+2,1,bw,3,comb,7.150684932,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+3,1,bw,4,comb,6.852054795,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+4,1,bw,5,comb,7.24109589,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+5,0,bw,6,comb,4.235616438,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+6,0,bw,7,comb,3.117808219,0,comb,brush,watch,bracelet,22.44276300486351,bracelet,Random
+7,1,bw,8,comb,5.854794521,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+8,1,bw,9,comb,4.268493151,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+9,1,bw,10,comb,5.106849315,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+10,1,bw,11,comb,5.109589041,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+11,1,bw,12,comb,5.276712329,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+12,1,bw,13,comb,5.630136986,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+13,1,bw,14,comb,5.178082192,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+14,1,bw,15,comb,5.969863014,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+15,1,bw,16,comb,5.452054795,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+16,1,bw,17,comb,5.252054795,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+17,1,bw,18,comb,5.21369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+18,1,bw,19,comb,5.778082192,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+19,1,bw,20,comb,5.117808219,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+20,1,bw,21,comb,5.361643836,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+21,1,bw,22,comb,5.287671233,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+22,1,bw,23,comb,5.060273973,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+23,1,bw,24,comb,5.657534247,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+24,1,bw,25,comb,5.97260274,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+25,1,bw,26,comb,5.676712329,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+26,1,bw,27,comb,5.531506849,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+27,1,bw,28,comb,5.64109589,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+28,1,bw,29,comb,3.994520548,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+29,0,bw,30,comb,5.6,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+30,1,bw,31,comb,5.591780822,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+31,1,bw,32,comb,5.115068493,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+32,0,obj,33,comb,4.682191781,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+33,1,obj,34,comb,5.246575342,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+34,1,obj,35,comb,3.983561644,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+35,1,obj,36,comb,4.775342466,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+36,1,obj,37,comb,4.279452055,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+37,1,obj,38,comb,4.208219178,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+38,1,obj,39,comb,4.263013699,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+39,1,obj,40,comb,4.78630137,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+40,0,obj,41,comb,3.978082192,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+41,0,obj,42,comb,4.391780822,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+42,0,obj,43,comb,4.391780822,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+43,1,obj,44,comb,4.835616438,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+44,1,obj,45,comb,4.043835616,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+45,1,obj,46,comb,4.797260274,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+46,0,obj,47,comb,4.153424658,0,comb,brush,watch,bracelet,22.44276300486351,bracelet,Random
+47,1,obj,48,comb,4.454794521,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+48,1,obj,49,comb,4.610958904,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+49,1,obj,50,comb,4.024657534,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+50,1,obj,51,comb,4.994520548,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+51,1,obj,52,comb,4.44109589,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+52,1,obj,53,comb,4.290410959,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+53,1,obj,54,comb,7.673972603,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+54,1,obj,55,comb,7.928767123,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+55,1,obj,56,comb,7.98,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+56,1,obj,57,comb,7.926027397,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+57,1,obj,58,comb,7.99,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+58,1,obj,59,comb,6.101369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+59,1,obj,60,comb,6.430136986,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+60,1,obj,61,comb,6.575342466,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+61,1,obj,62,comb,5.871232877,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+62,1,obj,63,comb,7.717808219,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+63,1,obj,64,comb,7.728767123,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+64,1,photo,65,comb,7.873972603,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+65,1,photo,66,comb,7.350684932,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+66,1,photo,67,comb,6.928767123,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+67,1,photo,68,comb,7.504109589,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+68,1,photo,69,comb,7.479452055,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+69,1,photo,70,comb,7.164383562,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+70,1,photo,71,comb,5.287671233,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+71,1,photo,72,comb,7.301369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+72,1,photo,73,comb,7.128767123,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+73,1,photo,74,comb,7.194520548,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+74,1,photo,75,comb,7.476712329,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+75,1,photo,76,comb,6.873972603,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+76,1,photo,77,comb,7.531506849,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+77,1,photo,78,comb,7.115068493,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+78,1,photo,79,comb,3.846575342,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+79,1,photo,80,comb,4.057534247,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+80,1,photo,81,comb,3.6,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+81,1,photo,82,comb,6.602739726,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+82,1,photo,83,comb,5.249315068,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+83,1,photo,84,comb,3.01369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+84,1,photo,85,comb,3.246575342,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+85,0,photo,86,comb,3.326027397,0,comb,brush,watch,bracelet,22.44276300486351,bracelet,Random
+86,0,photo,87,comb,3.265753425,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+87,1,photo,88,comb,3.871232877,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+88,0,photo,89,comb,3.150684932,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+89,1,photo,90,comb,3.063013699,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+90,1,photo,91,comb,3.495890411,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+91,0,photo,92,comb,3.142465753,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+92,0,photo,93,comb,3.77260274,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+93,1,photo,94,comb,3.443835616,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+94,1,photo,95,comb,3.547945205,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+95,0,photo,96,comb,4.82739726,0,comb,brush,watch,bracelet,22.44276300486351,brush,Near Distractor
+96,1,cartoon,97,comb,4.517808219,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+97,1,cartoon,98,comb,3.901369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+98,1,cartoon,99,comb,4.783561644,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+99,1,cartoon,100,comb,4.950684932,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+100,1,cartoon,101,comb,3.134246575,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+101,1,bw,1,shoe,6.854794521,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+102,1,bw,2,shoe,6.82739726,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+103,1,bw,3,shoe,7.150684932,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+104,0,bw,4,shoe,6.852054795,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+105,1,bw,5,shoe,7.24109589,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+106,1,bw,6,shoe,4.235616438,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+107,1,bw,7,shoe,3.117808219,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+108,1,bw,8,shoe,5.854794521,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+109,1,bw,9,shoe,4.268493151,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+110,1,bw,10,shoe,5.106849315,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+111,1,bw,11,shoe,5.109589041,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+112,1,bw,12,shoe,5.276712329,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+113,1,bw,13,shoe,5.630136986,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+114,1,bw,14,shoe,5.178082192,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+115,1,bw,15,shoe,5.969863014,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+116,1,bw,16,shoe,5.452054795,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+117,1,bw,17,shoe,5.252054795,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+118,1,bw,18,shoe,5.21369863,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+119,1,bw,19,shoe,5.778082192,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+120,1,bw,20,shoe,5.117808219,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+121,1,bw,21,shoe,5.361643836,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+122,1,bw,22,shoe,5.287671233,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+123,1,bw,23,shoe,5.060273973,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+124,1,bw,24,shoe,5.657534247,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+125,1,bw,25,shoe,5.97260274,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+126,1,bw,26,shoe,5.676712329,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+127,1,bw,27,shoe,5.531506849,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+128,1,bw,28,shoe,5.64109589,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+129,1,bw,29,shoe,3.994520548,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+130,1,bw,30,shoe,5.6,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+131,1,bw,31,shoe,5.591780822,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+132,1,bw,32,shoe,5.115068493,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+133,1,obj,33,shoe,4.682191781,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+134,1,obj,34,shoe,5.246575342,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+135,1,obj,35,shoe,3.983561644,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+136,1,obj,36,shoe,4.775342466,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+137,1,obj,37,shoe,4.279452055,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+138,1,obj,38,shoe,4.208219178,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+139,1,obj,39,shoe,4.263013699,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+140,1,obj,40,shoe,4.78630137,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+141,1,obj,41,shoe,3.978082192,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+142,1,obj,42,shoe,4.391780822,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+143,1,obj,43,shoe,4.391780822,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+144,1,obj,44,shoe,4.835616438,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+145,1,obj,45,shoe,4.043835616,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+146,1,obj,46,shoe,4.797260274,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+147,1,obj,47,shoe,4.153424658,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+148,1,obj,48,shoe,4.454794521,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+149,1,obj,49,shoe,4.610958904,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+150,1,obj,50,shoe,4.024657534,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+151,1,obj,51,shoe,4.994520548,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+152,1,obj,52,shoe,4.44109589,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+153,1,obj,53,shoe,4.290410959,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+154,1,obj,54,shoe,7.673972603,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+155,1,obj,55,shoe,7.928767123,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+156,1,obj,56,shoe,7.98,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+157,1,obj,57,shoe,7.926027397,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+158,1,obj,58,shoe,7.99,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+159,1,obj,59,shoe,6.101369863,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+160,1,obj,60,shoe,6.430136986,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+161,1,obj,61,shoe,6.575342466,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+162,1,obj,62,shoe,5.871232877,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+163,1,obj,63,shoe,7.717808219,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+164,1,obj,64,shoe,7.728767123,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+165,0,photo,65,shoe,7.873972603,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+166,1,photo,66,shoe,7.350684932,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+167,1,photo,67,shoe,6.928767123,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+168,1,photo,68,shoe,7.504109589,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+169,1,photo,69,shoe,7.479452055,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+170,1,photo,70,shoe,7.164383562,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+171,1,photo,71,shoe,5.287671233,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+172,1,photo,72,shoe,7.301369863,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+173,1,photo,73,shoe,7.128767123,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+174,1,photo,74,shoe,7.194520548,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+175,1,photo,75,shoe,7.476712329,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+176,1,photo,76,shoe,6.873972603,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+177,1,photo,77,shoe,7.531506849,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+178,1,photo,78,shoe,7.115068493,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+179,1,photo,79,shoe,3.846575342,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+180,1,photo,80,shoe,4.057534247,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+181,0,photo,81,shoe,3.6,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+182,1,photo,82,shoe,6.602739726,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+183,1,photo,83,shoe,5.249315068,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+184,0,photo,84,shoe,3.01369863,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+185,1,photo,85,shoe,3.246575342,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+186,0,photo,86,shoe,3.326027397,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+187,1,photo,87,shoe,3.265753425,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+188,1,photo,88,shoe,3.871232877,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+189,1,photo,89,shoe,3.150684932,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+190,1,photo,90,shoe,3.063013699,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+191,1,photo,91,shoe,3.495890411,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+192,1,photo,92,shoe,3.142465753,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+193,1,photo,93,shoe,3.77260274,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+194,1,photo,94,shoe,3.443835616,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+195,1,photo,95,shoe,3.547945205,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+196,1,photo,96,shoe,4.82739726,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+197,1,cartoon,97,shoe,4.517808219,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+198,1,cartoon,98,shoe,3.901369863,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+199,1,cartoon,99,shoe,4.783561644,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+200,1,cartoon,100,shoe,4.950684932,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+201,1,cartoon,101,shoe,3.134246575,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+202,1,bw,1,chalk,6.854794521,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+203,1,bw,2,chalk,6.82739726,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+204,1,bw,3,chalk,7.150684932,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+205,1,bw,4,chalk,6.852054795,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+206,1,bw,5,chalk,7.24109589,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+207,0,bw,6,chalk,4.235616438,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+208,0,bw,7,chalk,3.117808219,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+209,0,bw,8,chalk,5.854794521,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+210,0,bw,9,chalk,4.268493151,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+211,0,bw,10,chalk,5.106849315,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+212,1,bw,11,chalk,5.109589041,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+213,0,bw,12,chalk,5.276712329,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+214,0,bw,13,chalk,5.630136986,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+215,0,bw,14,chalk,5.178082192,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+216,0,bw,15,chalk,5.969863014,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+217,0,bw,16,chalk,5.452054795,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+218,0,bw,17,chalk,5.252054795,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+219,0,bw,18,chalk,5.21369863,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+220,0,bw,19,chalk,5.778082192,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+221,0,bw,20,chalk,5.117808219,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+222,0,bw,21,chalk,5.361643836,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+223,0,bw,22,chalk,5.287671233,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+224,0,bw,23,chalk,5.060273973,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+225,0,bw,24,chalk,5.657534247,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+226,0,bw,25,chalk,5.97260274,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+227,0,bw,26,chalk,5.676712329,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+228,1,bw,27,chalk,5.531506849,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+229,0,bw,28,chalk,5.64109589,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+230,0,bw,29,chalk,3.994520548,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+231,0,bw,30,chalk,5.6,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+232,0,bw,31,chalk,5.591780822,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+233,0,bw,32,chalk,5.115068493,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+234,0,obj,33,chalk,4.682191781,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+235,1,obj,34,chalk,5.246575342,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+236,0,obj,35,chalk,3.983561644,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+237,1,obj,36,chalk,4.775342466,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+238,1,obj,37,chalk,4.279452055,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+239,1,obj,38,chalk,4.208219178,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+240,1,obj,39,chalk,4.263013699,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+241,1,obj,40,chalk,4.78630137,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+242,1,obj,41,chalk,3.978082192,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+243,0,obj,42,chalk,4.391780822,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+244,1,obj,43,chalk,4.391780822,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+245,0,obj,44,chalk,4.835616438,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+246,0,obj,45,chalk,4.043835616,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+247,0,obj,46,chalk,4.797260274,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+248,0,obj,47,chalk,4.153424658,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+249,0,obj,48,chalk,4.454794521,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+250,0,obj,49,chalk,4.610958904,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+251,1,obj,50,chalk,4.024657534,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+252,0,obj,51,chalk,4.994520548,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+253,1,obj,52,chalk,4.44109589,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+254,0,obj,53,chalk,4.290410959,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+255,1,obj,54,chalk,7.673972603,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+256,1,obj,55,chalk,7.928767123,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+257,0,obj,56,chalk,7.98,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+258,1,obj,57,chalk,7.926027397,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+259,1,obj,58,chalk,7.99,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+260,0,obj,59,chalk,6.101369863,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+261,1,obj,60,chalk,6.430136986,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+262,1,obj,61,chalk,6.575342466,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+263,1,obj,62,chalk,5.871232877,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+264,1,obj,63,chalk,7.717808219,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+265,0,obj,64,chalk,7.728767123,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+266,1,photo,65,chalk,7.873972603,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+267,0,photo,66,chalk,7.350684932,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+268,0,photo,67,chalk,6.928767123,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+269,1,photo,68,chalk,7.504109589,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+270,1,photo,69,chalk,7.479452055,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+271,1,photo,70,chalk,7.164383562,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+272,1,photo,71,chalk,5.287671233,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+273,1,photo,72,chalk,7.301369863,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+274,0,photo,73,chalk,7.128767123,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+275,1,photo,74,chalk,7.194520548,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+276,1,photo,75,chalk,7.476712329,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+277,1,photo,76,chalk,6.873972603,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+278,1,photo,77,chalk,7.531506849,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+279,1,photo,78,chalk,7.115068493,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+280,0,photo,79,chalk,3.846575342,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+281,0,photo,80,chalk,4.057534247,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+282,0,photo,81,chalk,3.6,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+283,1,photo,82,chalk,6.602739726,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+284,0,photo,83,chalk,5.249315068,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+285,0,photo,84,chalk,3.01369863,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+286,0,photo,85,chalk,3.246575342,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+287,0,photo,86,chalk,3.326027397,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+288,0,photo,87,chalk,3.265753425,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+289,0,photo,88,chalk,3.871232877,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+290,0,photo,89,chalk,3.150684932,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+291,0,photo,90,chalk,3.063013699,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+292,0,photo,91,chalk,3.495890411,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+293,0,photo,92,chalk,3.142465753,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+294,0,photo,93,chalk,3.77260274,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+295,1,photo,94,chalk,3.443835616,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+296,0,photo,95,chalk,3.547945205,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+297,0,photo,96,chalk,4.82739726,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+298,0,cartoon,97,chalk,4.517808219,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+299,0,cartoon,98,chalk,3.901369863,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+300,0,cartoon,99,chalk,4.783561644,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+301,0,cartoon,100,chalk,4.950684932,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+302,0,cartoon,101,chalk,3.134246575,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+303,0,bw,1,fork,6.854794521,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+304,0,bw,2,fork,6.82739726,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+305,1,bw,3,fork,7.150684932,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+306,1,bw,4,fork,6.852054795,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+307,0,bw,5,fork,7.24109589,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+308,0,bw,6,fork,4.235616438,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+309,1,bw,7,fork,3.117808219,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+310,0,bw,8,fork,5.854794521,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+311,0,bw,9,fork,4.268493151,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+312,0,bw,10,fork,5.106849315,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+313,0,bw,11,fork,5.109589041,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+314,0,bw,12,fork,5.276712329,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+315,0,bw,13,fork,5.630136986,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+316,0,bw,14,fork,5.178082192,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+317,0,bw,15,fork,5.969863014,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+318,1,bw,16,fork,5.452054795,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+319,0,bw,17,fork,5.252054795,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+320,0,bw,18,fork,5.21369863,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+321,0,bw,19,fork,5.778082192,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+322,0,bw,20,fork,5.117808219,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+323,1,bw,21,fork,5.361643836,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+324,0,bw,22,fork,5.287671233,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+325,0,bw,23,fork,5.060273973,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+326,1,bw,24,fork,5.657534247,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+327,0,bw,25,fork,5.97260274,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+328,1,bw,26,fork,5.676712329,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+329,0,bw,27,fork,5.531506849,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+330,0,bw,28,fork,5.64109589,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+331,0,bw,29,fork,3.994520548,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+332,0,bw,30,fork,5.6,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+333,1,bw,31,fork,5.591780822,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+334,0,bw,32,fork,5.115068493,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+335,1,obj,33,fork,4.682191781,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+336,0,obj,34,fork,5.246575342,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+337,1,obj,35,fork,3.983561644,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+338,1,obj,36,fork,4.775342466,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+339,1,obj,37,fork,4.279452055,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+340,0,obj,38,fork,4.208219178,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+341,0,obj,39,fork,4.263013699,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+342,1,obj,40,fork,4.78630137,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+343,0,obj,41,fork,3.978082192,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+344,0,obj,42,fork,4.391780822,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+345,0,obj,43,fork,4.391780822,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+346,0,obj,44,fork,4.835616438,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+347,0,obj,45,fork,4.043835616,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+348,0,obj,46,fork,4.797260274,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+349,0,obj,47,fork,4.153424658,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+350,0,obj,48,fork,4.454794521,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+351,0,obj,49,fork,4.610958904,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+352,0,obj,50,fork,4.024657534,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+353,1,obj,51,fork,4.994520548,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+354,0,obj,52,fork,4.44109589,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+355,0,obj,53,fork,4.290410959,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+356,0,obj,54,fork,7.673972603,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+357,0,obj,55,fork,7.928767123,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+358,1,obj,56,fork,7.98,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+359,0,obj,57,fork,7.926027397,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+360,0,obj,58,fork,7.99,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+361,0,obj,59,fork,6.101369863,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+362,0,obj,60,fork,6.430136986,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+363,1,obj,61,fork,6.575342466,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+364,0,obj,62,fork,5.871232877,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+365,1,obj,63,fork,7.717808219,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+366,1,obj,64,fork,7.728767123,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+367,1,photo,65,fork,7.873972603,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+368,1,photo,66,fork,7.350684932,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+369,0,photo,67,fork,6.928767123,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+370,1,photo,68,fork,7.504109589,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+371,0,photo,69,fork,7.479452055,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+372,0,photo,70,fork,7.164383562,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+373,0,photo,71,fork,5.287671233,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+374,1,photo,72,fork,7.301369863,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+375,0,photo,73,fork,7.128767123,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+376,1,photo,74,fork,7.194520548,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+377,0,photo,75,fork,7.476712329,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+378,0,photo,76,fork,6.873972603,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+379,1,photo,77,fork,7.531506849,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+380,0,photo,78,fork,7.115068493,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+381,0,photo,79,fork,3.846575342,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+382,1,photo,80,fork,4.057534247,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+383,0,photo,81,fork,3.6,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+384,1,photo,82,fork,6.602739726,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+385,0,photo,83,fork,5.249315068,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+386,1,photo,84,fork,3.01369863,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+387,0,photo,85,fork,3.246575342,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+388,1,photo,86,fork,3.326027397,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+389,0,photo,87,fork,3.265753425,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+390,0,photo,88,fork,3.871232877,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+391,1,photo,89,fork,3.150684932,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+392,0,photo,90,fork,3.063013699,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+393,0,photo,91,fork,3.495890411,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+394,0,photo,92,fork,3.142465753,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+395,1,photo,93,fork,3.77260274,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+396,0,photo,94,fork,3.443835616,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+397,0,photo,95,fork,3.547945205,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+398,0,photo,96,fork,4.82739726,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+399,1,cartoon,97,fork,4.517808219,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+400,0,cartoon,98,fork,3.901369863,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+401,0,cartoon,99,fork,4.783561644,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+402,0,cartoon,100,fork,4.950684932,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+403,1,cartoon,101,fork,3.134246575,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+404,1,cartoon,1,cup,6.854794521,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+405,1,cartoon,2,cup,6.82739726,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+406,1,cartoon,3,cup,7.150684932,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+407,1,cartoon,4,cup,6.852054795,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+408,1,cartoon,5,cup,7.24109589,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+409,0,cartoon,6,cup,4.235616438,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+410,1,cartoon,7,cup,3.117808219,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+411,1,cartoon,8,cup,5.854794521,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+412,1,cartoon,9,cup,4.268493151,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+413,1,cartoon,10,cup,5.106849315,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+414,1,cartoon,11,cup,5.109589041,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+415,1,cartoon,12,cup,5.276712329,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+416,1,cartoon,13,cup,5.630136986,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+417,1,cartoon,14,cup,5.178082192,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+418,1,cartoon,15,cup,5.969863014,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+419,1,cartoon,16,cup,5.452054795,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+420,1,cartoon,17,cup,5.252054795,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+421,1,cartoon,18,cup,5.21369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+422,1,cartoon,19,cup,5.778082192,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+423,1,cartoon,20,cup,5.117808219,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+424,1,cartoon,21,cup,5.361643836,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+425,1,cartoon,22,cup,5.287671233,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+426,1,cartoon,23,cup,5.060273973,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+427,1,cartoon,24,cup,5.657534247,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+428,1,cartoon,25,cup,5.97260274,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+429,1,cartoon,26,cup,5.676712329,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+430,1,cartoon,27,cup,5.531506849,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+431,1,cartoon,28,cup,5.64109589,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+432,1,cartoon,29,cup,3.994520548,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+433,1,cartoon,30,cup,5.6,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+434,1,cartoon,31,cup,5.591780822,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+435,1,cartoon,32,cup,5.115068493,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+436,0,bw,33,cup,4.682191781,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+437,1,bw,34,cup,5.246575342,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+438,1,bw,35,cup,3.983561644,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+439,0,bw,36,cup,4.775342466,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+440,1,bw,37,cup,4.279452055,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+441,1,bw,38,cup,4.208219178,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+442,1,bw,39,cup,4.263013699,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+443,1,bw,40,cup,4.78630137,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+444,1,bw,41,cup,3.978082192,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+445,1,bw,42,cup,4.391780822,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+446,1,bw,43,cup,4.391780822,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+447,1,bw,44,cup,4.835616438,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+448,0,bw,45,cup,4.043835616,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+449,1,bw,46,cup,4.797260274,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+450,1,bw,47,cup,4.153424658,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+451,1,bw,48,cup,4.454794521,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+452,1,bw,49,cup,4.610958904,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+453,1,bw,50,cup,4.024657534,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+454,1,bw,51,cup,4.994520548,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+455,1,bw,52,cup,4.44109589,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+456,1,bw,53,cup,4.290410959,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+457,1,bw,54,cup,7.673972603,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+458,1,bw,55,cup,7.928767123,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+459,1,bw,56,cup,7.98,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+460,1,bw,57,cup,7.926027397,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+461,1,bw,58,cup,7.99,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+462,1,bw,59,cup,6.101369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+463,0,bw,60,cup,6.430136986,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+464,1,bw,61,cup,6.575342466,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+465,1,bw,62,cup,5.871232877,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+466,1,bw,63,cup,7.717808219,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+467,1,bw,64,cup,7.728767123,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+468,1,obj,65,cup,7.873972603,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+469,1,obj,66,cup,7.350684932,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+470,1,obj,67,cup,6.928767123,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+471,1,obj,68,cup,7.504109589,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+472,1,obj,69,cup,7.479452055,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+473,1,obj,70,cup,7.164383562,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+474,1,obj,71,cup,5.287671233,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+475,1,obj,72,cup,7.301369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+476,1,obj,73,cup,7.128767123,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+477,1,obj,74,cup,7.194520548,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+478,1,obj,75,cup,7.476712329,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+479,1,obj,76,cup,6.873972603,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+480,1,obj,77,cup,7.531506849,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+481,1,obj,78,cup,7.115068493,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+482,1,obj,79,cup,3.846575342,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+483,1,obj,80,cup,4.057534247,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+484,1,obj,81,cup,3.6,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+485,1,obj,82,cup,6.602739726,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+486,1,obj,83,cup,5.249315068,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+487,1,obj,84,cup,3.01369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+488,1,obj,85,cup,3.246575342,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+489,0,obj,86,cup,3.326027397,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+490,0,obj,87,cup,3.265753425,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+491,1,obj,88,cup,3.871232877,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+492,0,obj,89,cup,3.150684932,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+493,1,obj,90,cup,3.063013699,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+494,1,obj,91,cup,3.495890411,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+495,0,obj,92,cup,3.142465753,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+496,0,obj,93,cup,3.77260274,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+497,1,obj,94,cup,3.443835616,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+498,0,obj,95,cup,3.547945205,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+499,1,obj,96,cup,4.82739726,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+500,1,photo,97,cup,4.517808219,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+501,1,photo,98,cup,3.901369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+502,1,photo,99,cup,4.783561644,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+503,1,photo,100,cup,4.950684932,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+504,1,photo,101,cup,3.134246575,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+505,1,cartoon,1,shirt,6.854794521,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+506,1,cartoon,2,shirt,6.82739726,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+507,1,cartoon,3,shirt,7.150684932,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+508,1,cartoon,4,shirt,6.852054795,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+509,1,cartoon,5,shirt,7.24109589,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+510,1,cartoon,6,shirt,4.235616438,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+511,0,cartoon,7,shirt,3.117808219,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+512,1,cartoon,8,shirt,5.854794521,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+513,1,cartoon,9,shirt,4.268493151,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+514,1,cartoon,10,shirt,5.106849315,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+515,1,cartoon,11,shirt,5.109589041,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+516,1,cartoon,12,shirt,5.276712329,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+517,1,cartoon,13,shirt,5.630136986,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+518,1,cartoon,14,shirt,5.178082192,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+519,1,cartoon,15,shirt,5.969863014,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+520,1,cartoon,16,shirt,5.452054795,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+521,1,cartoon,17,shirt,5.252054795,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+522,1,cartoon,18,shirt,5.21369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+523,1,cartoon,19,shirt,5.778082192,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+524,1,cartoon,20,shirt,5.117808219,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+525,1,cartoon,21,shirt,5.361643836,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+526,1,cartoon,22,shirt,5.287671233,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+527,1,cartoon,23,shirt,5.060273973,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+528,1,cartoon,24,shirt,5.657534247,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+529,1,cartoon,25,shirt,5.97260274,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+530,1,cartoon,26,shirt,5.676712329,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+531,1,cartoon,27,shirt,5.531506849,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+532,1,cartoon,28,shirt,5.64109589,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+533,1,cartoon,29,shirt,3.994520548,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+534,1,cartoon,30,shirt,5.6,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+535,1,cartoon,31,shirt,5.591780822,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+536,1,cartoon,32,shirt,5.115068493,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+537,1,bw,33,shirt,4.682191781,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+538,1,bw,34,shirt,5.246575342,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+539,1,bw,35,shirt,3.983561644,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+540,1,bw,36,shirt,4.775342466,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+541,1,bw,37,shirt,4.279452055,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+542,1,bw,38,shirt,4.208219178,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+543,1,bw,39,shirt,4.263013699,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+544,1,bw,40,shirt,4.78630137,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+545,1,bw,41,shirt,3.978082192,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+546,1,bw,42,shirt,4.391780822,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+547,1,bw,43,shirt,4.391780822,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+548,1,bw,44,shirt,4.835616438,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+549,1,bw,45,shirt,4.043835616,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+550,1,bw,46,shirt,4.797260274,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+551,1,bw,47,shirt,4.153424658,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+552,1,bw,48,shirt,4.454794521,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+553,1,bw,49,shirt,4.610958904,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+554,1,bw,50,shirt,4.024657534,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+555,1,bw,51,shirt,4.994520548,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+556,1,bw,52,shirt,4.44109589,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+557,1,bw,53,shirt,4.290410959,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+558,1,bw,54,shirt,7.673972603,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+559,1,bw,55,shirt,7.928767123,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+560,1,bw,56,shirt,7.98,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+561,1,bw,57,shirt,7.926027397,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+562,1,bw,58,shirt,7.99,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+563,1,bw,59,shirt,6.101369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+564,1,bw,60,shirt,6.430136986,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+565,1,bw,61,shirt,6.575342466,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+566,1,bw,62,shirt,5.871232877,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+567,1,bw,63,shirt,7.717808219,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+568,1,bw,64,shirt,7.728767123,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+569,1,obj,65,shirt,7.873972603,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+570,1,obj,66,shirt,7.350684932,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+571,1,obj,67,shirt,6.928767123,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+572,1,obj,68,shirt,7.504109589,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+573,1,obj,69,shirt,7.479452055,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+574,1,obj,70,shirt,7.164383562,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+575,1,obj,71,shirt,5.287671233,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+576,1,obj,72,shirt,7.301369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+577,1,obj,73,shirt,7.128767123,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+578,1,obj,74,shirt,7.194520548,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+579,1,obj,75,shirt,7.476712329,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+580,1,obj,76,shirt,6.873972603,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+581,1,obj,77,shirt,7.531506849,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+582,1,obj,78,shirt,7.115068493,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+583,1,obj,79,shirt,3.846575342,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+584,0,obj,80,shirt,4.057534247,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+585,1,obj,81,shirt,3.6,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+586,1,obj,82,shirt,6.602739726,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+587,1,obj,83,shirt,5.249315068,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+588,1,obj,84,shirt,3.01369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+589,1,obj,85,shirt,3.246575342,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+590,0,obj,86,shirt,3.326027397,5,shirt,hat,eraser,bucket,27.07115394207143,hat,Near Distractor
+591,1,obj,87,shirt,3.265753425,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+592,1,obj,88,shirt,3.871232877,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+593,0,obj,89,shirt,3.150684932,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+594,1,obj,90,shirt,3.063013699,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+595,1,obj,91,shirt,3.495890411,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+596,0,obj,92,shirt,3.142465753,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+597,0,obj,93,shirt,3.77260274,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+598,1,obj,94,shirt,3.443835616,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+599,0,obj,95,shirt,3.547945205,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+600,1,obj,96,shirt,4.82739726,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+601,1,photo,97,shirt,4.517808219,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+602,1,photo,98,shirt,3.901369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+603,1,photo,99,shirt,4.783561644,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+604,1,photo,100,shirt,4.950684932,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+605,1,photo,101,shirt,3.134246575,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+606,1,cartoon,1,scissors,6.854794521,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+607,1,cartoon,2,scissors,6.82739726,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+608,1,cartoon,3,scissors,7.150684932,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+609,1,cartoon,4,scissors,6.852054795,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+610,1,cartoon,5,scissors,7.24109589,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+611,1,cartoon,6,scissors,4.235616438,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+612,1,cartoon,7,scissors,3.117808219,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+613,1,cartoon,8,scissors,5.854794521,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+614,1,cartoon,9,scissors,4.268493151,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+615,1,cartoon,10,scissors,5.106849315,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+616,1,cartoon,11,scissors,5.109589041,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+617,1,cartoon,12,scissors,5.276712329,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+618,1,cartoon,13,scissors,5.630136986,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+619,1,cartoon,14,scissors,5.178082192,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+620,1,cartoon,15,scissors,5.969863014,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+621,1,cartoon,16,scissors,5.452054795,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+622,1,cartoon,17,scissors,5.252054795,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+623,1,cartoon,18,scissors,5.21369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+624,1,cartoon,19,scissors,5.778082192,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+625,1,cartoon,20,scissors,5.117808219,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+626,1,cartoon,21,scissors,5.361643836,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+627,1,cartoon,22,scissors,5.287671233,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+628,1,cartoon,23,scissors,5.060273973,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+629,1,cartoon,24,scissors,5.657534247,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+630,1,cartoon,25,scissors,5.97260274,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+631,1,cartoon,26,scissors,5.676712329,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+632,1,cartoon,27,scissors,5.531506849,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+633,1,cartoon,28,scissors,5.64109589,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+634,1,cartoon,29,scissors,3.994520548,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+635,1,cartoon,30,scissors,5.6,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+636,1,cartoon,31,scissors,5.591780822,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+637,1,cartoon,32,scissors,5.115068493,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+638,1,bw,33,scissors,4.682191781,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+639,1,bw,34,scissors,5.246575342,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+640,1,bw,35,scissors,3.983561644,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+641,1,bw,36,scissors,4.775342466,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+642,1,bw,37,scissors,4.279452055,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+643,1,bw,38,scissors,4.208219178,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+644,1,bw,39,scissors,4.263013699,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+645,1,bw,40,scissors,4.78630137,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+646,0,bw,41,scissors,3.978082192,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+647,1,bw,42,scissors,4.391780822,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+648,0,bw,43,scissors,4.391780822,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+649,1,bw,44,scissors,4.835616438,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+650,1,bw,45,scissors,4.043835616,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+651,1,bw,46,scissors,4.797260274,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+652,0,bw,47,scissors,4.153424658,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+653,1,bw,48,scissors,4.454794521,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+654,1,bw,49,scissors,4.610958904,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+655,1,bw,50,scissors,4.024657534,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+656,1,bw,51,scissors,4.994520548,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+657,1,bw,52,scissors,4.44109589,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+658,1,bw,53,scissors,4.290410959,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+659,1,bw,54,scissors,7.673972603,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+660,1,bw,55,scissors,7.928767123,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+661,1,bw,56,scissors,7.98,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+662,1,bw,57,scissors,7.926027397,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+663,1,bw,58,scissors,7.99,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+664,1,bw,59,scissors,6.101369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+665,1,bw,60,scissors,6.430136986,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+666,1,bw,61,scissors,6.575342466,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+667,1,bw,62,scissors,5.871232877,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+668,1,bw,63,scissors,7.717808219,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+669,1,bw,64,scissors,7.728767123,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+670,1,obj,65,scissors,7.873972603,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+671,1,obj,66,scissors,7.350684932,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+672,1,obj,67,scissors,6.928767123,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+673,1,obj,68,scissors,7.504109589,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+674,1,obj,69,scissors,7.479452055,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+675,1,obj,70,scissors,7.164383562,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+676,1,obj,71,scissors,5.287671233,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+677,1,obj,72,scissors,7.301369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+678,1,obj,73,scissors,7.128767123,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+679,1,obj,74,scissors,7.194520548,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+680,1,obj,75,scissors,7.476712329,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+681,1,obj,76,scissors,6.873972603,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+682,1,obj,77,scissors,7.531506849,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+683,1,obj,78,scissors,7.115068493,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+684,1,obj,79,scissors,3.846575342,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+685,1,obj,80,scissors,4.057534247,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+686,1,obj,81,scissors,3.6,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+687,1,obj,82,scissors,6.602739726,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+688,1,obj,83,scissors,5.249315068,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+689,1,obj,84,scissors,3.01369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+690,1,obj,85,scissors,3.246575342,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+691,1,obj,86,scissors,3.326027397,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+692,1,obj,87,scissors,3.265753425,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+693,1,obj,88,scissors,3.871232877,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+694,1,obj,89,scissors,3.150684932,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+695,1,obj,90,scissors,3.063013699,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+696,0,obj,91,scissors,3.495890411,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+697,1,obj,92,scissors,3.142465753,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+698,1,obj,93,scissors,3.77260274,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+699,1,obj,94,scissors,3.443835616,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+700,0,obj,95,scissors,3.547945205,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+701,1,obj,96,scissors,4.82739726,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+702,1,photo,97,scissors,4.517808219,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+703,1,photo,98,scissors,3.901369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+704,1,photo,99,scissors,4.783561644,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+705,1,photo,100,scissors,4.950684932,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+706,1,photo,101,scissors,3.134246575,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+707,1,cartoon,1,button,6.854794521,7,button,stone,stick,shovel,31.754578878000576,button,Target
+708,1,cartoon,2,button,6.82739726,7,button,stone,stick,shovel,31.754578878000576,button,Target
+709,1,cartoon,3,button,7.150684932,7,button,stone,stick,shovel,31.754578878000576,button,Target
+710,0,cartoon,4,button,6.852054795,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+711,1,cartoon,5,button,7.24109589,7,button,stone,stick,shovel,31.754578878000576,button,Target
+712,0,cartoon,6,button,4.235616438,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+713,0,cartoon,7,button,3.117808219,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+714,0,cartoon,8,button,5.854794521,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+715,0,cartoon,9,button,4.268493151,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+716,1,cartoon,10,button,5.106849315,7,button,stone,stick,shovel,31.754578878000576,button,Target
+717,0,cartoon,11,button,5.109589041,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+718,0,cartoon,12,button,5.276712329,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+719,1,cartoon,13,button,5.630136986,7,button,stone,stick,shovel,31.754578878000576,button,Target
+720,0,cartoon,14,button,5.178082192,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+721,0,cartoon,15,button,5.969863014,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+722,1,cartoon,16,button,5.452054795,7,button,stone,stick,shovel,31.754578878000576,button,Target
+723,0,cartoon,17,button,5.252054795,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+724,1,cartoon,18,button,5.21369863,7,button,stone,stick,shovel,31.754578878000576,button,Target
+725,0,cartoon,19,button,5.778082192,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+726,0,cartoon,20,button,5.117808219,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+727,1,cartoon,21,button,5.361643836,7,button,stone,stick,shovel,31.754578878000576,button,Target
+728,0,cartoon,22,button,5.287671233,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+729,0,cartoon,23,button,5.060273973,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+730,0,cartoon,24,button,5.657534247,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+731,0,cartoon,25,button,5.97260274,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+732,1,cartoon,26,button,5.676712329,7,button,stone,stick,shovel,31.754578878000576,button,Target
+733,0,cartoon,27,button,5.531506849,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+734,0,cartoon,28,button,5.64109589,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+735,0,cartoon,29,button,3.994520548,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+736,1,cartoon,30,button,5.6,7,button,stone,stick,shovel,31.754578878000576,button,Target
+737,1,cartoon,31,button,5.591780822,7,button,stone,stick,shovel,31.754578878000576,button,Target
+738,0,cartoon,32,button,5.115068493,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+739,0,bw,33,button,4.682191781,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+740,0,bw,34,button,5.246575342,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+741,0,bw,35,button,3.983561644,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+742,0,bw,36,button,4.775342466,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+743,0,bw,37,button,4.279452055,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+744,0,bw,38,button,4.208219178,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+745,0,bw,39,button,4.263013699,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+746,0,bw,40,button,4.78630137,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+747,0,bw,41,button,3.978082192,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+748,0,bw,42,button,4.391780822,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+749,0,bw,43,button,4.391780822,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+750,0,bw,44,button,4.835616438,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+751,0,bw,45,button,4.043835616,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+752,0,bw,46,button,4.797260274,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+753,0,bw,47,button,4.153424658,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+754,0,bw,48,button,4.454794521,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+755,0,bw,49,button,4.610958904,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+756,0,bw,50,button,4.024657534,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+757,1,bw,51,button,4.994520548,7,button,stone,stick,shovel,31.754578878000576,button,Target
+758,0,bw,52,button,4.44109589,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+759,0,bw,53,button,4.290410959,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+760,1,bw,54,button,7.673972603,7,button,stone,stick,shovel,31.754578878000576,button,Target
+761,0,bw,55,button,7.928767123,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+762,1,bw,56,button,7.98,7,button,stone,stick,shovel,31.754578878000576,button,Target
+763,0,bw,57,button,7.926027397,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+764,0,bw,58,button,7.99,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+765,0,bw,59,button,6.101369863,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+766,1,bw,60,button,6.430136986,7,button,stone,stick,shovel,31.754578878000576,button,Target
+767,0,bw,61,button,6.575342466,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+768,1,bw,62,button,5.871232877,7,button,stone,stick,shovel,31.754578878000576,button,Target
+769,0,bw,63,button,7.717808219,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+770,0,bw,64,button,7.728767123,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+771,1,obj,65,button,7.873972603,7,button,stone,stick,shovel,31.754578878000576,button,Target
+772,1,obj,66,button,7.350684932,7,button,stone,stick,shovel,31.754578878000576,button,Target
+773,1,obj,67,button,6.928767123,7,button,stone,stick,shovel,31.754578878000576,button,Target
+774,1,obj,68,button,7.504109589,7,button,stone,stick,shovel,31.754578878000576,button,Target
+775,1,obj,69,button,7.479452055,7,button,stone,stick,shovel,31.754578878000576,button,Target
+776,1,obj,70,button,7.164383562,7,button,stone,stick,shovel,31.754578878000576,button,Target
+777,0,obj,71,button,5.287671233,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+778,1,obj,72,button,7.301369863,7,button,stone,stick,shovel,31.754578878000576,button,Target
+779,1,obj,73,button,7.128767123,7,button,stone,stick,shovel,31.754578878000576,button,Target
+780,1,obj,74,button,7.194520548,7,button,stone,stick,shovel,31.754578878000576,button,Target
+781,0,obj,75,button,7.476712329,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+782,0,obj,76,button,6.873972603,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+783,0,obj,77,button,7.531506849,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+784,0,obj,78,button,7.115068493,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+785,0,obj,79,button,3.846575342,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+786,0,obj,80,button,4.057534247,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+787,0,obj,81,button,3.6,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+788,1,obj,82,button,6.602739726,7,button,stone,stick,shovel,31.754578878000576,button,Target
+789,1,obj,83,button,5.249315068,7,button,stone,stick,shovel,31.754578878000576,button,Target
+790,0,obj,84,button,3.01369863,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+791,1,obj,85,button,3.246575342,7,button,stone,stick,shovel,31.754578878000576,button,Target
+792,0,obj,86,button,3.326027397,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+793,0,obj,87,button,3.265753425,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+794,0,obj,88,button,3.871232877,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+795,0,obj,89,button,3.150684932,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+796,0,obj,90,button,3.063013699,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+797,0,obj,91,button,3.495890411,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+798,0,obj,92,button,3.142465753,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+799,0,obj,93,button,3.77260274,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+800,0,obj,94,button,3.443835616,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+801,0,obj,95,button,3.547945205,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+802,0,obj,96,button,4.82739726,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+803,0,photo,97,button,4.517808219,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+804,0,photo,98,button,3.901369863,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+805,0,photo,99,button,4.783561644,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+806,0,photo,100,button,4.950684932,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+807,0,photo,101,button,3.134246575,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+808,1,photo,1,book,6.854794521,8,book,paper,jeans,coat,22.182314070136787,book,Target
+809,1,photo,2,book,6.82739726,8,book,paper,jeans,coat,22.182314070136787,book,Target
+810,1,photo,3,book,7.150684932,8,book,paper,jeans,coat,22.182314070136787,book,Target
+811,1,photo,4,book,6.852054795,8,book,paper,jeans,coat,22.182314070136787,book,Target
+812,1,photo,5,book,7.24109589,8,book,paper,jeans,coat,22.182314070136787,book,Target
+813,1,photo,6,book,4.235616438,8,book,paper,jeans,coat,22.182314070136787,book,Target
+814,1,photo,7,book,3.117808219,8,book,paper,jeans,coat,22.182314070136787,book,Target
+815,1,photo,8,book,5.854794521,8,book,paper,jeans,coat,22.182314070136787,book,Target
+816,1,photo,9,book,4.268493151,8,book,paper,jeans,coat,22.182314070136787,book,Target
+817,1,photo,10,book,5.106849315,8,book,paper,jeans,coat,22.182314070136787,book,Target
+818,0,photo,11,book,5.109589041,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+819,0,photo,12,book,5.276712329,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+820,1,photo,13,book,5.630136986,8,book,paper,jeans,coat,22.182314070136787,book,Target
+821,1,photo,14,book,5.178082192,8,book,paper,jeans,coat,22.182314070136787,book,Target
+822,1,photo,15,book,5.969863014,8,book,paper,jeans,coat,22.182314070136787,book,Target
+823,1,photo,16,book,5.452054795,8,book,paper,jeans,coat,22.182314070136787,book,Target
+824,1,photo,17,book,5.252054795,8,book,paper,jeans,coat,22.182314070136787,book,Target
+825,0,photo,18,book,5.21369863,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+826,1,photo,19,book,5.778082192,8,book,paper,jeans,coat,22.182314070136787,book,Target
+827,1,photo,20,book,5.117808219,8,book,paper,jeans,coat,22.182314070136787,book,Target
+828,1,photo,21,book,5.361643836,8,book,paper,jeans,coat,22.182314070136787,book,Target
+829,0,photo,22,book,5.287671233,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+830,1,photo,23,book,5.060273973,8,book,paper,jeans,coat,22.182314070136787,book,Target
+831,1,photo,24,book,5.657534247,8,book,paper,jeans,coat,22.182314070136787,book,Target
+832,1,photo,25,book,5.97260274,8,book,paper,jeans,coat,22.182314070136787,book,Target
+833,1,photo,26,book,5.676712329,8,book,paper,jeans,coat,22.182314070136787,book,Target
+834,1,photo,27,book,5.531506849,8,book,paper,jeans,coat,22.182314070136787,book,Target
+835,1,photo,28,book,5.64109589,8,book,paper,jeans,coat,22.182314070136787,book,Target
+836,1,photo,29,book,3.994520548,8,book,paper,jeans,coat,22.182314070136787,book,Target
+837,1,photo,30,book,5.6,8,book,paper,jeans,coat,22.182314070136787,book,Target
+838,1,photo,31,book,5.591780822,8,book,paper,jeans,coat,22.182314070136787,book,Target
+839,1,photo,32,book,5.115068493,8,book,paper,jeans,coat,22.182314070136787,book,Target
+840,1,cartoon,33,book,4.682191781,8,book,paper,jeans,coat,22.182314070136787,book,Target
+841,1,cartoon,34,book,5.246575342,8,book,paper,jeans,coat,22.182314070136787,book,Target
+842,1,cartoon,35,book,3.983561644,8,book,paper,jeans,coat,22.182314070136787,book,Target
+843,1,cartoon,36,book,4.775342466,8,book,paper,jeans,coat,22.182314070136787,book,Target
+844,1,cartoon,37,book,4.279452055,8,book,paper,jeans,coat,22.182314070136787,book,Target
+845,1,cartoon,38,book,4.208219178,8,book,paper,jeans,coat,22.182314070136787,book,Target
+846,1,cartoon,39,book,4.263013699,8,book,paper,jeans,coat,22.182314070136787,book,Target
+847,1,cartoon,40,book,4.78630137,8,book,paper,jeans,coat,22.182314070136787,book,Target
+848,1,cartoon,41,book,3.978082192,8,book,paper,jeans,coat,22.182314070136787,book,Target
+849,0,cartoon,42,book,4.391780822,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+850,1,cartoon,43,book,4.391780822,8,book,paper,jeans,coat,22.182314070136787,book,Target
+851,1,cartoon,44,book,4.835616438,8,book,paper,jeans,coat,22.182314070136787,book,Target
+852,1,cartoon,45,book,4.043835616,8,book,paper,jeans,coat,22.182314070136787,book,Target
+853,1,cartoon,46,book,4.797260274,8,book,paper,jeans,coat,22.182314070136787,book,Target
+854,0,cartoon,47,book,4.153424658,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+855,0,cartoon,48,book,4.454794521,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+856,0,cartoon,49,book,4.610958904,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+857,1,cartoon,50,book,4.024657534,8,book,paper,jeans,coat,22.182314070136787,book,Target
+858,0,cartoon,51,book,4.994520548,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+859,1,cartoon,52,book,4.44109589,8,book,paper,jeans,coat,22.182314070136787,book,Target
+860,0,cartoon,53,book,4.290410959,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+861,1,cartoon,54,book,7.673972603,8,book,paper,jeans,coat,22.182314070136787,book,Target
+862,1,cartoon,55,book,7.928767123,8,book,paper,jeans,coat,22.182314070136787,book,Target
+863,1,cartoon,56,book,7.98,8,book,paper,jeans,coat,22.182314070136787,book,Target
+864,1,cartoon,57,book,7.926027397,8,book,paper,jeans,coat,22.182314070136787,book,Target
+865,1,cartoon,58,book,7.99,8,book,paper,jeans,coat,22.182314070136787,book,Target
+866,0,cartoon,59,book,6.101369863,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+867,1,cartoon,60,book,6.430136986,8,book,paper,jeans,coat,22.182314070136787,book,Target
+868,1,cartoon,61,book,6.575342466,8,book,paper,jeans,coat,22.182314070136787,book,Target
+869,1,cartoon,62,book,5.871232877,8,book,paper,jeans,coat,22.182314070136787,book,Target
+870,1,cartoon,63,book,7.717808219,8,book,paper,jeans,coat,22.182314070136787,book,Target
+871,1,cartoon,64,book,7.728767123,8,book,paper,jeans,coat,22.182314070136787,book,Target
+872,1,bw,65,book,7.873972603,8,book,paper,jeans,coat,22.182314070136787,book,Target
+873,1,bw,66,book,7.350684932,8,book,paper,jeans,coat,22.182314070136787,book,Target
+874,0,bw,67,book,6.928767123,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+875,1,bw,68,book,7.504109589,8,book,paper,jeans,coat,22.182314070136787,book,Target
+876,0,bw,69,book,7.479452055,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+877,1,bw,70,book,7.164383562,8,book,paper,jeans,coat,22.182314070136787,book,Target
+878,0,bw,71,book,5.287671233,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+879,1,bw,72,book,7.301369863,8,book,paper,jeans,coat,22.182314070136787,book,Target
+880,1,bw,73,book,7.128767123,8,book,paper,jeans,coat,22.182314070136787,book,Target
+881,1,bw,74,book,7.194520548,8,book,paper,jeans,coat,22.182314070136787,book,Target
+882,0,bw,75,book,7.476712329,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+883,0,bw,76,book,6.873972603,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+884,1,bw,77,book,7.531506849,8,book,paper,jeans,coat,22.182314070136787,book,Target
+885,0,bw,78,book,7.115068493,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+886,0,bw,79,book,3.846575342,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+887,0,bw,80,book,4.057534247,8,book,paper,jeans,coat,22.182314070136787,jeans,Random
+888,0,bw,81,book,3.6,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+889,0,bw,82,book,6.602739726,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+890,0,bw,83,book,5.249315068,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+891,1,bw,84,book,3.01369863,8,book,paper,jeans,coat,22.182314070136787,book,Target
+892,1,bw,85,book,3.246575342,8,book,paper,jeans,coat,22.182314070136787,book,Target
+893,0,bw,86,book,3.326027397,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+894,1,bw,87,book,3.265753425,8,book,paper,jeans,coat,22.182314070136787,book,Target
+895,0,bw,88,book,3.871232877,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+896,1,bw,89,book,3.150684932,8,book,paper,jeans,coat,22.182314070136787,book,Target
+897,0,bw,90,book,3.063013699,8,book,paper,jeans,coat,22.182314070136787,jeans,Random
+898,0,bw,91,book,3.495890411,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+899,1,bw,92,book,3.142465753,8,book,paper,jeans,coat,22.182314070136787,book,Target
+900,0,bw,93,book,3.77260274,8,book,paper,jeans,coat,22.182314070136787,coat,Random
+901,1,bw,94,book,3.443835616,8,book,paper,jeans,coat,22.182314070136787,book,Target
+902,0,bw,95,book,3.547945205,8,book,paper,jeans,coat,22.182314070136787,jeans,Random
+903,0,bw,96,book,4.82739726,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+904,1,obj,97,book,4.517808219,8,book,paper,jeans,coat,22.182314070136787,book,Target
+905,0,obj,98,book,3.901369863,8,book,paper,jeans,coat,22.182314070136787,paper,Near Distractor
+906,1,obj,99,book,4.783561644,8,book,paper,jeans,coat,22.182314070136787,book,Target
+907,1,obj,100,book,4.950684932,8,book,paper,jeans,coat,22.182314070136787,book,Target
+908,1,obj,101,book,3.134246575,8,book,paper,jeans,coat,22.182314070136787,book,Target
+909,1,photo,1,bowl,6.854794521,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+910,1,photo,2,bowl,6.82739726,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+911,1,photo,3,bowl,7.150684932,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+912,1,photo,4,bowl,6.852054795,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+913,1,photo,5,bowl,7.24109589,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+914,0,photo,6,bowl,4.235616438,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+915,0,photo,7,bowl,3.117808219,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+916,1,photo,8,bowl,5.854794521,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+917,0,photo,9,bowl,4.268493151,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+918,1,photo,10,bowl,5.106849315,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+919,1,photo,11,bowl,5.109589041,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+920,1,photo,12,bowl,5.276712329,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+921,1,photo,13,bowl,5.630136986,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+922,1,photo,14,bowl,5.178082192,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+923,1,photo,15,bowl,5.969863014,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+924,1,photo,16,bowl,5.452054795,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+925,1,photo,17,bowl,5.252054795,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+926,1,photo,18,bowl,5.21369863,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+927,1,photo,19,bowl,5.778082192,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+928,1,photo,20,bowl,5.117808219,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+929,1,photo,21,bowl,5.361643836,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+930,1,photo,22,bowl,5.287671233,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+931,0,photo,23,bowl,5.060273973,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+932,1,photo,24,bowl,5.657534247,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+933,1,photo,25,bowl,5.97260274,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+934,1,photo,26,bowl,5.676712329,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+935,1,photo,27,bowl,5.531506849,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+936,0,photo,28,bowl,5.64109589,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+937,0,photo,29,bowl,3.994520548,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+938,0,photo,30,bowl,5.6,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+939,1,photo,31,bowl,5.591780822,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+940,1,photo,32,bowl,5.115068493,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+941,0,cartoon,33,bowl,4.682191781,9,bowl,plate,pants,scarf,23.43778594209283,pants,Random
+942,1,cartoon,34,bowl,5.246575342,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+943,0,cartoon,35,bowl,3.983561644,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+944,1,cartoon,36,bowl,4.775342466,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+945,1,cartoon,37,bowl,4.279452055,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+946,1,cartoon,38,bowl,4.208219178,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+947,1,cartoon,39,bowl,4.263013699,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+948,1,cartoon,40,bowl,4.78630137,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+949,1,cartoon,41,bowl,3.978082192,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+950,0,cartoon,42,bowl,4.391780822,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+951,0,cartoon,43,bowl,4.391780822,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+952,1,cartoon,44,bowl,4.835616438,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+953,1,cartoon,45,bowl,4.043835616,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+954,1,cartoon,46,bowl,4.797260274,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+955,1,cartoon,47,bowl,4.153424658,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+956,1,cartoon,48,bowl,4.454794521,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+957,0,cartoon,49,bowl,4.610958904,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+958,0,cartoon,50,bowl,4.024657534,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+959,1,cartoon,51,bowl,4.994520548,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+960,1,cartoon,52,bowl,4.44109589,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+961,0,cartoon,53,bowl,4.290410959,9,bowl,plate,pants,scarf,23.43778594209283,pants,Random
+962,1,cartoon,54,bowl,7.673972603,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+963,1,cartoon,55,bowl,7.928767123,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+964,1,cartoon,56,bowl,7.98,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+965,1,cartoon,57,bowl,7.926027397,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+966,1,cartoon,58,bowl,7.99,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+967,1,cartoon,59,bowl,6.101369863,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+968,0,cartoon,60,bowl,6.430136986,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+969,0,cartoon,61,bowl,6.575342466,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+970,1,cartoon,62,bowl,5.871232877,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+971,1,cartoon,63,bowl,7.717808219,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+972,1,cartoon,64,bowl,7.728767123,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+973,1,bw,65,bowl,7.873972603,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+974,0,bw,66,bowl,7.350684932,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+975,1,bw,67,bowl,6.928767123,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+976,1,bw,68,bowl,7.504109589,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+977,1,bw,69,bowl,7.479452055,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+978,0,bw,70,bowl,7.164383562,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+979,1,bw,71,bowl,5.287671233,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+980,1,bw,72,bowl,7.301369863,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+981,1,bw,73,bowl,7.128767123,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+982,0,bw,74,bowl,7.194520548,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+983,1,bw,75,bowl,7.476712329,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+984,0,bw,76,bowl,6.873972603,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+985,1,bw,77,bowl,7.531506849,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+986,1,bw,78,bowl,7.115068493,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+987,0,bw,79,bowl,3.846575342,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+988,0,bw,80,bowl,4.057534247,9,bowl,plate,pants,scarf,23.43778594209283,pants,Random
+989,1,bw,81,bowl,3.6,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+990,1,bw,82,bowl,6.602739726,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+991,1,bw,83,bowl,5.249315068,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+992,1,bw,84,bowl,3.01369863,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+993,1,bw,85,bowl,3.246575342,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+994,1,bw,86,bowl,3.326027397,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+995,1,bw,87,bowl,3.265753425,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+996,1,bw,88,bowl,3.871232877,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+997,0,bw,89,bowl,3.150684932,9,bowl,plate,pants,scarf,23.43778594209283,pants,Random
+998,0,bw,90,bowl,3.063013699,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+999,0,bw,91,bowl,3.495890411,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1000,0,bw,92,bowl,3.142465753,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+1001,1,bw,93,bowl,3.77260274,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1002,1,bw,94,bowl,3.443835616,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1003,0,bw,95,bowl,3.547945205,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+1004,1,bw,96,bowl,4.82739726,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1005,0,obj,97,bowl,4.517808219,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1006,0,obj,98,bowl,3.901369863,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1007,0,obj,99,bowl,4.783561644,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1008,0,obj,100,bowl,4.950684932,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1009,0,obj,101,bowl,3.134246575,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1010,0,photo,1,box,6.854794521,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1011,1,photo,2,box,6.82739726,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1012,1,photo,3,box,7.150684932,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1013,0,photo,4,box,6.852054795,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1014,0,photo,5,box,7.24109589,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1015,0,photo,6,box,4.235616438,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1016,0,photo,7,box,3.117808219,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1017,1,photo,8,box,5.854794521,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1018,0,photo,9,box,4.268493151,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1019,1,photo,10,box,5.106849315,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1020,1,photo,11,box,5.109589041,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1021,1,photo,12,box,5.276712329,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1022,1,photo,13,box,5.630136986,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1023,1,photo,14,box,5.178082192,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1024,1,photo,15,box,5.969863014,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1025,1,photo,16,box,5.452054795,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1026,0,photo,17,box,5.252054795,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1027,1,photo,18,box,5.21369863,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1028,1,photo,19,box,5.778082192,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1029,0,photo,20,box,5.117808219,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1030,1,photo,21,box,5.361643836,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1031,1,photo,22,box,5.287671233,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1032,1,photo,23,box,5.060273973,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1033,1,photo,24,box,5.657534247,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1034,1,photo,25,box,5.97260274,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1035,1,photo,26,box,5.676712329,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1036,1,photo,27,box,5.531506849,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1037,1,photo,28,box,5.64109589,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1038,0,photo,29,box,3.994520548,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1039,1,photo,30,box,5.6,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1040,0,photo,31,box,5.591780822,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1041,1,photo,32,box,5.115068493,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1042,0,cartoon,33,box,4.682191781,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1043,1,cartoon,34,box,5.246575342,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1044,0,cartoon,35,box,3.983561644,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1045,1,cartoon,36,box,4.775342466,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1046,1,cartoon,37,box,4.279452055,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1047,1,cartoon,38,box,4.208219178,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1048,0,cartoon,39,box,4.263013699,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1049,0,cartoon,40,box,4.78630137,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1050,0,cartoon,41,box,3.978082192,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1051,1,cartoon,42,box,4.391780822,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1052,0,cartoon,43,box,4.391780822,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1053,0,cartoon,44,box,4.835616438,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1054,0,cartoon,45,box,4.043835616,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1055,1,cartoon,46,box,4.797260274,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1056,1,cartoon,47,box,4.153424658,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1057,0,cartoon,48,box,4.454794521,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1058,0,cartoon,49,box,4.610958904,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1059,1,cartoon,50,box,4.024657534,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1060,0,cartoon,51,box,4.994520548,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1061,0,cartoon,52,box,4.44109589,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1062,1,cartoon,53,box,4.290410959,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1063,1,cartoon,54,box,7.673972603,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1064,1,cartoon,55,box,7.928767123,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1065,1,cartoon,56,box,7.98,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1066,1,cartoon,57,box,7.926027397,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1067,0,cartoon,58,box,7.99,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1068,0,cartoon,59,box,6.101369863,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1069,1,cartoon,60,box,6.430136986,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1070,1,cartoon,61,box,6.575342466,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1071,1,cartoon,62,box,5.871232877,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1072,1,cartoon,63,box,7.717808219,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1073,1,cartoon,64,box,7.728767123,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1074,1,bw,65,box,7.873972603,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1075,0,bw,66,box,7.350684932,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1076,1,bw,67,box,6.928767123,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1077,0,bw,68,box,7.504109589,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1078,1,bw,69,box,7.479452055,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1079,0,bw,70,box,7.164383562,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1080,1,bw,71,box,5.287671233,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1081,1,bw,72,box,7.301369863,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1082,1,bw,73,box,7.128767123,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1083,0,bw,74,box,7.194520548,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1084,0,bw,75,box,7.476712329,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1085,1,bw,76,box,6.873972603,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1086,1,bw,77,box,7.531506849,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1087,1,bw,78,box,7.115068493,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1088,1,bw,79,box,3.846575342,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1089,0,bw,80,box,4.057534247,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1090,0,bw,81,box,3.6,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1091,1,bw,82,box,6.602739726,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1092,1,bw,83,box,5.249315068,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1093,0,bw,84,box,3.01369863,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1094,0,bw,85,box,3.246575342,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1095,0,bw,86,box,3.326027397,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1096,0,bw,87,box,3.265753425,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1097,1,bw,88,box,3.871232877,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1098,0,bw,89,box,3.150684932,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1099,1,bw,90,box,3.063013699,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1100,1,bw,91,box,3.495890411,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1101,0,bw,92,box,3.142465753,10,box,basket,bottle cap,key,29.26612874157193,key,Random
+1102,0,bw,93,box,3.77260274,10,box,basket,bottle cap,key,29.26612874157193,bottle cap,Random
+1103,1,bw,94,box,3.443835616,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1104,1,bw,95,box,3.547945205,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1105,0,bw,96,box,4.82739726,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1106,1,obj,97,box,4.517808219,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1107,1,obj,98,box,3.901369863,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1108,1,obj,99,box,4.783561644,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1109,1,obj,100,box,4.950684932,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1110,0,obj,101,box,3.134246575,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1111,0,photo,1,shorts,6.854794521,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1112,0,photo,2,shorts,6.82739726,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1113,0,photo,3,shorts,7.150684932,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1114,0,photo,4,shorts,6.852054795,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1115,0,photo,5,shorts,7.24109589,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1116,0,photo,6,shorts,4.235616438,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1117,0,photo,7,shorts,3.117808219,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1118,0,photo,8,shorts,5.854794521,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1119,0,photo,9,shorts,4.268493151,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1120,0,photo,10,shorts,5.106849315,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1121,0,photo,11,shorts,5.109589041,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1122,0,photo,12,shorts,5.276712329,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1123,0,photo,13,shorts,5.630136986,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1124,0,photo,14,shorts,5.178082192,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1125,0,photo,15,shorts,5.969863014,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1126,1,photo,16,shorts,5.452054795,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1127,0,photo,17,shorts,5.252054795,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1128,0,photo,18,shorts,5.21369863,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1129,0,photo,19,shorts,5.778082192,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1130,0,photo,20,shorts,5.117808219,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1131,0,photo,21,shorts,5.361643836,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1132,1,photo,22,shorts,5.287671233,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1133,0,photo,23,shorts,5.060273973,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1134,0,photo,24,shorts,5.657534247,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1135,0,photo,25,shorts,5.97260274,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1136,0,photo,26,shorts,5.676712329,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1137,0,photo,27,shorts,5.531506849,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1138,0,photo,28,shorts,5.64109589,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1139,0,photo,29,shorts,3.994520548,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1140,0,photo,30,shorts,5.6,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1141,0,photo,31,shorts,5.591780822,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1142,0,photo,32,shorts,5.115068493,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1143,0,cartoon,33,shorts,4.682191781,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1144,0,cartoon,34,shorts,5.246575342,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1145,0,cartoon,35,shorts,3.983561644,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1146,0,cartoon,36,shorts,4.775342466,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1147,0,cartoon,37,shorts,4.279452055,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1148,0,cartoon,38,shorts,4.208219178,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1149,0,cartoon,39,shorts,4.263013699,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1150,0,cartoon,40,shorts,4.78630137,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1151,0,cartoon,41,shorts,3.978082192,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1152,0,cartoon,42,shorts,4.391780822,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1153,1,cartoon,43,shorts,4.391780822,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1154,0,cartoon,44,shorts,4.835616438,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1155,0,cartoon,45,shorts,4.043835616,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1156,0,cartoon,46,shorts,4.797260274,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1157,1,cartoon,47,shorts,4.153424658,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1158,0,cartoon,48,shorts,4.454794521,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1159,0,cartoon,49,shorts,4.610958904,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1160,0,cartoon,50,shorts,4.024657534,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1161,0,cartoon,51,shorts,4.994520548,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1162,0,cartoon,52,shorts,4.44109589,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1163,1,cartoon,53,shorts,4.290410959,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1164,0,cartoon,54,shorts,7.673972603,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1165,0,cartoon,55,shorts,7.928767123,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1166,0,cartoon,56,shorts,7.98,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1167,0,cartoon,57,shorts,7.926027397,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1168,0,cartoon,58,shorts,7.99,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1169,0,cartoon,59,shorts,6.101369863,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1170,0,cartoon,60,shorts,6.430136986,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1171,1,cartoon,61,shorts,6.575342466,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1172,0,cartoon,62,shorts,5.871232877,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1173,0,cartoon,63,shorts,7.717808219,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1174,0,cartoon,64,shorts,7.728767123,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1175,0,bw,65,shorts,7.873972603,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1176,0,bw,66,shorts,7.350684932,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1177,0,bw,67,shorts,6.928767123,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1178,0,bw,68,shorts,7.504109589,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1179,0,bw,69,shorts,7.479452055,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1180,0,bw,70,shorts,7.164383562,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1181,0,bw,71,shorts,5.287671233,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1182,0,bw,72,shorts,7.301369863,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1183,0,bw,73,shorts,7.128767123,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1184,0,bw,74,shorts,7.194520548,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1185,0,bw,75,shorts,7.476712329,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1186,0,bw,76,shorts,6.873972603,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1187,0,bw,77,shorts,7.531506849,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1188,0,bw,78,shorts,7.115068493,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1189,0,bw,79,shorts,3.846575342,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1190,1,bw,80,shorts,4.057534247,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1191,1,bw,81,shorts,3.6,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1192,0,bw,82,shorts,6.602739726,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1193,0,bw,83,shorts,5.249315068,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1194,0,bw,84,shorts,3.01369863,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1195,0,bw,85,shorts,3.246575342,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1196,1,bw,86,shorts,3.326027397,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1197,1,bw,87,shorts,3.265753425,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1198,0,bw,88,shorts,3.871232877,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1199,1,bw,89,shorts,3.150684932,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1200,1,bw,90,shorts,3.063013699,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1201,0,bw,91,shorts,3.495890411,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1202,0,bw,92,shorts,3.142465753,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1203,0,bw,93,shorts,3.77260274,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1204,0,bw,94,shorts,3.443835616,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1205,0,bw,95,shorts,3.547945205,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1206,0,bw,96,shorts,4.82739726,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1207,1,obj,97,shorts,4.517808219,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1208,0,obj,98,shorts,3.901369863,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1209,1,obj,99,shorts,4.783561644,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1210,0,obj,100,shorts,4.950684932,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1211,1,obj,101,shorts,3.134246575,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1212,1,obj,1,ball,6.854794521,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1213,1,obj,2,ball,6.82739726,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1214,1,obj,3,ball,7.150684932,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1215,1,obj,4,ball,6.852054795,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1216,1,obj,5,ball,7.24109589,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1217,1,obj,6,ball,4.235616438,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1218,1,obj,7,ball,3.117808219,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1219,1,obj,8,ball,5.854794521,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1220,1,obj,9,ball,4.268493151,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1221,1,obj,10,ball,5.106849315,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1222,0,obj,11,ball,5.109589041,12,ball,balloon,earring,sandal,20.19072217,balloon,Near Distractor
+1223,1,obj,12,ball,5.276712329,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1224,1,obj,13,ball,5.630136986,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1225,1,obj,14,ball,5.178082192,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1226,1,obj,15,ball,5.969863014,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1227,1,obj,16,ball,5.452054795,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1228,1,obj,17,ball,5.252054795,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1229,1,obj,18,ball,5.21369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1230,1,obj,19,ball,5.778082192,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1231,1,obj,20,ball,5.117808219,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1232,1,obj,21,ball,5.361643836,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1233,0,obj,22,ball,5.287671233,12,ball,balloon,earring,sandal,20.19072217,balloon,Near Distractor
+1234,1,obj,23,ball,5.060273973,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1235,1,obj,24,ball,5.657534247,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1236,1,obj,25,ball,5.97260274,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1237,1,obj,26,ball,5.676712329,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1238,1,obj,27,ball,5.531506849,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1239,1,obj,28,ball,5.64109589,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1240,1,obj,29,ball,3.994520548,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1241,1,obj,30,ball,5.6,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1242,1,obj,31,ball,5.591780822,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1243,1,obj,32,ball,5.115068493,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1244,1,photo,33,ball,4.682191781,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1245,1,photo,34,ball,5.246575342,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1246,1,photo,35,ball,3.983561644,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1247,1,photo,36,ball,4.775342466,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1248,1,photo,37,ball,4.279452055,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1249,1,photo,38,ball,4.208219178,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1250,1,photo,39,ball,4.263013699,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1251,1,photo,40,ball,4.78630137,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1252,1,photo,41,ball,3.978082192,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1253,1,photo,42,ball,4.391780822,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1254,1,photo,43,ball,4.391780822,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1255,1,photo,44,ball,4.835616438,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1256,1,photo,45,ball,4.043835616,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1257,1,photo,46,ball,4.797260274,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1258,1,photo,47,ball,4.153424658,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1259,1,photo,48,ball,4.454794521,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1260,1,photo,49,ball,4.610958904,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1261,1,photo,50,ball,4.024657534,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1262,1,photo,51,ball,4.994520548,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1263,1,photo,52,ball,4.44109589,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1264,1,photo,53,ball,4.290410959,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1265,1,photo,54,ball,7.673972603,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1266,1,photo,55,ball,7.928767123,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1267,1,photo,56,ball,7.98,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1268,1,photo,57,ball,7.926027397,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1269,1,photo,58,ball,7.99,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1270,1,photo,59,ball,6.101369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1271,1,photo,60,ball,6.430136986,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1272,1,photo,61,ball,6.575342466,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1273,1,photo,62,ball,5.871232877,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1274,1,photo,63,ball,7.717808219,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1275,1,photo,64,ball,7.728767123,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1276,1,cartoon,65,ball,7.873972603,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1277,1,cartoon,66,ball,7.350684932,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1278,1,cartoon,67,ball,6.928767123,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1279,1,cartoon,68,ball,7.504109589,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1280,1,cartoon,69,ball,7.479452055,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1281,1,cartoon,70,ball,7.164383562,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1282,1,cartoon,71,ball,5.287671233,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1283,1,cartoon,72,ball,7.301369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1284,1,cartoon,73,ball,7.128767123,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1285,1,cartoon,74,ball,7.194520548,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1286,1,cartoon,75,ball,7.476712329,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1287,1,cartoon,76,ball,6.873972603,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1288,1,cartoon,77,ball,7.531506849,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1289,1,cartoon,78,ball,7.115068493,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1290,1,cartoon,79,ball,3.846575342,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1291,1,cartoon,80,ball,4.057534247,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1292,1,cartoon,81,ball,3.6,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1293,1,cartoon,82,ball,6.602739726,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1294,1,cartoon,83,ball,5.249315068,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1295,1,cartoon,84,ball,3.01369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1296,1,cartoon,85,ball,3.246575342,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1297,1,cartoon,86,ball,3.326027397,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1298,1,cartoon,87,ball,3.265753425,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1299,1,cartoon,88,ball,3.871232877,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1300,1,cartoon,89,ball,3.150684932,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1301,1,cartoon,90,ball,3.063013699,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1302,1,cartoon,91,ball,3.495890411,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1303,1,cartoon,92,ball,3.142465753,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1304,1,cartoon,93,ball,3.77260274,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1305,1,cartoon,94,ball,3.443835616,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1306,1,cartoon,95,ball,3.547945205,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1307,1,cartoon,96,ball,4.82739726,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1308,1,bw,97,ball,4.517808219,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1309,1,bw,98,ball,3.901369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1310,1,bw,99,ball,4.783561644,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1311,1,bw,100,ball,4.950684932,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1312,1,bw,101,ball,3.134246575,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1313,1,obj,1,toothbrush,6.854794521,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1314,0,obj,2,toothbrush,6.82739726,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1315,1,obj,3,toothbrush,7.150684932,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1316,0,obj,4,toothbrush,6.852054795,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1317,1,obj,5,toothbrush,7.24109589,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1318,0,obj,6,toothbrush,4.235616438,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1319,0,obj,7,toothbrush,3.117808219,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1320,0,obj,8,toothbrush,5.854794521,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1321,0,obj,9,toothbrush,4.268493151,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1322,0,obj,10,toothbrush,5.106849315,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1323,0,obj,11,toothbrush,5.109589041,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1324,1,obj,12,toothbrush,5.276712329,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1325,0,obj,13,toothbrush,5.630136986,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1326,0,obj,14,toothbrush,5.178082192,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1327,1,obj,15,toothbrush,5.969863014,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1328,1,obj,16,toothbrush,5.452054795,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1329,0,obj,17,toothbrush,5.252054795,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1330,1,obj,18,toothbrush,5.21369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1331,1,obj,19,toothbrush,5.778082192,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1332,0,obj,20,toothbrush,5.117808219,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1333,0,obj,21,toothbrush,5.361643836,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1334,1,obj,22,toothbrush,5.287671233,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1335,0,obj,23,toothbrush,5.060273973,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1336,0,obj,24,toothbrush,5.657534247,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1337,0,obj,25,toothbrush,5.97260274,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1338,1,obj,26,toothbrush,5.676712329,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1339,0,obj,27,toothbrush,5.531506849,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1340,1,obj,28,toothbrush,5.64109589,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1341,0,obj,29,toothbrush,3.994520548,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1342,0,obj,30,toothbrush,5.6,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1343,1,obj,31,toothbrush,5.591780822,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1344,0,obj,32,toothbrush,5.115068493,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1345,0,photo,33,toothbrush,4.682191781,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1346,1,photo,34,toothbrush,5.246575342,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1347,0,photo,35,toothbrush,3.983561644,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1348,0,photo,36,toothbrush,4.775342466,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1349,0,photo,37,toothbrush,4.279452055,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1350,0,photo,38,toothbrush,4.208219178,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1351,0,photo,39,toothbrush,4.263013699,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1352,0,photo,40,toothbrush,4.78630137,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1353,0,photo,41,toothbrush,3.978082192,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1354,0,photo,42,toothbrush,4.391780822,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1355,0,photo,43,toothbrush,4.391780822,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1356,0,photo,44,toothbrush,4.835616438,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1357,0,photo,45,toothbrush,4.043835616,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1358,0,photo,46,toothbrush,4.797260274,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1359,1,photo,47,toothbrush,4.153424658,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1360,0,photo,48,toothbrush,4.454794521,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1361,0,photo,49,toothbrush,4.610958904,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1362,0,photo,50,toothbrush,4.024657534,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1363,0,photo,51,toothbrush,4.994520548,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1364,0,photo,52,toothbrush,4.44109589,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1365,0,photo,53,toothbrush,4.290410959,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1366,0,photo,54,toothbrush,7.673972603,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1367,1,photo,55,toothbrush,7.928767123,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1368,1,photo,56,toothbrush,7.98,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1369,1,photo,57,toothbrush,7.926027397,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1370,1,photo,58,toothbrush,7.99,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1371,1,photo,59,toothbrush,6.101369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1372,0,photo,60,toothbrush,6.430136986,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1373,1,photo,61,toothbrush,6.575342466,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1374,0,photo,62,toothbrush,5.871232877,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1375,1,photo,63,toothbrush,7.717808219,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1376,1,photo,64,toothbrush,7.728767123,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1377,1,cartoon,65,toothbrush,7.873972603,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1378,1,cartoon,66,toothbrush,7.350684932,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1379,1,cartoon,67,toothbrush,6.928767123,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1380,1,cartoon,68,toothbrush,7.504109589,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1381,1,cartoon,69,toothbrush,7.479452055,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1382,0,cartoon,70,toothbrush,7.164383562,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1383,0,cartoon,71,toothbrush,5.287671233,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1384,0,cartoon,72,toothbrush,7.301369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1385,0,cartoon,73,toothbrush,7.128767123,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1386,1,cartoon,74,toothbrush,7.194520548,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1387,1,cartoon,75,toothbrush,7.476712329,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1388,0,cartoon,76,toothbrush,6.873972603,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1389,1,cartoon,77,toothbrush,7.531506849,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1390,1,cartoon,78,toothbrush,7.115068493,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1391,0,cartoon,79,toothbrush,3.846575342,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1392,0,cartoon,80,toothbrush,4.057534247,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1393,1,cartoon,81,toothbrush,3.6,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1394,1,cartoon,82,toothbrush,6.602739726,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1395,0,cartoon,83,toothbrush,5.249315068,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1396,0,cartoon,84,toothbrush,3.01369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1397,1,cartoon,85,toothbrush,3.246575342,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1398,0,cartoon,86,toothbrush,3.326027397,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1399,0,cartoon,87,toothbrush,3.265753425,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1400,1,cartoon,88,toothbrush,3.871232877,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1401,0,cartoon,89,toothbrush,3.150684932,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1402,0,cartoon,90,toothbrush,3.063013699,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1403,1,cartoon,91,toothbrush,3.495890411,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1404,0,cartoon,92,toothbrush,3.142465753,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1405,0,cartoon,93,toothbrush,3.77260274,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1406,0,cartoon,94,toothbrush,3.443835616,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1407,0,cartoon,95,toothbrush,3.547945205,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1408,1,cartoon,96,toothbrush,4.82739726,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1409,0,bw,97,toothbrush,4.517808219,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1410,1,bw,98,toothbrush,3.901369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1411,1,bw,99,toothbrush,4.783561644,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1412,1,bw,100,toothbrush,4.950684932,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1413,0,bw,101,toothbrush,3.134246575,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1414,1,obj,1,sweater,6.854794521,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1415,1,obj,2,sweater,6.82739726,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1416,1,obj,3,sweater,7.150684932,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1417,1,obj,4,sweater,6.852054795,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1418,1,obj,5,sweater,7.24109589,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1419,1,obj,6,sweater,4.235616438,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1420,1,obj,7,sweater,3.117808219,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1421,1,obj,8,sweater,5.854794521,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1422,1,obj,9,sweater,4.268493151,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1423,1,obj,10,sweater,5.106849315,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1424,1,obj,11,sweater,5.109589041,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1425,0,obj,12,sweater,5.276712329,14,sweater,skirt,glasses,toilet paper,28.246207202604666,skirt,Near Distractor
+1426,1,obj,13,sweater,5.630136986,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1427,1,obj,14,sweater,5.178082192,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1428,1,obj,15,sweater,5.969863014,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1429,1,obj,16,sweater,5.452054795,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1430,1,obj,17,sweater,5.252054795,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1431,1,obj,18,sweater,5.21369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1432,1,obj,19,sweater,5.778082192,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1433,1,obj,20,sweater,5.117808219,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1434,1,obj,21,sweater,5.361643836,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1435,1,obj,22,sweater,5.287671233,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1436,1,obj,23,sweater,5.060273973,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1437,1,obj,24,sweater,5.657534247,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1438,1,obj,25,sweater,5.97260274,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1439,1,obj,26,sweater,5.676712329,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1440,1,obj,27,sweater,5.531506849,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1441,1,obj,28,sweater,5.64109589,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1442,1,obj,29,sweater,3.994520548,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1443,1,obj,30,sweater,5.6,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1444,1,obj,31,sweater,5.591780822,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1445,1,obj,32,sweater,5.115068493,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1446,0,photo,33,sweater,4.682191781,14,sweater,skirt,glasses,toilet paper,28.246207202604666,skirt,Near Distractor
+1447,1,photo,34,sweater,5.246575342,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1448,1,photo,35,sweater,3.983561644,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1449,1,photo,36,sweater,4.775342466,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1450,1,photo,37,sweater,4.279452055,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1451,1,photo,38,sweater,4.208219178,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1452,1,photo,39,sweater,4.263013699,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1453,1,photo,40,sweater,4.78630137,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1454,1,photo,41,sweater,3.978082192,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1455,1,photo,42,sweater,4.391780822,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1456,1,photo,43,sweater,4.391780822,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1457,1,photo,44,sweater,4.835616438,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1458,1,photo,45,sweater,4.043835616,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1459,1,photo,46,sweater,4.797260274,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1460,0,photo,47,sweater,4.153424658,14,sweater,skirt,glasses,toilet paper,28.246207202604666,toilet paper,Random
+1461,1,photo,48,sweater,4.454794521,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1462,1,photo,49,sweater,4.610958904,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1463,1,photo,50,sweater,4.024657534,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1464,1,photo,51,sweater,4.994520548,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1465,1,photo,52,sweater,4.44109589,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1466,1,photo,53,sweater,4.290410959,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1467,1,photo,54,sweater,7.673972603,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1468,1,photo,55,sweater,7.928767123,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1469,1,photo,56,sweater,7.98,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1470,1,photo,57,sweater,7.926027397,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1471,1,photo,58,sweater,7.99,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1472,1,photo,59,sweater,6.101369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1473,1,photo,60,sweater,6.430136986,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1474,1,photo,61,sweater,6.575342466,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1475,1,photo,62,sweater,5.871232877,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1476,1,photo,63,sweater,7.717808219,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1477,1,photo,64,sweater,7.728767123,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1478,1,cartoon,65,sweater,7.873972603,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1479,1,cartoon,66,sweater,7.350684932,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1480,1,cartoon,67,sweater,6.928767123,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1481,1,cartoon,68,sweater,7.504109589,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1482,1,cartoon,69,sweater,7.479452055,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1483,1,cartoon,70,sweater,7.164383562,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1484,1,cartoon,71,sweater,5.287671233,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1485,1,cartoon,72,sweater,7.301369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1486,1,cartoon,73,sweater,7.128767123,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1487,1,cartoon,74,sweater,7.194520548,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1488,1,cartoon,75,sweater,7.476712329,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1489,1,cartoon,76,sweater,6.873972603,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1490,1,cartoon,77,sweater,7.531506849,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1491,1,cartoon,78,sweater,7.115068493,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1492,1,cartoon,79,sweater,3.846575342,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1493,1,cartoon,80,sweater,4.057534247,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1494,1,cartoon,81,sweater,3.6,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1495,1,cartoon,82,sweater,6.602739726,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1496,1,cartoon,83,sweater,5.249315068,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1497,1,cartoon,84,sweater,3.01369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1498,1,cartoon,85,sweater,3.246575342,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1499,1,cartoon,86,sweater,3.326027397,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1500,1,cartoon,87,sweater,3.265753425,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1501,1,cartoon,88,sweater,3.871232877,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1502,0,cartoon,89,sweater,3.150684932,14,sweater,skirt,glasses,toilet paper,28.246207202604666,skirt,Near Distractor
+1503,1,cartoon,90,sweater,3.063013699,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1504,1,cartoon,91,sweater,3.495890411,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1505,0,cartoon,92,sweater,3.142465753,14,sweater,skirt,glasses,toilet paper,28.246207202604666,skirt,Near Distractor
+1506,1,cartoon,93,sweater,3.77260274,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1507,1,cartoon,94,sweater,3.443835616,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1508,1,cartoon,95,sweater,3.547945205,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1509,0,cartoon,96,sweater,4.82739726,14,sweater,skirt,glasses,toilet paper,28.246207202604666,toilet paper,Random
+1510,1,bw,97,sweater,4.517808219,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1511,1,bw,98,sweater,3.901369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1512,1,bw,99,sweater,4.783561644,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1513,1,bw,100,sweater,4.950684932,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1514,1,bw,101,sweater,3.134246575,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1515,1,obj,1,pencil,6.854794521,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1516,1,obj,2,pencil,6.82739726,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1517,1,obj,3,pencil,7.150684932,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1518,1,obj,4,pencil,6.852054795,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1519,1,obj,5,pencil,7.24109589,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1520,1,obj,6,pencil,4.235616438,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1521,1,obj,7,pencil,3.117808219,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1522,1,obj,8,pencil,5.854794521,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1523,1,obj,9,pencil,4.268493151,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1524,1,obj,10,pencil,5.106849315,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1525,1,obj,11,pencil,5.109589041,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1526,1,obj,12,pencil,5.276712329,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1527,1,obj,13,pencil,5.630136986,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1528,1,obj,14,pencil,5.178082192,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1529,1,obj,15,pencil,5.969863014,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1530,1,obj,16,pencil,5.452054795,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1531,1,obj,17,pencil,5.252054795,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1532,1,obj,18,pencil,5.21369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1533,1,obj,19,pencil,5.778082192,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1534,1,obj,20,pencil,5.117808219,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1535,1,obj,21,pencil,5.361643836,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1536,1,obj,22,pencil,5.287671233,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1537,1,obj,23,pencil,5.060273973,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1538,1,obj,24,pencil,5.657534247,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1539,1,obj,25,pencil,5.97260274,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1540,1,obj,26,pencil,5.676712329,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1541,1,obj,27,pencil,5.531506849,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1542,1,obj,28,pencil,5.64109589,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1543,1,obj,29,pencil,3.994520548,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1544,1,obj,30,pencil,5.6,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1545,1,obj,31,pencil,5.591780822,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1546,1,obj,32,pencil,5.115068493,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1547,1,photo,33,pencil,4.682191781,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1548,1,photo,34,pencil,5.246575342,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1549,1,photo,35,pencil,3.983561644,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1550,1,photo,36,pencil,4.775342466,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1551,1,photo,37,pencil,4.279452055,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1552,1,photo,38,pencil,4.208219178,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1553,1,photo,39,pencil,4.263013699,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1554,1,photo,40,pencil,4.78630137,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1555,1,photo,41,pencil,3.978082192,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1556,1,photo,42,pencil,4.391780822,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1557,1,photo,43,pencil,4.391780822,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1558,1,photo,44,pencil,4.835616438,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1559,1,photo,45,pencil,4.043835616,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1560,1,photo,46,pencil,4.797260274,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1561,1,photo,47,pencil,4.153424658,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1562,1,photo,48,pencil,4.454794521,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1563,1,photo,49,pencil,4.610958904,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1564,1,photo,50,pencil,4.024657534,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1565,1,photo,51,pencil,4.994520548,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1566,1,photo,52,pencil,4.44109589,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1567,1,photo,53,pencil,4.290410959,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1568,1,photo,54,pencil,7.673972603,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1569,1,photo,55,pencil,7.928767123,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1570,1,photo,56,pencil,7.98,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1571,1,photo,57,pencil,7.926027397,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1572,1,photo,58,pencil,7.99,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1573,1,photo,59,pencil,6.101369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1574,1,photo,60,pencil,6.430136986,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1575,1,photo,61,pencil,6.575342466,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1576,1,photo,62,pencil,5.871232877,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1577,1,photo,63,pencil,7.717808219,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1578,1,photo,64,pencil,7.728767123,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1579,1,cartoon,65,pencil,7.873972603,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1580,1,cartoon,66,pencil,7.350684932,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1581,1,cartoon,67,pencil,6.928767123,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1582,1,cartoon,68,pencil,7.504109589,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1583,1,cartoon,69,pencil,7.479452055,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1584,1,cartoon,70,pencil,7.164383562,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1585,1,cartoon,71,pencil,5.287671233,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1586,1,cartoon,72,pencil,7.301369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1587,1,cartoon,73,pencil,7.128767123,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1588,1,cartoon,74,pencil,7.194520548,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1589,1,cartoon,75,pencil,7.476712329,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1590,1,cartoon,76,pencil,6.873972603,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1591,1,cartoon,77,pencil,7.531506849,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1592,1,cartoon,78,pencil,7.115068493,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1593,1,cartoon,79,pencil,3.846575342,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1594,0,cartoon,80,pencil,4.057534247,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil sharpener,Near Distractor
+1595,1,cartoon,81,pencil,3.6,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1596,1,cartoon,82,pencil,6.602739726,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1597,1,cartoon,83,pencil,5.249315068,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1598,1,cartoon,84,pencil,3.01369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1599,1,cartoon,85,pencil,3.246575342,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1600,1,cartoon,86,pencil,3.326027397,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1601,0,cartoon,87,pencil,3.265753425,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil sharpener,Near Distractor
+1602,1,cartoon,88,pencil,3.871232877,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1603,0,cartoon,89,pencil,3.150684932,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil sharpener,Near Distractor
+1604,1,cartoon,90,pencil,3.063013699,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1605,1,cartoon,91,pencil,3.495890411,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1606,1,cartoon,92,pencil,3.142465753,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1607,1,cartoon,93,pencil,3.77260274,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1608,0,cartoon,94,pencil,3.443835616,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil sharpener,Near Distractor
+1609,0,cartoon,95,pencil,3.547945205,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil sharpener,Near Distractor
+1610,1,cartoon,96,pencil,4.82739726,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1611,1,bw,97,pencil,4.517808219,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1612,1,bw,98,pencil,3.901369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1613,1,bw,99,pencil,4.783561644,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1614,1,bw,100,pencil,4.950684932,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1615,1,bw,101,pencil,3.134246575,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+1616,1,cartoon,102,comb,6.254794521,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1617,1,cartoon,103,comb,3.934246575,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1618,0,cartoon,104,comb,3.090410959,0,comb,brush,watch,bracelet,22.44276300486351,bracelet,Random
+1619,1,cartoon,105,comb,6.161643836,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1620,1,cartoon,106,comb,6.430136986,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1621,1,cartoon,107,comb,6.235616438,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1622,1,cartoon,108,comb,6.980821918,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1623,1,cartoon,109,comb,6.495890411,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1624,1,cartoon,110,comb,6.021917808,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1625,1,cartoon,111,comb,6.778082192,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1626,1,cartoon,112,comb,6.621917808,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1627,1,cartoon,113,comb,6.580821918,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1628,1,cartoon,114,comb,6.901369863,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1629,1,cartoon,115,comb,6.942465753,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1630,1,cartoon,116,comb,5.350684932,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1631,1,cartoon,117,comb,6.032876712,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1632,1,cartoon,118,comb,3.347945205,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1633,1,cartoon,119,comb,5.463013699,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1634,1,cartoon,120,comb,6.18630137,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1635,1,cartoon,121,comb,4.843835616,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1636,0,cartoon,122,comb,3.720547945,0,comb,brush,watch,bracelet,22.44276300486351,watch,Random
+1637,1,cartoon,123,comb,5.252054795,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1638,1,cartoon,124,comb,4.830136986,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1639,1,cartoon,125,comb,3.276712329,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1640,1,cartoon,126,comb,6.652054795,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1641,1,cartoon,127,comb,5.482191781,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1642,1,cartoon,128,comb,5.016438356,0,comb,brush,watch,bracelet,22.44276300486351,comb,Target
+1643,0,cartoon,102,shoe,6.254794521,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+1644,1,cartoon,103,shoe,3.934246575,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1645,0,cartoon,104,shoe,3.090410959,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+1646,1,cartoon,105,shoe,6.161643836,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1647,1,cartoon,106,shoe,6.430136986,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1648,1,cartoon,107,shoe,6.235616438,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1649,1,cartoon,108,shoe,6.980821918,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1650,1,cartoon,109,shoe,6.495890411,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1651,1,cartoon,110,shoe,6.021917808,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1652,1,cartoon,111,shoe,6.778082192,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1653,1,cartoon,112,shoe,6.621917808,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1654,1,cartoon,113,shoe,6.580821918,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1655,1,cartoon,114,shoe,6.901369863,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1656,1,cartoon,115,shoe,6.942465753,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1657,0,cartoon,116,shoe,5.350684932,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+1658,1,cartoon,117,shoe,6.032876712,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1659,1,cartoon,118,shoe,3.347945205,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1660,1,cartoon,119,shoe,5.463013699,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1661,1,cartoon,120,shoe,6.18630137,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1662,1,cartoon,121,shoe,4.843835616,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1663,0,cartoon,122,shoe,3.720547945,1,shoe,sock,medicine,telephone,23.43778889088626,telephone,Random
+1664,0,cartoon,123,shoe,5.252054795,1,shoe,sock,medicine,telephone,23.43778889088626,sock,Near Distractor
+1665,1,cartoon,124,shoe,4.830136986,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1666,1,cartoon,125,shoe,3.276712329,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1667,1,cartoon,126,shoe,6.652054795,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1668,1,cartoon,127,shoe,5.482191781,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1669,1,cartoon,128,shoe,5.016438356,1,shoe,sock,medicine,telephone,23.43778889088626,shoe,Target
+1670,0,cartoon,102,chalk,6.254794521,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1671,0,cartoon,103,chalk,3.934246575,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+1672,0,cartoon,104,chalk,3.090410959,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+1673,0,cartoon,105,chalk,6.161643836,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+1674,0,cartoon,106,chalk,6.430136986,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1675,0,cartoon,107,chalk,6.235616438,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+1676,0,cartoon,108,chalk,6.980821918,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+1677,1,cartoon,109,chalk,6.495890411,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1678,0,cartoon,110,chalk,6.021917808,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1679,0,cartoon,111,chalk,6.778082192,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1680,1,cartoon,112,chalk,6.621917808,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1681,1,cartoon,113,chalk,6.580821918,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1682,0,cartoon,114,chalk,6.901369863,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1683,1,cartoon,115,chalk,6.942465753,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1684,0,cartoon,116,chalk,5.350684932,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1685,1,cartoon,117,chalk,6.032876712,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1686,0,cartoon,118,chalk,3.347945205,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1687,0,cartoon,119,chalk,5.463013699,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1688,0,cartoon,120,chalk,6.18630137,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+1689,1,cartoon,121,chalk,4.843835616,2,chalk,crayon,string,handkerchief,28.00434298542545,chalk,Target
+1690,0,cartoon,122,chalk,3.720547945,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+1691,0,cartoon,123,chalk,5.252054795,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1692,0,cartoon,124,chalk,4.830136986,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1693,0,cartoon,125,chalk,3.276712329,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1694,0,cartoon,126,chalk,6.652054795,2,chalk,crayon,string,handkerchief,28.00434298542545,handkerchief,Random
+1695,0,cartoon,127,chalk,5.482191781,2,chalk,crayon,string,handkerchief,28.00434298542545,crayon,Near Distractor
+1696,0,cartoon,128,chalk,5.016438356,2,chalk,crayon,string,handkerchief,28.00434298542545,string,Random
+1697,0,cartoon,102,fork,6.254794521,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1698,0,cartoon,103,fork,3.934246575,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+1699,1,cartoon,104,fork,3.090410959,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1700,0,cartoon,105,fork,6.161643836,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1701,1,cartoon,106,fork,6.430136986,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1702,0,cartoon,107,fork,6.235616438,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+1703,0,cartoon,108,fork,6.980821918,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1704,0,cartoon,109,fork,6.495890411,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+1705,0,cartoon,110,fork,6.021917808,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1706,1,cartoon,111,fork,6.778082192,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1707,0,cartoon,112,fork,6.621917808,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1708,0,cartoon,113,fork,6.580821918,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1709,1,cartoon,114,fork,6.901369863,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1710,1,cartoon,115,fork,6.942465753,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1711,0,cartoon,116,fork,5.350684932,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1712,1,cartoon,117,fork,6.032876712,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1713,1,cartoon,118,fork,3.347945205,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1714,0,cartoon,119,fork,5.463013699,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1715,0,cartoon,120,fork,6.18630137,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1716,0,cartoon,121,fork,4.843835616,3,fork,spoon,straw,necklace,31.37980029759097,straw,Random
+1717,1,cartoon,122,fork,3.720547945,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1718,1,cartoon,123,fork,5.252054795,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1719,1,cartoon,124,fork,4.830136986,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1720,0,cartoon,125,fork,3.276712329,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1721,0,cartoon,126,fork,6.652054795,3,fork,spoon,straw,necklace,31.37980029759097,spoon,Near Distractor
+1722,0,cartoon,127,fork,5.482191781,3,fork,spoon,straw,necklace,31.37980029759097,necklace,Random
+1723,1,cartoon,128,fork,5.016438356,3,fork,spoon,straw,necklace,31.37980029759097,fork,Target
+1724,1,photo,102,cup,6.254794521,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1725,0,photo,103,cup,3.934246575,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+1726,0,photo,104,cup,3.090410959,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+1727,1,photo,105,cup,6.161643836,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1728,1,photo,106,cup,6.430136986,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1729,1,photo,107,cup,6.235616438,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1730,1,photo,108,cup,6.980821918,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1731,1,photo,109,cup,6.495890411,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1732,1,photo,110,cup,6.021917808,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1733,1,photo,111,cup,6.778082192,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1734,1,photo,112,cup,6.621917808,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1735,1,photo,113,cup,6.580821918,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1736,1,photo,114,cup,6.901369863,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1737,1,photo,115,cup,6.942465753,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1738,1,photo,116,cup,5.350684932,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1739,1,photo,117,cup,6.032876712,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1740,1,photo,118,cup,3.347945205,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1741,1,photo,119,cup,5.463013699,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1742,1,photo,120,cup,6.18630137,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1743,1,photo,121,cup,4.843835616,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1744,0,photo,122,cup,3.720547945,4,cup,bottle,soap,boots,21.082809429403188,soap,Random
+1745,1,photo,123,cup,5.252054795,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1746,1,photo,124,cup,4.830136986,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1747,0,photo,125,cup,3.276712329,4,cup,bottle,soap,boots,21.082809429403188,bottle,Near Distractor
+1748,1,photo,126,cup,6.652054795,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1749,1,photo,127,cup,5.482191781,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1750,1,photo,128,cup,5.016438356,4,cup,bottle,soap,boots,21.082809429403188,cup,Target
+1751,1,photo,102,shirt,6.254794521,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1752,1,photo,103,shirt,3.934246575,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1753,1,photo,104,shirt,3.090410959,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1754,1,photo,105,shirt,6.161643836,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1755,1,photo,106,shirt,6.430136986,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1756,1,photo,107,shirt,6.235616438,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1757,1,photo,108,shirt,6.980821918,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1758,1,photo,109,shirt,6.495890411,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1759,1,photo,110,shirt,6.021917808,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1760,1,photo,111,shirt,6.778082192,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1761,1,photo,112,shirt,6.621917808,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1762,1,photo,113,shirt,6.580821918,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1763,1,photo,114,shirt,6.901369863,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1764,1,photo,115,shirt,6.942465753,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1765,1,photo,116,shirt,5.350684932,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1766,1,photo,117,shirt,6.032876712,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1767,0,photo,118,shirt,3.347945205,5,shirt,hat,eraser,bucket,27.07115394207143,eraser,Random
+1768,1,photo,119,shirt,5.463013699,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1769,1,photo,120,shirt,6.18630137,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1770,1,photo,121,shirt,4.843835616,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1771,1,photo,122,shirt,3.720547945,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1772,1,photo,123,shirt,5.252054795,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1773,1,photo,124,shirt,4.830136986,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1774,1,photo,125,shirt,3.276712329,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1775,1,photo,126,shirt,6.652054795,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1776,1,photo,127,shirt,5.482191781,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1777,1,photo,128,shirt,5.016438356,5,shirt,hat,eraser,bucket,27.07115394207143,shirt,Target
+1778,1,photo,102,scissors,6.254794521,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1779,1,photo,103,scissors,3.934246575,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1780,1,photo,104,scissors,3.090410959,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1781,1,photo,105,scissors,6.161643836,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1782,1,photo,106,scissors,6.430136986,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1783,1,photo,107,scissors,6.235616438,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1784,1,photo,108,scissors,6.980821918,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1785,1,photo,109,scissors,6.495890411,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1786,1,photo,110,scissors,6.021917808,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1787,1,photo,111,scissors,6.778082192,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1788,1,photo,112,scissors,6.621917808,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1789,1,photo,113,scissors,6.580821918,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1790,1,photo,114,scissors,6.901369863,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1791,1,photo,115,scissors,6.942465753,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1792,1,photo,116,scissors,5.350684932,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1793,1,photo,117,scissors,6.032876712,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1794,1,photo,118,scissors,3.347945205,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1795,1,photo,119,scissors,5.463013699,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1796,1,photo,120,scissors,6.18630137,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1797,1,photo,121,scissors,4.843835616,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1798,0,photo,122,scissors,3.720547945,6,scissors,knife,bag,bib,29.771761397494483,knife,Near Distractor
+1799,1,photo,123,scissors,5.252054795,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1800,1,photo,124,scissors,4.830136986,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1801,1,photo,125,scissors,3.276712329,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1802,1,photo,126,scissors,6.652054795,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1803,1,photo,127,scissors,5.482191781,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1804,1,photo,128,scissors,5.016438356,6,scissors,knife,bag,bib,29.771761397494483,scissors,Target
+1805,1,photo,102,button,6.254794521,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1806,1,photo,103,button,3.934246575,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1807,0,photo,104,button,3.090410959,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+1808,1,photo,105,button,6.161643836,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1809,0,photo,106,button,6.430136986,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1810,0,photo,107,button,6.235616438,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+1811,1,photo,108,button,6.980821918,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1812,0,photo,109,button,6.495890411,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1813,0,photo,110,button,6.021917808,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1814,1,photo,111,button,6.778082192,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1815,1,photo,112,button,6.621917808,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1816,1,photo,113,button,6.580821918,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1817,0,photo,114,button,6.901369863,7,button,stone,stick,shovel,31.754578878000576,stone,Near Distractor
+1818,1,photo,115,button,6.942465753,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1819,0,photo,116,button,5.350684932,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1820,1,photo,117,button,6.032876712,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1821,0,photo,118,button,3.347945205,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1822,0,photo,119,button,5.463013699,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1823,1,photo,120,button,6.18630137,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1824,1,photo,121,button,4.843835616,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1825,0,photo,122,button,3.720547945,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+1826,0,photo,123,button,5.252054795,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1827,0,photo,124,button,4.830136986,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+1828,0,photo,125,button,3.276712329,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+1829,1,photo,126,button,6.652054795,7,button,stone,stick,shovel,31.754578878000576,button,Target
+1830,0,photo,127,button,5.482191781,7,button,stone,stick,shovel,31.754578878000576,shovel,Random
+1831,0,photo,128,button,5.016438356,7,button,stone,stick,shovel,31.754578878000576,stick,Random
+1832,1,obj,102,book,6.254794521,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1833,1,obj,103,book,3.934246575,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1834,1,obj,104,book,3.090410959,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1835,1,obj,105,book,6.161643836,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1836,1,obj,106,book,6.430136986,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1837,1,obj,107,book,6.235616438,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1838,1,obj,108,book,6.980821918,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1839,1,obj,109,book,6.495890411,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1840,1,obj,110,book,6.021917808,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1841,1,obj,111,book,6.778082192,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1842,1,obj,112,book,6.621917808,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1843,1,obj,113,book,6.580821918,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1844,1,obj,114,book,6.901369863,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1845,1,obj,115,book,6.942465753,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1846,1,obj,116,book,5.350684932,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1847,1,obj,117,book,6.032876712,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1848,0,obj,118,book,3.347945205,8,book,paper,jeans,coat,22.182314070136787,jeans,Random
+1849,1,obj,119,book,5.463013699,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1850,1,obj,120,book,6.18630137,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1851,1,obj,121,book,4.843835616,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1852,1,obj,122,book,3.720547945,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1853,1,obj,123,book,5.252054795,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1854,1,obj,124,book,4.830136986,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1855,1,obj,125,book,3.276712329,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1856,1,obj,126,book,6.652054795,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1857,1,obj,127,book,5.482191781,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1858,1,obj,128,book,5.016438356,8,book,paper,jeans,coat,22.182314070136787,book,Target
+1859,1,obj,102,bowl,6.254794521,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1860,0,obj,103,bowl,3.934246575,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1861,0,obj,104,bowl,3.090410959,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1862,0,obj,105,bowl,6.161643836,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1863,1,obj,106,bowl,6.430136986,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1864,1,obj,107,bowl,6.235616438,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1865,1,obj,108,bowl,6.980821918,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1866,1,obj,109,bowl,6.495890411,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1867,0,obj,110,bowl,6.021917808,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1868,1,obj,111,bowl,6.778082192,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1869,1,obj,112,bowl,6.621917808,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1870,0,obj,113,bowl,6.580821918,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1871,0,obj,114,bowl,6.901369863,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1872,1,obj,115,bowl,6.942465753,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1873,0,obj,116,bowl,5.350684932,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1874,1,obj,117,bowl,6.032876712,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1875,0,obj,118,bowl,3.347945205,9,bowl,plate,pants,scarf,23.43778594209283,pants,Random
+1876,1,obj,119,bowl,5.463013699,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1877,1,obj,120,bowl,6.18630137,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1878,0,obj,121,bowl,4.843835616,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1879,0,obj,122,bowl,3.720547945,9,bowl,plate,pants,scarf,23.43778594209283,scarf,Random
+1880,1,obj,123,bowl,5.252054795,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1881,1,obj,124,bowl,4.830136986,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1882,1,obj,125,bowl,3.276712329,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1883,1,obj,126,bowl,6.652054795,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1884,1,obj,127,bowl,5.482191781,9,bowl,plate,pants,scarf,23.43778594209283,bowl,Target
+1885,0,obj,128,bowl,5.016438356,9,bowl,plate,pants,scarf,23.43778594209283,plate,Near Distractor
+1886,0,obj,102,box,6.254794521,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1887,1,obj,103,box,3.934246575,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1888,0,obj,104,box,3.090410959,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1889,0,obj,105,box,6.161643836,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1890,0,obj,106,box,6.430136986,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1891,0,obj,107,box,6.235616438,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1892,1,obj,108,box,6.980821918,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1893,1,obj,109,box,6.495890411,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1894,1,obj,110,box,6.021917808,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1895,1,obj,111,box,6.778082192,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1896,1,obj,112,box,6.621917808,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1897,0,obj,113,box,6.580821918,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1898,1,obj,114,box,6.901369863,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1899,1,obj,115,box,6.942465753,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1900,1,obj,116,box,5.350684932,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1901,1,obj,117,box,6.032876712,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1902,0,obj,118,box,3.347945205,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1903,0,obj,119,box,5.463013699,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1904,0,obj,120,box,6.18630137,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1905,1,obj,121,box,4.843835616,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1906,0,obj,122,box,3.720547945,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1907,1,obj,123,box,5.252054795,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1908,0,obj,124,box,4.830136986,10,box,basket,bottle cap,key,29.26612874157193,basket,Near Distractor
+1909,1,obj,125,box,3.276712329,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1910,1,obj,126,box,6.652054795,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1911,1,obj,127,box,5.482191781,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1912,1,obj,128,box,5.016438356,10,box,basket,bottle cap,key,29.26612874157193,box,Target
+1913,0,obj,102,shorts,6.254794521,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1914,1,obj,103,shorts,3.934246575,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1915,0,obj,104,shorts,3.090410959,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1916,0,obj,105,shorts,6.161643836,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1917,0,obj,106,shorts,6.430136986,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1918,0,obj,107,shorts,6.235616438,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1919,0,obj,108,shorts,6.980821918,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1920,0,obj,109,shorts,6.495890411,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1921,0,obj,110,shorts,6.021917808,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1922,0,obj,111,shorts,6.778082192,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1923,0,obj,112,shorts,6.621917808,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1924,0,obj,113,shorts,6.580821918,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1925,0,obj,114,shorts,6.901369863,11,shorts,dress,clock,remote control,34.18849908997094,remote,Random
+1926,1,obj,115,shorts,6.942465753,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1927,1,obj,116,shorts,5.350684932,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1928,0,obj,117,shorts,6.032876712,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1929,1,obj,118,shorts,3.347945205,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1930,0,obj,119,shorts,5.463013699,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1931,0,obj,120,shorts,6.18630137,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1932,1,obj,121,shorts,4.843835616,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1933,1,obj,122,shorts,3.720547945,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1934,0,obj,123,shorts,5.252054795,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1935,0,obj,124,shorts,4.830136986,11,shorts,dress,clock,remote control,34.18849908997094,dress,Near Distractor
+1936,1,obj,125,shorts,3.276712329,11,shorts,dress,clock,remote control,34.18849908997094,shorts,Target
+1937,0,obj,126,shorts,6.652054795,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1938,0,obj,127,shorts,5.482191781,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1939,0,obj,128,shorts,5.016438356,11,shorts,dress,clock,remote control,34.18849908997094,clock,Random
+1940,1,bw,102,ball,6.254794521,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1941,0,bw,103,ball,3.934246575,12,ball,balloon,earring,sandal,20.19072217,earring,Random
+1942,1,bw,104,ball,3.090410959,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1943,1,bw,105,ball,6.161643836,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1944,1,bw,106,ball,6.430136986,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1945,1,bw,107,ball,6.235616438,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1946,1,bw,108,ball,6.980821918,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1947,1,bw,109,ball,6.495890411,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1948,1,bw,110,ball,6.021917808,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1949,1,bw,111,ball,6.778082192,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1950,1,bw,112,ball,6.621917808,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1951,1,bw,113,ball,6.580821918,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1952,1,bw,114,ball,6.901369863,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1953,1,bw,115,ball,6.942465753,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1954,1,bw,116,ball,5.350684932,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1955,1,bw,117,ball,6.032876712,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1956,0,bw,118,ball,3.347945205,12,ball,balloon,earring,sandal,20.19072217,earring,Random
+1957,1,bw,119,ball,5.463013699,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1958,1,bw,120,ball,6.18630137,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1959,1,bw,121,ball,4.843835616,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1960,1,bw,122,ball,3.720547945,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1961,1,bw,123,ball,5.252054795,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1962,0,bw,124,ball,4.830136986,12,ball,balloon,earring,sandal,20.19072217,balloon,Near Distractor
+1963,1,bw,125,ball,3.276712329,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1964,1,bw,126,ball,6.652054795,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1965,1,bw,127,ball,5.482191781,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1966,1,bw,128,ball,5.016438356,12,ball,balloon,earring,sandal,20.19072217,ball,Target
+1967,0,bw,102,toothbrush,6.254794521,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1968,0,bw,103,toothbrush,3.934246575,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1969,1,bw,104,toothbrush,3.090410959,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1970,1,bw,105,toothbrush,6.161643836,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1971,1,bw,106,toothbrush,6.430136986,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1972,0,bw,107,toothbrush,6.235616438,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1973,1,bw,108,toothbrush,6.980821918,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1974,1,bw,109,toothbrush,6.495890411,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1975,0,bw,110,toothbrush,6.021917808,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1976,1,bw,111,toothbrush,6.778082192,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1977,1,bw,112,toothbrush,6.621917808,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1978,0,bw,113,toothbrush,6.580821918,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1979,0,bw,114,toothbrush,6.901369863,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1980,1,bw,115,toothbrush,6.942465753,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1981,0,bw,116,toothbrush,5.350684932,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1982,1,bw,117,toothbrush,6.032876712,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1983,1,bw,118,toothbrush,3.347945205,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1984,0,bw,119,toothbrush,5.463013699,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1985,0,bw,120,toothbrush,6.18630137,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1986,0,bw,121,toothbrush,4.843835616,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1987,0,bw,122,toothbrush,3.720547945,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1988,0,bw,123,toothbrush,5.252054795,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1989,1,bw,124,toothbrush,4.830136986,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1990,0,bw,125,toothbrush,3.276712329,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothpaste,Near Distractor
+1991,1,bw,126,toothbrush,6.652054795,13,toothbrush,toothpaste,mirror,bead,23.43779921,toothbrush,Target
+1992,0,bw,127,toothbrush,5.482191781,13,toothbrush,toothpaste,mirror,bead,23.43779921,bead,Random
+1993,0,bw,128,toothbrush,5.016438356,13,toothbrush,toothpaste,mirror,bead,23.43779921,mirror,Random
+1994,1,bw,102,sweater,6.254794521,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1995,1,bw,103,sweater,3.934246575,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1996,0,bw,104,sweater,3.090410959,14,sweater,skirt,glasses,toilet paper,28.246207202604666,glasses,Random
+1997,1,bw,105,sweater,6.161643836,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1998,1,bw,106,sweater,6.430136986,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+1999,1,bw,107,sweater,6.235616438,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2000,1,bw,108,sweater,6.980821918,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2001,1,bw,109,sweater,6.495890411,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2002,1,bw,110,sweater,6.021917808,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2003,1,bw,111,sweater,6.778082192,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2004,1,bw,112,sweater,6.621917808,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2005,1,bw,113,sweater,6.580821918,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2006,1,bw,114,sweater,6.901369863,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2007,1,bw,115,sweater,6.942465753,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2008,0,bw,116,sweater,5.350684932,14,sweater,skirt,glasses,toilet paper,28.246207202604666,toilet paper,Random
+2009,1,bw,117,sweater,6.032876712,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2010,1,bw,118,sweater,3.347945205,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2011,1,bw,119,sweater,5.463013699,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2012,1,bw,120,sweater,6.18630137,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2013,1,bw,121,sweater,4.843835616,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2014,1,bw,122,sweater,3.720547945,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2015,1,bw,123,sweater,5.252054795,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2016,1,bw,124,sweater,4.830136986,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2017,1,bw,125,sweater,3.276712329,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2018,1,bw,126,sweater,6.652054795,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2019,1,bw,127,sweater,5.482191781,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2020,1,bw,128,sweater,5.016438356,14,sweater,skirt,glasses,toilet paper,28.246207202604666,sweater,Target
+2021,1,bw,102,pencil,6.254794521,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2022,1,bw,103,pencil,3.934246575,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2023,1,bw,104,pencil,3.090410959,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2024,1,bw,105,pencil,6.161643836,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2025,1,bw,106,pencil,6.430136986,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2026,1,bw,107,pencil,6.235616438,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2027,1,bw,108,pencil,6.980821918,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2028,1,bw,109,pencil,6.495890411,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2029,1,bw,110,pencil,6.021917808,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2030,1,bw,111,pencil,6.778082192,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2031,1,bw,112,pencil,6.621917808,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2032,1,bw,113,pencil,6.580821918,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2033,1,bw,114,pencil,6.901369863,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2034,1,bw,115,pencil,6.942465753,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2035,1,bw,116,pencil,5.350684932,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2036,1,bw,117,pencil,6.032876712,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2037,1,bw,118,pencil,3.347945205,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2038,1,bw,119,pencil,5.463013699,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2039,1,bw,120,pencil,6.18630137,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2040,1,bw,121,pencil,4.843835616,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2041,0,bw,122,pencil,3.720547945,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,zipper,Random
+2042,1,bw,123,pencil,5.252054795,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2043,1,bw,124,pencil,4.830136986,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2044,1,bw,125,pencil,3.276712329,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2045,1,bw,126,pencil,6.652054795,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2046,1,bw,127,pencil,5.482191781,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
+2047,1,bw,128,pencil,5.016438356,15,pencil,pencil sharpener,towel,zipper,34.85914405373763,pencil,Target
