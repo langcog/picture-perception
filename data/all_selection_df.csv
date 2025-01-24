@@ -1,0 +1,638 @@
+,child,condition,age,target_word,accuracy,response_type,is_near_distractor,is_random
+5,6,bw,4.235616438,comb,0,Random,0,1
+6,7,bw,3.117808219,comb,0,Random,0,1
+29,30,bw,5.6,comb,0,Random,0,1
+32,33,obj,4.682191781,comb,0,Random,0,1
+40,41,obj,3.978082192,comb,0,Random,0,1
+41,42,obj,4.391780822,comb,0,Random,0,1
+42,43,obj,4.391780822,comb,0,Random,0,1
+46,47,obj,4.153424658,comb,0,Random,0,1
+85,86,photo,3.326027397,comb,0,Random,0,1
+86,87,photo,3.265753425,comb,0,Random,0,1
+88,89,photo,3.150684932,comb,0,Random,0,1
+91,92,photo,3.142465753,comb,0,Random,0,1
+92,93,photo,3.77260274,comb,0,Random,0,1
+95,96,photo,4.82739726,comb,0,Near Distractor,1,0
+104,4,bw,6.852054795,shoe,0,Near Distractor,1,0
+165,65,photo,7.873972603,shoe,0,Near Distractor,1,0
+181,81,photo,3.6,shoe,0,Near Distractor,1,0
+184,84,photo,3.01369863,shoe,0,Near Distractor,1,0
+186,86,photo,3.326027397,shoe,0,Near Distractor,1,0
+207,6,bw,4.235616438,chalk,0,Random,0,1
+208,7,bw,3.117808219,chalk,0,Random,0,1
+209,8,bw,5.854794521,chalk,0,Near Distractor,1,0
+210,9,bw,4.268493151,chalk,0,Random,0,1
+211,10,bw,5.106849315,chalk,0,Random,0,1
+213,12,bw,5.276712329,chalk,0,Random,0,1
+214,13,bw,5.630136986,chalk,0,Near Distractor,1,0
+215,14,bw,5.178082192,chalk,0,Random,0,1
+216,15,bw,5.969863014,chalk,0,Random,0,1
+217,16,bw,5.452054795,chalk,0,Random,0,1
+218,17,bw,5.252054795,chalk,0,Near Distractor,1,0
+219,18,bw,5.21369863,chalk,0,Near Distractor,1,0
+220,19,bw,5.778082192,chalk,0,Random,0,1
+221,20,bw,5.117808219,chalk,0,Random,0,1
+222,21,bw,5.361643836,chalk,0,Near Distractor,1,0
+223,22,bw,5.287671233,chalk,0,Random,0,1
+224,23,bw,5.060273973,chalk,0,Random,0,1
+225,24,bw,5.657534247,chalk,0,Random,0,1
+226,25,bw,5.97260274,chalk,0,Random,0,1
+227,26,bw,5.676712329,chalk,0,Random,0,1
+229,28,bw,5.64109589,chalk,0,Random,0,1
+230,29,bw,3.994520548,chalk,0,Random,0,1
+231,30,bw,5.6,chalk,0,Random,0,1
+232,31,bw,5.591780822,chalk,0,Near Distractor,1,0
+233,32,bw,5.115068493,chalk,0,Random,0,1
+234,33,obj,4.682191781,chalk,0,Near Distractor,1,0
+236,35,obj,3.983561644,chalk,0,Near Distractor,1,0
+243,42,obj,4.391780822,chalk,0,Random,0,1
+245,44,obj,4.835616438,chalk,0,Random,0,1
+246,45,obj,4.043835616,chalk,0,Near Distractor,1,0
+247,46,obj,4.797260274,chalk,0,Random,0,1
+248,47,obj,4.153424658,chalk,0,Random,0,1
+249,48,obj,4.454794521,chalk,0,Near Distractor,1,0
+250,49,obj,4.610958904,chalk,0,Random,0,1
+252,51,obj,4.994520548,chalk,0,Near Distractor,1,0
+254,53,obj,4.290410959,chalk,0,Near Distractor,1,0
+257,56,obj,7.98,chalk,0,Near Distractor,1,0
+260,59,obj,6.101369863,chalk,0,Random,0,1
+265,64,obj,7.728767123,chalk,0,Random,0,1
+267,66,photo,7.350684932,chalk,0,Random,0,1
+268,67,photo,6.928767123,chalk,0,Near Distractor,1,0
+274,73,photo,7.128767123,chalk,0,Random,0,1
+280,79,photo,3.846575342,chalk,0,Random,0,1
+281,80,photo,4.057534247,chalk,0,Random,0,1
+282,81,photo,3.6,chalk,0,Near Distractor,1,0
+284,83,photo,5.249315068,chalk,0,Random,0,1
+285,84,photo,3.01369863,chalk,0,Random,0,1
+286,85,photo,3.246575342,chalk,0,Random,0,1
+287,86,photo,3.326027397,chalk,0,Random,0,1
+288,87,photo,3.265753425,chalk,0,Random,0,1
+289,88,photo,3.871232877,chalk,0,Random,0,1
+290,89,photo,3.150684932,chalk,0,Near Distractor,1,0
+291,90,photo,3.063013699,chalk,0,Random,0,1
+292,91,photo,3.495890411,chalk,0,Near Distractor,1,0
+293,92,photo,3.142465753,chalk,0,Random,0,1
+294,93,photo,3.77260274,chalk,0,Near Distractor,1,0
+296,95,photo,3.547945205,chalk,0,Near Distractor,1,0
+297,96,photo,4.82739726,chalk,0,Random,0,1
+298,97,cartoon,4.517808219,chalk,0,Near Distractor,1,0
+299,98,cartoon,3.901369863,chalk,0,Random,0,1
+300,99,cartoon,4.783561644,chalk,0,Random,0,1
+301,100,cartoon,4.950684932,chalk,0,Random,0,1
+302,101,cartoon,3.134246575,chalk,0,Random,0,1
+303,1,bw,6.854794521,fork,0,Random,0,1
+304,2,bw,6.82739726,fork,0,Random,0,1
+307,5,bw,7.24109589,fork,0,Random,0,1
+308,6,bw,4.235616438,fork,0,Random,0,1
+310,8,bw,5.854794521,fork,0,Random,0,1
+311,9,bw,4.268493151,fork,0,Random,0,1
+312,10,bw,5.106849315,fork,0,Random,0,1
+313,11,bw,5.109589041,fork,0,Near Distractor,1,0
+314,12,bw,5.276712329,fork,0,Random,0,1
+315,13,bw,5.630136986,fork,0,Random,0,1
+316,14,bw,5.178082192,fork,0,Random,0,1
+317,15,bw,5.969863014,fork,0,Random,0,1
+319,17,bw,5.252054795,fork,0,Random,0,1
+320,18,bw,5.21369863,fork,0,Random,0,1
+321,19,bw,5.778082192,fork,0,Random,0,1
+322,20,bw,5.117808219,fork,0,Random,0,1
+324,22,bw,5.287671233,fork,0,Random,0,1
+325,23,bw,5.060273973,fork,0,Random,0,1
+327,25,bw,5.97260274,fork,0,Random,0,1
+329,27,bw,5.531506849,fork,0,Random,0,1
+330,28,bw,5.64109589,fork,0,Near Distractor,1,0
+331,29,bw,3.994520548,fork,0,Random,0,1
+332,30,bw,5.6,fork,0,Random,0,1
+334,32,bw,5.115068493,fork,0,Random,0,1
+336,34,obj,5.246575342,fork,0,Random,0,1
+340,38,obj,4.208219178,fork,0,Random,0,1
+341,39,obj,4.263013699,fork,0,Random,0,1
+343,41,obj,3.978082192,fork,0,Random,0,1
+344,42,obj,4.391780822,fork,0,Random,0,1
+345,43,obj,4.391780822,fork,0,Random,0,1
+346,44,obj,4.835616438,fork,0,Near Distractor,1,0
+347,45,obj,4.043835616,fork,0,Near Distractor,1,0
+348,46,obj,4.797260274,fork,0,Random,0,1
+349,47,obj,4.153424658,fork,0,Random,0,1
+350,48,obj,4.454794521,fork,0,Random,0,1
+351,49,obj,4.610958904,fork,0,Random,0,1
+352,50,obj,4.024657534,fork,0,Near Distractor,1,0
+354,52,obj,4.44109589,fork,0,Random,0,1
+355,53,obj,4.290410959,fork,0,Near Distractor,1,0
+356,54,obj,7.673972603,fork,0,Random,0,1
+357,55,obj,7.928767123,fork,0,Random,0,1
+359,57,obj,7.926027397,fork,0,Random,0,1
+360,58,obj,7.99,fork,0,Random,0,1
+361,59,obj,6.101369863,fork,0,Random,0,1
+362,60,obj,6.430136986,fork,0,Random,0,1
+364,62,obj,5.871232877,fork,0,Near Distractor,1,0
+369,67,photo,6.928767123,fork,0,Random,0,1
+371,69,photo,7.479452055,fork,0,Random,0,1
+372,70,photo,7.164383562,fork,0,Random,0,1
+373,71,photo,5.287671233,fork,0,Random,0,1
+375,73,photo,7.128767123,fork,0,Random,0,1
+377,75,photo,7.476712329,fork,0,Near Distractor,1,0
+378,76,photo,6.873972603,fork,0,Random,0,1
+380,78,photo,7.115068493,fork,0,Random,0,1
+381,79,photo,3.846575342,fork,0,Random,0,1
+383,81,photo,3.6,fork,0,Random,0,1
+385,83,photo,5.249315068,fork,0,Random,0,1
+387,85,photo,3.246575342,fork,0,Random,0,1
+389,87,photo,3.265753425,fork,0,Random,0,1
+390,88,photo,3.871232877,fork,0,Random,0,1
+392,90,photo,3.063013699,fork,0,Random,0,1
+393,91,photo,3.495890411,fork,0,Near Distractor,1,0
+394,92,photo,3.142465753,fork,0,Random,0,1
+396,94,photo,3.443835616,fork,0,Random,0,1
+397,95,photo,3.547945205,fork,0,Random,0,1
+398,96,photo,4.82739726,fork,0,Random,0,1
+400,98,cartoon,3.901369863,fork,0,Random,0,1
+401,99,cartoon,4.783561644,fork,0,Random,0,1
+402,100,cartoon,4.950684932,fork,0,Random,0,1
+409,6,cartoon,4.235616438,cup,0,Near Distractor,1,0
+436,33,bw,4.682191781,cup,0,Near Distractor,1,0
+439,36,bw,4.775342466,cup,0,Near Distractor,1,0
+448,45,bw,4.043835616,cup,0,Near Distractor,1,0
+463,60,bw,6.430136986,cup,0,Near Distractor,1,0
+489,86,obj,3.326027397,cup,0,Near Distractor,1,0
+490,87,obj,3.265753425,cup,0,Near Distractor,1,0
+492,89,obj,3.150684932,cup,0,Near Distractor,1,0
+495,92,obj,3.142465753,cup,0,Near Distractor,1,0
+496,93,obj,3.77260274,cup,0,Near Distractor,1,0
+498,95,obj,3.547945205,cup,0,Near Distractor,1,0
+511,7,cartoon,3.117808219,shirt,0,Random,0,1
+584,80,obj,4.057534247,shirt,0,Random,0,1
+590,86,obj,3.326027397,shirt,0,Near Distractor,1,0
+593,89,obj,3.150684932,shirt,0,Random,0,1
+596,92,obj,3.142465753,shirt,0,Random,0,1
+597,93,obj,3.77260274,shirt,0,Random,0,1
+599,95,obj,3.547945205,shirt,0,Random,0,1
+646,41,bw,3.978082192,scissors,0,Near Distractor,1,0
+648,43,bw,4.391780822,scissors,0,Near Distractor,1,0
+652,47,bw,4.153424658,scissors,0,Near Distractor,1,0
+696,91,obj,3.495890411,scissors,0,Near Distractor,1,0
+700,95,obj,3.547945205,scissors,0,Near Distractor,1,0
+710,4,cartoon,6.852054795,button,0,Random,0,1
+712,6,cartoon,4.235616438,button,0,Near Distractor,1,0
+713,7,cartoon,3.117808219,button,0,Random,0,1
+714,8,cartoon,5.854794521,button,0,Random,0,1
+715,9,cartoon,4.268493151,button,0,Random,0,1
+717,11,cartoon,5.109589041,button,0,Random,0,1
+718,12,cartoon,5.276712329,button,0,Random,0,1
+720,14,cartoon,5.178082192,button,0,Near Distractor,1,0
+721,15,cartoon,5.969863014,button,0,Near Distractor,1,0
+723,17,cartoon,5.252054795,button,0,Random,0,1
+725,19,cartoon,5.778082192,button,0,Random,0,1
+726,20,cartoon,5.117808219,button,0,Random,0,1
+728,22,cartoon,5.287671233,button,0,Random,0,1
+729,23,cartoon,5.060273973,button,0,Random,0,1
+730,24,cartoon,5.657534247,button,0,Random,0,1
+731,25,cartoon,5.97260274,button,0,Random,0,1
+733,27,cartoon,5.531506849,button,0,Random,0,1
+734,28,cartoon,5.64109589,button,0,Random,0,1
+735,29,cartoon,3.994520548,button,0,Random,0,1
+738,32,cartoon,5.115068493,button,0,Random,0,1
+739,33,bw,4.682191781,button,0,Random,0,1
+740,34,bw,5.246575342,button,0,Random,0,1
+741,35,bw,3.983561644,button,0,Random,0,1
+742,36,bw,4.775342466,button,0,Random,0,1
+743,37,bw,4.279452055,button,0,Random,0,1
+744,38,bw,4.208219178,button,0,Random,0,1
+745,39,bw,4.263013699,button,0,Random,0,1
+746,40,bw,4.78630137,button,0,Random,0,1
+747,41,bw,3.978082192,button,0,Near Distractor,1,0
+748,42,bw,4.391780822,button,0,Random,0,1
+749,43,bw,4.391780822,button,0,Random,0,1
+750,44,bw,4.835616438,button,0,Random,0,1
+751,45,bw,4.043835616,button,0,Random,0,1
+752,46,bw,4.797260274,button,0,Random,0,1
+753,47,bw,4.153424658,button,0,Random,0,1
+754,48,bw,4.454794521,button,0,Random,0,1
+755,49,bw,4.610958904,button,0,Random,0,1
+756,50,bw,4.024657534,button,0,Random,0,1
+758,52,bw,4.44109589,button,0,Random,0,1
+759,53,bw,4.290410959,button,0,Random,0,1
+761,55,bw,7.928767123,button,0,Random,0,1
+763,57,bw,7.926027397,button,0,Near Distractor,1,0
+764,58,bw,7.99,button,0,Random,0,1
+765,59,bw,6.101369863,button,0,Random,0,1
+767,61,bw,6.575342466,button,0,Random,0,1
+769,63,bw,7.717808219,button,0,Random,0,1
+770,64,bw,7.728767123,button,0,Random,0,1
+777,71,obj,5.287671233,button,0,Near Distractor,1,0
+781,75,obj,7.476712329,button,0,Near Distractor,1,0
+782,76,obj,6.873972603,button,0,Near Distractor,1,0
+783,77,obj,7.531506849,button,0,Random,0,1
+784,78,obj,7.115068493,button,0,Random,0,1
+785,79,obj,3.846575342,button,0,Random,0,1
+786,80,obj,4.057534247,button,0,Near Distractor,1,0
+787,81,obj,3.6,button,0,Near Distractor,1,0
+790,84,obj,3.01369863,button,0,Near Distractor,1,0
+792,86,obj,3.326027397,button,0,Near Distractor,1,0
+793,87,obj,3.265753425,button,0,Near Distractor,1,0
+794,88,obj,3.871232877,button,0,Random,0,1
+795,89,obj,3.150684932,button,0,Near Distractor,1,0
+796,90,obj,3.063013699,button,0,Random,0,1
+797,91,obj,3.495890411,button,0,Near Distractor,1,0
+798,92,obj,3.142465753,button,0,Random,0,1
+799,93,obj,3.77260274,button,0,Near Distractor,1,0
+800,94,obj,3.443835616,button,0,Random,0,1
+801,95,obj,3.547945205,button,0,Near Distractor,1,0
+802,96,obj,4.82739726,button,0,Random,0,1
+803,97,photo,4.517808219,button,0,Near Distractor,1,0
+804,98,photo,3.901369863,button,0,Random,0,1
+805,99,photo,4.783561644,button,0,Near Distractor,1,0
+806,100,photo,4.950684932,button,0,Random,0,1
+807,101,photo,3.134246575,button,0,Random,0,1
+818,11,photo,5.109589041,book,0,Near Distractor,1,0
+819,12,photo,5.276712329,book,0,Near Distractor,1,0
+825,18,photo,5.21369863,book,0,Near Distractor,1,0
+829,22,photo,5.287671233,book,0,Near Distractor,1,0
+849,42,cartoon,4.391780822,book,0,Near Distractor,1,0
+854,47,cartoon,4.153424658,book,0,Near Distractor,1,0
+855,48,cartoon,4.454794521,book,0,Near Distractor,1,0
+856,49,cartoon,4.610958904,book,0,Near Distractor,1,0
+858,51,cartoon,4.994520548,book,0,Near Distractor,1,0
+860,53,cartoon,4.290410959,book,0,Near Distractor,1,0
+866,59,cartoon,6.101369863,book,0,Near Distractor,1,0
+874,67,bw,6.928767123,book,0,Near Distractor,1,0
+876,69,bw,7.479452055,book,0,Near Distractor,1,0
+878,71,bw,5.287671233,book,0,Near Distractor,1,0
+882,75,bw,7.476712329,book,0,Near Distractor,1,0
+883,76,bw,6.873972603,book,0,Near Distractor,1,0
+885,78,bw,7.115068493,book,0,Near Distractor,1,0
+886,79,bw,3.846575342,book,0,Near Distractor,1,0
+887,80,bw,4.057534247,book,0,Random,0,1
+888,81,bw,3.6,book,0,Near Distractor,1,0
+889,82,bw,6.602739726,book,0,Near Distractor,1,0
+890,83,bw,5.249315068,book,0,Near Distractor,1,0
+893,86,bw,3.326027397,book,0,Near Distractor,1,0
+895,88,bw,3.871232877,book,0,Near Distractor,1,0
+897,90,bw,3.063013699,book,0,Random,0,1
+898,91,bw,3.495890411,book,0,Near Distractor,1,0
+900,93,bw,3.77260274,book,0,Random,0,1
+902,95,bw,3.547945205,book,0,Random,0,1
+903,96,bw,4.82739726,book,0,Near Distractor,1,0
+905,98,obj,3.901369863,book,0,Near Distractor,1,0
+914,6,photo,4.235616438,bowl,0,Random,0,1
+915,7,photo,3.117808219,bowl,0,Random,0,1
+917,9,photo,4.268493151,bowl,0,Near Distractor,1,0
+931,23,photo,5.060273973,bowl,0,Near Distractor,1,0
+936,28,photo,5.64109589,bowl,0,Near Distractor,1,0
+937,29,photo,3.994520548,bowl,0,Near Distractor,1,0
+938,30,photo,5.6,bowl,0,Near Distractor,1,0
+941,33,cartoon,4.682191781,bowl,0,Random,0,1
+943,35,cartoon,3.983561644,bowl,0,Near Distractor,1,0
+950,42,cartoon,4.391780822,bowl,0,Near Distractor,1,0
+951,43,cartoon,4.391780822,bowl,0,Random,0,1
+957,49,cartoon,4.610958904,bowl,0,Near Distractor,1,0
+958,50,cartoon,4.024657534,bowl,0,Near Distractor,1,0
+961,53,cartoon,4.290410959,bowl,0,Random,0,1
+968,60,cartoon,6.430136986,bowl,0,Near Distractor,1,0
+969,61,cartoon,6.575342466,bowl,0,Near Distractor,1,0
+974,66,bw,7.350684932,bowl,0,Near Distractor,1,0
+978,70,bw,7.164383562,bowl,0,Near Distractor,1,0
+982,74,bw,7.194520548,bowl,0,Near Distractor,1,0
+984,76,bw,6.873972603,bowl,0,Near Distractor,1,0
+987,79,bw,3.846575342,bowl,0,Near Distractor,1,0
+988,80,bw,4.057534247,bowl,0,Random,0,1
+997,89,bw,3.150684932,bowl,0,Random,0,1
+998,90,bw,3.063013699,bowl,0,Random,0,1
+999,91,bw,3.495890411,bowl,0,Near Distractor,1,0
+1000,92,bw,3.142465753,bowl,0,Random,0,1
+1003,95,bw,3.547945205,bowl,0,Random,0,1
+1005,97,obj,4.517808219,bowl,0,Near Distractor,1,0
+1006,98,obj,3.901369863,bowl,0,Near Distractor,1,0
+1007,99,obj,4.783561644,bowl,0,Near Distractor,1,0
+1008,100,obj,4.950684932,bowl,0,Near Distractor,1,0
+1009,101,obj,3.134246575,bowl,0,Near Distractor,1,0
+1010,1,photo,6.854794521,box,0,Near Distractor,1,0
+1013,4,photo,6.852054795,box,0,Near Distractor,1,0
+1014,5,photo,7.24109589,box,0,Near Distractor,1,0
+1015,6,photo,4.235616438,box,0,Near Distractor,1,0
+1016,7,photo,3.117808219,box,0,Random,0,1
+1018,9,photo,4.268493151,box,0,Random,0,1
+1026,17,photo,5.252054795,box,0,Random,0,1
+1029,20,photo,5.117808219,box,0,Random,0,1
+1038,29,photo,3.994520548,box,0,Near Distractor,1,0
+1040,31,photo,5.591780822,box,0,Near Distractor,1,0
+1042,33,cartoon,4.682191781,box,0,Random,0,1
+1044,35,cartoon,3.983561644,box,0,Near Distractor,1,0
+1048,39,cartoon,4.263013699,box,0,Near Distractor,1,0
+1049,40,cartoon,4.78630137,box,0,Near Distractor,1,0
+1050,41,cartoon,3.978082192,box,0,Random,0,1
+1052,43,cartoon,4.391780822,box,0,Random,0,1
+1053,44,cartoon,4.835616438,box,0,Near Distractor,1,0
+1054,45,cartoon,4.043835616,box,0,Near Distractor,1,0
+1057,48,cartoon,4.454794521,box,0,Near Distractor,1,0
+1058,49,cartoon,4.610958904,box,0,Near Distractor,1,0
+1060,51,cartoon,4.994520548,box,0,Near Distractor,1,0
+1061,52,cartoon,4.44109589,box,0,Random,0,1
+1067,58,cartoon,7.99,box,0,Near Distractor,1,0
+1068,59,cartoon,6.101369863,box,0,Near Distractor,1,0
+1075,66,bw,7.350684932,box,0,Near Distractor,1,0
+1077,68,bw,7.504109589,box,0,Random,0,1
+1079,70,bw,7.164383562,box,0,Random,0,1
+1083,74,bw,7.194520548,box,0,Near Distractor,1,0
+1084,75,bw,7.476712329,box,0,Near Distractor,1,0
+1089,80,bw,4.057534247,box,0,Random,0,1
+1090,81,bw,3.6,box,0,Random,0,1
+1093,84,bw,3.01369863,box,0,Random,0,1
+1094,85,bw,3.246575342,box,0,Random,0,1
+1095,86,bw,3.326027397,box,0,Near Distractor,1,0
+1096,87,bw,3.265753425,box,0,Random,0,1
+1098,89,bw,3.150684932,box,0,Random,0,1
+1101,92,bw,3.142465753,box,0,Random,0,1
+1102,93,bw,3.77260274,box,0,Random,0,1
+1105,96,bw,4.82739726,box,0,Near Distractor,1,0
+1110,101,obj,3.134246575,box,0,Near Distractor,1,0
+1111,1,photo,6.854794521,shorts,0,Random,0,1
+1112,2,photo,6.82739726,shorts,0,Random,0,1
+1113,3,photo,7.150684932,shorts,0,Random,0,1
+1114,4,photo,6.852054795,shorts,0,Random,0,1
+1115,5,photo,7.24109589,shorts,0,Random,0,1
+1116,6,photo,4.235616438,shorts,0,Random,0,1
+1117,7,photo,3.117808219,shorts,0,Random,0,1
+1118,8,photo,5.854794521,shorts,0,Random,0,1
+1119,9,photo,4.268493151,shorts,0,Random,0,1
+1120,10,photo,5.106849315,shorts,0,Random,0,1
+1121,11,photo,5.109589041,shorts,0,Random,0,1
+1122,12,photo,5.276712329,shorts,0,Random,0,1
+1123,13,photo,5.630136986,shorts,0,Random,0,1
+1124,14,photo,5.178082192,shorts,0,Random,0,1
+1125,15,photo,5.969863014,shorts,0,Random,0,1
+1127,17,photo,5.252054795,shorts,0,Random,0,1
+1128,18,photo,5.21369863,shorts,0,Random,0,1
+1129,19,photo,5.778082192,shorts,0,Random,0,1
+1130,20,photo,5.117808219,shorts,0,Near Distractor,1,0
+1131,21,photo,5.361643836,shorts,0,Random,0,1
+1133,23,photo,5.060273973,shorts,0,Random,0,1
+1134,24,photo,5.657534247,shorts,0,Random,0,1
+1135,25,photo,5.97260274,shorts,0,Random,0,1
+1136,26,photo,5.676712329,shorts,0,Random,0,1
+1137,27,photo,5.531506849,shorts,0,Random,0,1
+1138,28,photo,5.64109589,shorts,0,Random,0,1
+1139,29,photo,3.994520548,shorts,0,Random,0,1
+1140,30,photo,5.6,shorts,0,Random,0,1
+1141,31,photo,5.591780822,shorts,0,Random,0,1
+1142,32,photo,5.115068493,shorts,0,Random,0,1
+1143,33,cartoon,4.682191781,shorts,0,Near Distractor,1,0
+1144,34,cartoon,5.246575342,shorts,0,Random,0,1
+1145,35,cartoon,3.983561644,shorts,0,Random,0,1
+1146,36,cartoon,4.775342466,shorts,0,Random,0,1
+1147,37,cartoon,4.279452055,shorts,0,Random,0,1
+1148,38,cartoon,4.208219178,shorts,0,Random,0,1
+1149,39,cartoon,4.263013699,shorts,0,Random,0,1
+1150,40,cartoon,4.78630137,shorts,0,Random,0,1
+1151,41,cartoon,3.978082192,shorts,0,Random,0,1
+1152,42,cartoon,4.391780822,shorts,0,Random,0,1
+1154,44,cartoon,4.835616438,shorts,0,Random,0,1
+1155,45,cartoon,4.043835616,shorts,0,Random,0,1
+1156,46,cartoon,4.797260274,shorts,0,Random,0,1
+1158,48,cartoon,4.454794521,shorts,0,Random,0,1
+1159,49,cartoon,4.610958904,shorts,0,Random,0,1
+1160,50,cartoon,4.024657534,shorts,0,Random,0,1
+1161,51,cartoon,4.994520548,shorts,0,Random,0,1
+1162,52,cartoon,4.44109589,shorts,0,Random,0,1
+1164,54,cartoon,7.673972603,shorts,0,Random,0,1
+1165,55,cartoon,7.928767123,shorts,0,Random,0,1
+1166,56,cartoon,7.98,shorts,0,Random,0,1
+1167,57,cartoon,7.926027397,shorts,0,Random,0,1
+1168,58,cartoon,7.99,shorts,0,Random,0,1
+1169,59,cartoon,6.101369863,shorts,0,Random,0,1
+1170,60,cartoon,6.430136986,shorts,0,Random,0,1
+1172,62,cartoon,5.871232877,shorts,0,Random,0,1
+1173,63,cartoon,7.717808219,shorts,0,Near Distractor,1,0
+1174,64,cartoon,7.728767123,shorts,0,Random,0,1
+1175,65,bw,7.873972603,shorts,0,Random,0,1
+1176,66,bw,7.350684932,shorts,0,Random,0,1
+1177,67,bw,6.928767123,shorts,0,Random,0,1
+1178,68,bw,7.504109589,shorts,0,Random,0,1
+1179,69,bw,7.479452055,shorts,0,Random,0,1
+1180,70,bw,7.164383562,shorts,0,Random,0,1
+1181,71,bw,5.287671233,shorts,0,Random,0,1
+1182,72,bw,7.301369863,shorts,0,Random,0,1
+1183,73,bw,7.128767123,shorts,0,Random,0,1
+1184,74,bw,7.194520548,shorts,0,Random,0,1
+1185,75,bw,7.476712329,shorts,0,Random,0,1
+1186,76,bw,6.873972603,shorts,0,Random,0,1
+1187,77,bw,7.531506849,shorts,0,Random,0,1
+1188,78,bw,7.115068493,shorts,0,Random,0,1
+1189,79,bw,3.846575342,shorts,0,Random,0,1
+1192,82,bw,6.602739726,shorts,0,Near Distractor,1,0
+1193,83,bw,5.249315068,shorts,0,Random,0,1
+1194,84,bw,3.01369863,shorts,0,Random,0,1
+1195,85,bw,3.246575342,shorts,0,Random,0,1
+1198,88,bw,3.871232877,shorts,0,Random,0,1
+1201,91,bw,3.495890411,shorts,0,Random,0,1
+1202,92,bw,3.142465753,shorts,0,Random,0,1
+1203,93,bw,3.77260274,shorts,0,Random,0,1
+1204,94,bw,3.443835616,shorts,0,Random,0,1
+1205,95,bw,3.547945205,shorts,0,Near Distractor,1,0
+1206,96,bw,4.82739726,shorts,0,Random,0,1
+1208,98,obj,3.901369863,shorts,0,Random,0,1
+1210,100,obj,4.950684932,shorts,0,Random,0,1
+1222,11,obj,5.109589041,ball,0,Near Distractor,1,0
+1233,22,obj,5.287671233,ball,0,Near Distractor,1,0
+1314,2,obj,6.82739726,toothbrush,0,Random,0,1
+1316,4,obj,6.852054795,toothbrush,0,Near Distractor,1,0
+1318,6,obj,4.235616438,toothbrush,0,Random,0,1
+1319,7,obj,3.117808219,toothbrush,0,Random,0,1
+1320,8,obj,5.854794521,toothbrush,0,Random,0,1
+1321,9,obj,4.268493151,toothbrush,0,Random,0,1
+1322,10,obj,5.106849315,toothbrush,0,Random,0,1
+1323,11,obj,5.109589041,toothbrush,0,Random,0,1
+1325,13,obj,5.630136986,toothbrush,0,Near Distractor,1,0
+1326,14,obj,5.178082192,toothbrush,0,Near Distractor,1,0
+1329,17,obj,5.252054795,toothbrush,0,Random,0,1
+1332,20,obj,5.117808219,toothbrush,0,Near Distractor,1,0
+1333,21,obj,5.361643836,toothbrush,0,Near Distractor,1,0
+1335,23,obj,5.060273973,toothbrush,0,Random,0,1
+1336,24,obj,5.657534247,toothbrush,0,Near Distractor,1,0
+1337,25,obj,5.97260274,toothbrush,0,Random,0,1
+1339,27,obj,5.531506849,toothbrush,0,Random,0,1
+1341,29,obj,3.994520548,toothbrush,0,Random,0,1
+1342,30,obj,5.6,toothbrush,0,Random,0,1
+1344,32,obj,5.115068493,toothbrush,0,Random,0,1
+1345,33,photo,4.682191781,toothbrush,0,Random,0,1
+1347,35,photo,3.983561644,toothbrush,0,Random,0,1
+1348,36,photo,4.775342466,toothbrush,0,Near Distractor,1,0
+1349,37,photo,4.279452055,toothbrush,0,Random,0,1
+1350,38,photo,4.208219178,toothbrush,0,Random,0,1
+1351,39,photo,4.263013699,toothbrush,0,Random,0,1
+1352,40,photo,4.78630137,toothbrush,0,Random,0,1
+1353,41,photo,3.978082192,toothbrush,0,Random,0,1
+1354,42,photo,4.391780822,toothbrush,0,Random,0,1
+1355,43,photo,4.391780822,toothbrush,0,Near Distractor,1,0
+1356,44,photo,4.835616438,toothbrush,0,Random,0,1
+1357,45,photo,4.043835616,toothbrush,0,Random,0,1
+1358,46,photo,4.797260274,toothbrush,0,Random,0,1
+1360,48,photo,4.454794521,toothbrush,0,Random,0,1
+1361,49,photo,4.610958904,toothbrush,0,Random,0,1
+1362,50,photo,4.024657534,toothbrush,0,Random,0,1
+1363,51,photo,4.994520548,toothbrush,0,Near Distractor,1,0
+1364,52,photo,4.44109589,toothbrush,0,Random,0,1
+1365,53,photo,4.290410959,toothbrush,0,Near Distractor,1,0
+1366,54,photo,7.673972603,toothbrush,0,Random,0,1
+1372,60,photo,6.430136986,toothbrush,0,Random,0,1
+1374,62,photo,5.871232877,toothbrush,0,Random,0,1
+1382,70,cartoon,7.164383562,toothbrush,0,Random,0,1
+1383,71,cartoon,5.287671233,toothbrush,0,Random,0,1
+1384,72,cartoon,7.301369863,toothbrush,0,Random,0,1
+1385,73,cartoon,7.128767123,toothbrush,0,Random,0,1
+1388,76,cartoon,6.873972603,toothbrush,0,Random,0,1
+1391,79,cartoon,3.846575342,toothbrush,0,Random,0,1
+1392,80,cartoon,4.057534247,toothbrush,0,Random,0,1
+1395,83,cartoon,5.249315068,toothbrush,0,Near Distractor,1,0
+1396,84,cartoon,3.01369863,toothbrush,0,Near Distractor,1,0
+1398,86,cartoon,3.326027397,toothbrush,0,Random,0,1
+1399,87,cartoon,3.265753425,toothbrush,0,Random,0,1
+1401,89,cartoon,3.150684932,toothbrush,0,Random,0,1
+1402,90,cartoon,3.063013699,toothbrush,0,Random,0,1
+1404,92,cartoon,3.142465753,toothbrush,0,Random,0,1
+1405,93,cartoon,3.77260274,toothbrush,0,Random,0,1
+1406,94,cartoon,3.443835616,toothbrush,0,Random,0,1
+1407,95,cartoon,3.547945205,toothbrush,0,Near Distractor,1,0
+1409,97,bw,4.517808219,toothbrush,0,Random,0,1
+1413,101,bw,3.134246575,toothbrush,0,Random,0,1
+1425,12,obj,5.276712329,sweater,0,Near Distractor,1,0
+1446,33,photo,4.682191781,sweater,0,Near Distractor,1,0
+1460,47,photo,4.153424658,sweater,0,Random,0,1
+1502,89,cartoon,3.150684932,sweater,0,Near Distractor,1,0
+1505,92,cartoon,3.142465753,sweater,0,Near Distractor,1,0
+1509,96,cartoon,4.82739726,sweater,0,Random,0,1
+1594,80,cartoon,4.057534247,pencil,0,Near Distractor,1,0
+1601,87,cartoon,3.265753425,pencil,0,Near Distractor,1,0
+1603,89,cartoon,3.150684932,pencil,0,Near Distractor,1,0
+1608,94,cartoon,3.443835616,pencil,0,Near Distractor,1,0
+1609,95,cartoon,3.547945205,pencil,0,Near Distractor,1,0
+1618,104,cartoon,3.090410959,comb,0,Random,0,1
+1636,122,cartoon,3.720547945,comb,0,Random,0,1
+1643,102,cartoon,6.254794521,shoe,0,Near Distractor,1,0
+1645,104,cartoon,3.090410959,shoe,0,Near Distractor,1,0
+1657,116,cartoon,5.350684932,shoe,0,Near Distractor,1,0
+1663,122,cartoon,3.720547945,shoe,0,Random,0,1
+1664,123,cartoon,5.252054795,shoe,0,Near Distractor,1,0
+1670,102,cartoon,6.254794521,chalk,0,Random,0,1
+1671,103,cartoon,3.934246575,chalk,0,Near Distractor,1,0
+1672,104,cartoon,3.090410959,chalk,0,Near Distractor,1,0
+1673,105,cartoon,6.161643836,chalk,0,Random,0,1
+1674,106,cartoon,6.430136986,chalk,0,Random,0,1
+1675,107,cartoon,6.235616438,chalk,0,Near Distractor,1,0
+1676,108,cartoon,6.980821918,chalk,0,Near Distractor,1,0
+1678,110,cartoon,6.021917808,chalk,0,Random,0,1
+1679,111,cartoon,6.778082192,chalk,0,Random,0,1
+1682,114,cartoon,6.901369863,chalk,0,Random,0,1
+1684,116,cartoon,5.350684932,chalk,0,Random,0,1
+1686,118,cartoon,3.347945205,chalk,0,Random,0,1
+1687,119,cartoon,5.463013699,chalk,0,Random,0,1
+1688,120,cartoon,6.18630137,chalk,0,Random,0,1
+1690,122,cartoon,3.720547945,chalk,0,Random,0,1
+1691,123,cartoon,5.252054795,chalk,0,Random,0,1
+1692,124,cartoon,4.830136986,chalk,0,Random,0,1
+1693,125,cartoon,3.276712329,chalk,0,Random,0,1
+1694,126,cartoon,6.652054795,chalk,0,Random,0,1
+1695,127,cartoon,5.482191781,chalk,0,Near Distractor,1,0
+1696,128,cartoon,5.016438356,chalk,0,Random,0,1
+1697,102,cartoon,6.254794521,fork,0,Random,0,1
+1698,103,cartoon,3.934246575,fork,0,Near Distractor,1,0
+1700,105,cartoon,6.161643836,fork,0,Random,0,1
+1702,107,cartoon,6.235616438,fork,0,Near Distractor,1,0
+1703,108,cartoon,6.980821918,fork,0,Random,0,1
+1704,109,cartoon,6.495890411,fork,0,Random,0,1
+1705,110,cartoon,6.021917808,fork,0,Random,0,1
+1707,112,cartoon,6.621917808,fork,0,Random,0,1
+1708,113,cartoon,6.580821918,fork,0,Random,0,1
+1711,116,cartoon,5.350684932,fork,0,Random,0,1
+1714,119,cartoon,5.463013699,fork,0,Random,0,1
+1715,120,cartoon,6.18630137,fork,0,Random,0,1
+1716,121,cartoon,4.843835616,fork,0,Random,0,1
+1720,125,cartoon,3.276712329,fork,0,Random,0,1
+1721,126,cartoon,6.652054795,fork,0,Near Distractor,1,0
+1722,127,cartoon,5.482191781,fork,0,Random,0,1
+1725,103,photo,3.934246575,cup,0,Near Distractor,1,0
+1726,104,photo,3.090410959,cup,0,Near Distractor,1,0
+1744,122,photo,3.720547945,cup,0,Random,0,1
+1747,125,photo,3.276712329,cup,0,Near Distractor,1,0
+1767,118,photo,3.347945205,shirt,0,Random,0,1
+1798,122,photo,3.720547945,scissors,0,Near Distractor,1,0
+1807,104,photo,3.090410959,button,0,Near Distractor,1,0
+1809,106,photo,6.430136986,button,0,Random,0,1
+1810,107,photo,6.235616438,button,0,Near Distractor,1,0
+1812,109,photo,6.495890411,button,0,Random,0,1
+1813,110,photo,6.021917808,button,0,Random,0,1
+1817,114,photo,6.901369863,button,0,Near Distractor,1,0
+1819,116,photo,5.350684932,button,0,Random,0,1
+1821,118,photo,3.347945205,button,0,Random,0,1
+1822,119,photo,5.463013699,button,0,Random,0,1
+1825,122,photo,3.720547945,button,0,Random,0,1
+1826,123,photo,5.252054795,button,0,Random,0,1
+1827,124,photo,4.830136986,button,0,Random,0,1
+1828,125,photo,3.276712329,button,0,Random,0,1
+1830,127,photo,5.482191781,button,0,Random,0,1
+1831,128,photo,5.016438356,button,0,Random,0,1
+1848,118,obj,3.347945205,book,0,Random,0,1
+1860,103,obj,3.934246575,bowl,0,Near Distractor,1,0
+1861,104,obj,3.090410959,bowl,0,Near Distractor,1,0
+1862,105,obj,6.161643836,bowl,0,Near Distractor,1,0
+1867,110,obj,6.021917808,bowl,0,Near Distractor,1,0
+1870,113,obj,6.580821918,bowl,0,Near Distractor,1,0
+1871,114,obj,6.901369863,bowl,0,Near Distractor,1,0
+1873,116,obj,5.350684932,bowl,0,Near Distractor,1,0
+1875,118,obj,3.347945205,bowl,0,Random,0,1
+1878,121,obj,4.843835616,bowl,0,Near Distractor,1,0
+1879,122,obj,3.720547945,bowl,0,Random,0,1
+1885,128,obj,5.016438356,bowl,0,Near Distractor,1,0
+1886,102,obj,6.254794521,box,0,Near Distractor,1,0
+1888,104,obj,3.090410959,box,0,Near Distractor,1,0
+1889,105,obj,6.161643836,box,0,Near Distractor,1,0
+1890,106,obj,6.430136986,box,0,Near Distractor,1,0
+1891,107,obj,6.235616438,box,0,Near Distractor,1,0
+1897,113,obj,6.580821918,box,0,Near Distractor,1,0
+1902,118,obj,3.347945205,box,0,Near Distractor,1,0
+1903,119,obj,5.463013699,box,0,Near Distractor,1,0
+1904,120,obj,6.18630137,box,0,Near Distractor,1,0
+1906,122,obj,3.720547945,box,0,Near Distractor,1,0
+1908,124,obj,4.830136986,box,0,Near Distractor,1,0
+1913,102,obj,6.254794521,shorts,0,Random,0,1
+1915,104,obj,3.090410959,shorts,0,Random,0,1
+1916,105,obj,6.161643836,shorts,0,Random,0,1
+1917,106,obj,6.430136986,shorts,0,Random,0,1
+1918,107,obj,6.235616438,shorts,0,Random,0,1
+1919,108,obj,6.980821918,shorts,0,Random,0,1
+1920,109,obj,6.495890411,shorts,0,Random,0,1
+1921,110,obj,6.021917808,shorts,0,Random,0,1
+1922,111,obj,6.778082192,shorts,0,Random,0,1
+1923,112,obj,6.621917808,shorts,0,Random,0,1
+1924,113,obj,6.580821918,shorts,0,Random,0,1
+1925,114,obj,6.901369863,shorts,0,Random,0,1
+1928,117,obj,6.032876712,shorts,0,Random,0,1
+1930,119,obj,5.463013699,shorts,0,Random,0,1
+1931,120,obj,6.18630137,shorts,0,Random,0,1
+1934,123,obj,5.252054795,shorts,0,Random,0,1
+1935,124,obj,4.830136986,shorts,0,Near Distractor,1,0
+1937,126,obj,6.652054795,shorts,0,Random,0,1
+1938,127,obj,5.482191781,shorts,0,Random,0,1
+1939,128,obj,5.016438356,shorts,0,Random,0,1
+1941,103,bw,3.934246575,ball,0,Random,0,1
+1956,118,bw,3.347945205,ball,0,Random,0,1
+1962,124,bw,4.830136986,ball,0,Near Distractor,1,0
+1967,102,bw,6.254794521,toothbrush,0,Random,0,1
+1968,103,bw,3.934246575,toothbrush,0,Random,0,1
+1972,107,bw,6.235616438,toothbrush,0,Random,0,1
+1975,110,bw,6.021917808,toothbrush,0,Random,0,1
+1978,113,bw,6.580821918,toothbrush,0,Random,0,1
+1979,114,bw,6.901369863,toothbrush,0,Random,0,1
+1981,116,bw,5.350684932,toothbrush,0,Random,0,1
+1984,119,bw,5.463013699,toothbrush,0,Random,0,1
+1985,120,bw,6.18630137,toothbrush,0,Random,0,1
+1986,121,bw,4.843835616,toothbrush,0,Random,0,1
+1987,122,bw,3.720547945,toothbrush,0,Random,0,1
+1988,123,bw,5.252054795,toothbrush,0,Near Distractor,1,0
+1990,125,bw,3.276712329,toothbrush,0,Near Distractor,1,0
+1992,127,bw,5.482191781,toothbrush,0,Random,0,1
+1993,128,bw,5.016438356,toothbrush,0,Random,0,1
+1996,104,bw,3.090410959,sweater,0,Random,0,1
+2008,116,bw,5.350684932,sweater,0,Random,0,1
+2041,122,bw,3.720547945,pencil,0,Random,0,1
