@@ -3,12 +3,12 @@ title: "picture-perception-error-analysis"
 author: "Arnav Verma"
 date: "`r Sys.Date()`"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(dev = "svg", echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(lme4)
 library(ggplot2)
@@ -139,13 +139,13 @@ Second attempt uses simpler random-effects structure. Still there are convergenc
 
 ```{r}
 base_model <- glmer(
-    is_far ~ 1  + (condition | child), 
+    is_far ~ 1  + (condition | child) + (1 | target_word), 
     data=errors, 
     family = "binomial"
 )
 
 condition_model <- glmer(
-     is_far ~ condition + (condition | child), 
+     is_far ~ condition + (condition | child) + (1 | target_word), 
      data=errors, 
      family = "binomial"
 )
@@ -157,13 +157,13 @@ Third attempt uses even simpler random-effects structure. Now we get convergence
 
 ```{r}
 base_model <- glmer(
-    is_far ~ 1  + (1 | child), 
+    is_far ~ 1  + (1 | child) + (1| target_word), 
     data=errors, 
     family = "binomial"
 )
 
 condition_model <- glmer(
-     is_far ~ condition + (1 | child), 
+     is_far ~ condition + (1 | child) + (1| target_word), 
      data=errors, 
      family = "binomial"
 )
@@ -174,13 +174,13 @@ condition_model <- glmer(
 Now let's get a little more ambitious and add age in as a fixed effect, with the interaction
 ```{r}
 age_condition_model <- glmer(
-     is_far ~ condition*age + (1 | child), 
+     is_far ~ condition*age + (1 | child) + (1 | target_word), 
      data=errors, 
      family = "binomial"
 )
 
 age_condition_model_nointeraction <- glmer(
-     is_far ~ condition + age + (1 | child), 
+     is_far ~ condition + age + (1 | child) + (1 | target_word), 
      data=errors, 
      family = "binomial"
 )
@@ -198,7 +198,7 @@ summary(condition_model)
 ```
 
 
-Test for reliability of effect of condition
+Test for reliability of effect of condition and age
 ```{r}
 anova(base_model, condition_model, age_condition_model)
 ```

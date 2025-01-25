@@ -488,14 +488,13 @@ watch/wait for this one.</p>
 <p>Second attempt uses simpler random-effects structure. Still there are
 convergence issues.</p>
 <pre class="r"><code>base_model &lt;- glmer(
-    is_far ~ 1  + (condition | child), 
+    is_far ~ 1  + (condition | child) + (1 | target_word), 
     data=errors, 
     family = &quot;binomial&quot;
-)</code></pre>
-<pre><code>## Warning in checkConv(attr(opt, &quot;derivs&quot;), opt$par, ctrl = control$checkConv, :
-## Model failed to converge with max|grad| = 0.00221372 (tol = 0.002, component 1)</code></pre>
-<pre class="r"><code>condition_model &lt;- glmer(
-     is_far ~ condition + (condition | child), 
+)
+
+condition_model &lt;- glmer(
+     is_far ~ condition + (condition | child) + (1 | target_word), 
      data=errors, 
      family = &quot;binomial&quot;
 )</code></pre>
@@ -506,36 +505,37 @@ convergence issues.</p>
 <pre class="r"><code>anova(base_model, condition_model, test = &quot;Chisq&quot;)</code></pre>
 <pre><code>## Data: errors
 ## Models:
-## base_model: is_far ~ 1 + (condition | child)
-## condition_model: is_far ~ condition + (condition | child)
-##                 npar    AIC    BIC  logLik deviance  Chisq Df Pr(&gt;Chisq)   
-## base_model        11 826.84 875.87 -402.42   804.84                        
-## condition_model   14 818.87 881.26 -395.43   790.87 13.977  3   0.002936 **
+## base_model: is_far ~ 1 + (condition | child) + (1 | target_word)
+## condition_model: is_far ~ condition + (condition | child) + (1 | target_word)
+##                 npar    AIC    BIC  logLik deviance  Chisq Df Pr(&gt;Chisq)    
+## base_model        12 650.10 703.58 -313.05   626.10                         
+## condition_model   15 625.96 692.81 -297.98   595.96 30.133  3  1.294e-06 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Third attempt uses even simpler random-effects structure. Now we get
 convergence.</p>
 <pre class="r"><code>base_model &lt;- glmer(
-    is_far ~ 1  + (1 | child), 
+    is_far ~ 1  + (1 | child) + (1| target_word), 
     data=errors, 
     family = &quot;binomial&quot;
 )
 
 condition_model &lt;- glmer(
-     is_far ~ condition + (1 | child), 
+     is_far ~ condition + (1 | child) + (1| target_word), 
      data=errors, 
      family = &quot;binomial&quot;
 )</code></pre>
 <p>Now let’s get a little more ambitious and add age in as a fixed
 effect, with the interaction</p>
 <pre class="r"><code>age_condition_model &lt;- glmer(
-     is_far ~ condition*age + (1 | child), 
+     is_far ~ condition*age + (1 | child) + (1 | target_word), 
      data=errors, 
      family = &quot;binomial&quot;
-)
-
-age_condition_model_nointeraction &lt;- glmer(
-     is_far ~ condition + age + (1 | child), 
+)</code></pre>
+<pre><code>## Warning in checkConv(attr(opt, &quot;derivs&quot;), opt$par, ctrl = control$checkConv, :
+## Model failed to converge with max|grad| = 0.0452212 (tol = 0.002, component 1)</code></pre>
+<pre class="r"><code>age_condition_model_nointeraction &lt;- glmer(
+     is_far ~ condition + age + (1 | child) + (1 | target_word), 
      data=errors, 
      family = &quot;binomial&quot;
 )</code></pre>
@@ -544,92 +544,96 @@ age_condition_model_nointeraction &lt;- glmer(
 <pre><code>## Generalized linear mixed model fit by maximum likelihood (Laplace
 ##   Approximation) [glmerMod]
 ##  Family: binomial  ( logit )
-## Formula: is_far ~ condition * age + (1 | child)
+## Formula: is_far ~ condition * age + (1 | child) + (1 | target_word)
 ##    Data: errors
 ## 
 ##      AIC      BIC   logLik deviance df.resid 
-##    803.1    843.2   -392.5    785.1      628 
+##    612.3    656.8   -296.1    592.3      627 
 ## 
 ## Scaled residuals: 
 ##     Min      1Q  Median      3Q     Max 
-## -2.0490 -1.1144  0.5919  0.6762  1.2835 
+## -8.4360 -0.3941  0.2719  0.4873  3.6513 
 ## 
 ## Random effects:
-##  Groups Name        Variance Std.Dev.
-##  child  (Intercept) 0.08096  0.2845  
-## Number of obs: 637, groups:  child, 127
+##  Groups      Name        Variance Std.Dev.
+##  child       (Intercept) 0.4167   0.6455  
+##  target_word (Intercept) 5.0318   2.2432  
+## Number of obs: 637, groups:  child, 127; target_word, 16
 ## 
 ## Fixed effects:
 ##                         Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)             -1.17989    0.67282  -1.754 0.079492 .  
-## conditionphoto           2.01733    0.97038   2.079 0.037627 *  
-## conditioncartoon         0.73322    0.96909   0.757 0.449285    
-## conditionmonochrome      3.15735    0.94631   3.336 0.000848 ***
-## age                      0.26919    0.13313   2.022 0.043172 *  
-## conditionphoto:age      -0.24940    0.19402  -1.285 0.198649    
-## conditioncartoon:age    -0.03398    0.19240  -0.177 0.859797    
-## conditionmonochrome:age -0.44833    0.17987  -2.493 0.012683 *  
+## (Intercept)             -1.59662    1.05357  -1.515  0.12966    
+## conditionphoto           2.38358    1.22235   1.950  0.05118 .  
+## conditioncartoon         1.51143    1.26773   1.192  0.23317    
+## conditionmonochrome      5.34336    1.26593   4.221 2.43e-05 ***
+## age                      0.09738    0.17059   0.571  0.56811    
+## conditionphoto:age      -0.27323    0.24081  -1.135  0.25653    
+## conditioncartoon:age    -0.09040    0.24564  -0.368  0.71286    
+## conditionmonochrome:age -0.67343    0.23318  -2.888  0.00388 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Correlation of Fixed Effects:
 ##             (Intr) cndtnp cndtnc cndtnm age    cndtnp: cndtnc:
-## conditinpht -0.676                                            
-## conditncrtn -0.674  0.466                                     
-## cndtnmnchrm -0.695  0.482  0.478                              
-## age         -0.967  0.655  0.653  0.674                       
-## condtnpht:g  0.649 -0.966 -0.447 -0.462 -0.672                
-## cndtncrtn:g  0.651 -0.450 -0.968 -0.461 -0.674  0.462         
-## cndtnmnchr:  0.702 -0.487 -0.482 -0.966 -0.727  0.499   0.498</code></pre>
+## conditinpht -0.561                                            
+## conditncrtn -0.551  0.469                                     
+## cndtnmnchrm -0.579  0.492  0.480                              
+## age         -0.799  0.643  0.620  0.632                       
+## condtnpht:g  0.532 -0.966 -0.443 -0.459 -0.655                
+## cndtncrtn:g  0.529 -0.450 -0.969 -0.452 -0.641  0.455         
+## cndtnmnchr:  0.580 -0.494 -0.480 -0.963 -0.689  0.494   0.486 
+## optimizer (Nelder_Mead) convergence code: 0 (OK)
+## Model failed to converge with max|grad| = 0.0452212 (tol = 0.002, component 1)</code></pre>
 <p>Summary of <code>condition</code> only model</p>
 <pre class="r"><code>summary(condition_model)</code></pre>
 <pre><code>## Generalized linear mixed model fit by maximum likelihood (Laplace
 ##   Approximation) [glmerMod]
 ##  Family: binomial  ( logit )
-## Formula: is_far ~ condition + (1 | child)
+## Formula: is_far ~ condition + (1 | child) + (1 | target_word)
 ##    Data: errors
 ## 
 ##      AIC      BIC   logLik deviance df.resid 
-##    804.2    826.5   -397.1    794.2      632 
+##    617.4    644.2   -302.7    605.4      631 
 ## 
 ## Scaled residuals: 
 ##     Min      1Q  Median      3Q     Max 
-## -1.7648 -1.0788  0.5898  0.6685  1.0677 
+## -5.2957 -0.4238  0.2768  0.4872  3.0409 
 ## 
 ## Random effects:
-##  Groups Name        Variance Std.Dev.
-##  child  (Intercept) 0.1117   0.3343  
-## Number of obs: 637, groups:  child, 127
+##  Groups      Name        Variance Std.Dev.
+##  child       (Intercept) 0.4074   0.6383  
+##  target_word (Intercept) 4.3810   2.0931  
+## Number of obs: 637, groups:  child, 127; target_word, 16
 ## 
 ## Fixed effects:
 ##                     Estimate Std. Error z value Pr(&gt;|z|)    
-## (Intercept)           0.1444     0.1703   0.848 0.396325    
-## conditionphoto        0.8018     0.2498   3.209 0.001330 ** 
-## conditioncartoon      0.5775     0.2399   2.408 0.016061 *  
-## conditionmonochrome   0.9063     0.2417   3.749 0.000177 ***
+## (Intercept)          -1.0348     0.5963  -1.735 0.082698 .  
+## conditionphoto        1.0409     0.3107   3.350 0.000807 ***
+## conditioncartoon      1.0374     0.3078   3.371 0.000750 ***
+## conditionmonochrome   1.8544     0.3335   5.560  2.7e-08 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Correlation of Fixed Effects:
 ##             (Intr) cndtnp cndtnc
-## conditinpht -0.650              
-## conditncrtn -0.677  0.468       
-## cndtnmnchrm -0.672  0.481  0.484</code></pre>
-<p>Test for reliability of effect of condition</p>
+## conditinpht -0.257              
+## conditncrtn -0.271  0.487       
+## cndtnmnchrm -0.296  0.486  0.502</code></pre>
+<p>Test for reliability of effect of condition and age</p>
 <pre class="r"><code>anova(base_model, condition_model, age_condition_model)</code></pre>
 <pre><code>## Data: errors
 ## Models:
-## base_model: is_far ~ 1 + (1 | child)
-## condition_model: is_far ~ condition + (1 | child)
-## age_condition_model: is_far ~ condition * age + (1 | child)
-##                     npar    AIC    BIC  logLik deviance   Chisq Df Pr(&gt;Chisq)
-## base_model             2 815.19 824.10 -405.59   811.19                      
-## condition_model        5 804.24 826.52 -397.12   794.24 16.9536  3  0.0007224
-## age_condition_model    9 803.07 843.18 -392.53   785.07  9.1709  4  0.0569663
+## base_model: is_far ~ 1 + (1 | child) + (1 | target_word)
+## condition_model: is_far ~ condition + (1 | child) + (1 | target_word)
+## age_condition_model: is_far ~ condition * age + (1 | child) + (1 | target_word)
+##                     npar    AIC    BIC  logLik deviance  Chisq Df Pr(&gt;Chisq)
+## base_model             3 646.05 659.42 -320.03   640.05                     
+## condition_model        6 617.44 644.18 -302.72   605.44 34.616  3  1.469e-07
+## age_condition_model   10 612.27 656.84 -296.13   592.27 13.168  4    0.01048
 ##                        
 ## base_model             
 ## condition_model     ***
-## age_condition_model .  
+## age_condition_model *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 </div>
