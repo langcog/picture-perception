@@ -99,6 +99,40 @@ knitr::include_graphics(here("paper","fig1.png"))
 
 Using a within-subjects design, each participant completed all sixteen vocabulary trials. Across participants, each target word was presented in all four formats an equal number of items. On each trial, a local experimenter presented children with either a laminated piece of paper depicting four objects, or a tray with four objects (see Fig. 1) and prompted the participant to select one of the four items (e.g., “Nionyeshe mswaki”, meaning “Show me a toothbrush” in Swahili). Within each block, the placement of the target item was counterbalanced across trials. For a full list of target and distractor items, see Table 1.
 
+```{r}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{colortbl}
+\begin{table}[]
+\begin{tabular}{@{}ccccc@{}}
+\multicolumn{1}{l}{} & \textbf{Target Item (Swahili)} & \textbf{Near Distractor} & \textbf{Random Distractor} & \textbf{Random Distractor} \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{Set 1}       & Comb (Kichana)                 & Brush                    & Watch                      & Bracelet                   \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{}            & Shoe (Kiatu)                   & Sock                     & Medicine                   & Telephone                  \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{}            & Chalk (Chaki)                  & Crayon                   & String                     & Handkerchief               \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{}            & Fork (Uma)                     & Spoon                    & Straw                      & Necklace                   \\
+\textbf{Set 2}       & Cup (Kikombe)                  & Bottle                   & Soap                       & Boots                      \\
+\textbf{}            & Shirt (Shati)                  & Hat                      & Eraser                     & Bucket                     \\
+\textbf{}            & Scissors (Makasi)              & Knife                    & Bag                        & Bib                        \\
+\textbf{}            & Button (Kifungo)               & Stone                    & Stick                      & Shovel                     \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{Set 3}       & Book (Kitabu)                  & Paper                    & Jeans                      & Coat                       \\
+\rowcolor[HTML]{C0C0C0}
+\textbf{}            & Bowl (Bakuli)                  & Plate                    & Pants                      & Scarf                      \\
+\rowcolor[HTML]{C0C0C0}
+                     & Box (Sanduku)                  & Basket                   & Bottle Cap                 & Key                        \\
+\rowcolor[HTML]{C0C0C0}
+                     & Shorts (Kaptula)               & Dress                    & Clock                      & Remote Control             \\
+\textbf{Set 4}       & Ball (Mpira)                   & Balloon                  & Earring                    & Sandal                     \\
+                     & Toothbrush (Mswaki)            & Toothpaste               & Mirror                     & Bead                       \\
+                     & Sweater (Sweta)                & Skirt                    & Glasses                    & Toilet Paper               \\
+                     & Pencil (Penseli)               & Pencil Sharpener         & Towel                      & Zipper
+\end{tabular}
+\end{table}
+```
 
 
 # Results
@@ -116,8 +150,6 @@ ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) +
   xlab("Age (Years)") + 
   theme(legend.position = "bottom")
 ```
-
-Figure 2 shows 
 
 ## Confirmatory Analyses
 
