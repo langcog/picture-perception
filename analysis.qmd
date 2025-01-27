@@ -208,3 +208,84 @@ bayes_mod_age %>%
 
 bayes_mod_age%>% emmeans(specs = pairwise~condition)
 ```
+
+Run Bayesian analyses on pruned model without age
+
+```{r}
+bayes_mod_pruned <- brm(formula = accuracy ~ condition + (1 | child) + (1 | target_word),
+                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+summary(bayes_mod_pruned)
+
+joint_tests(bayes_mod_pruned)
+
+#effect of condition
+#model term df1 df2 F.ratio Chisq p.value
+#condition    3 Inf   2.654 7.962  0.0468
+```
+
+Get posterior estimates and 95% credible intervals
+
+```{r}
+bayes_mod_pruned %>%
+  as_draws_df() %>%
+  select(starts_with("b_")) %>% 
+  mutate(obj = b_Intercept, 
+         bw = b_Intercept + b_conditionbw, 
+     	   cartoon = b_Intercept + b_conditioncartoon,
+         photo = b_Intercept + b_conditionphoto) %>%
+  select(obj, photo, cartoon, bw) %>%
+  mean_hdi() %>%
+  pivot_longer(cols = -c(.width:.interval),
+               names_to = "index",
+               values_to = "value") %>% 
+  select(index, value) %>% 
+  mutate(index = ifelse(str_detect(index, fixed(".")), index, str_c(index, ".mean"))) %>% 
+  separate(index, into = c("parameter", "type"), sep = "\\.") %>% 
+  pivot_wider(names_from = type, 
+              values_from = value) %>%
+  mutate_at(vars(2:4), plogis)
+
+bayes_mod_pruned%>% emmeans(specs = pairwise~condition)
+```
+
+
+Run Bayesian analyses on pruned model with age
+
+```{r}
+bayes_mod_age_pruned <-  brm(formula = accuracy ~ condition * age_centered + (1 | child) + (1 | target_word), 
+                              family=bernoulli(link="logit"), data = d, seed = 1)
+
+summary(bayes_mod_age_pruned)
+
+joint_tests(bayes_mod_age_pruned)
+
+# model term             df1 df2 F.ratio   Chisq p.value
+# condition                3 Inf   3.455  10.365  0.0157
+# age_centered             1 Inf 100.641 100.641  <.0001
+# condition:age_centered   3 Inf   5.167  15.501  0.0014
+```
+
+Get posterior estimates and 95% credible intervals
+```{r}
+bayes_mod_age_pruned %>%
+  as_draws_df() %>%
+  select(starts_with("b_")) %>% 
+  mutate(obj = b_Intercept, 
+         bw = b_Intercept + b_conditionbw, 
+     	   cartoon = b_Intercept + b_conditioncartoon,
+         photo = b_Intercept + b_conditionphoto) %>%
+  select(obj, photo, cartoon, bw) %>%
+  mean_hdi() %>%
+  pivot_longer(cols = -c(.width:.interval),
+               names_to = "index",
+               values_to = "value") %>% 
+  select(index, value) %>% 
+  mutate(index = ifelse(str_detect(index, fixed(".")), index, str_c(index, ".mean"))) %>% 
+  separate(index, into = c("parameter", "type"), sep = "\\.") %>% 
+  pivot_wider(names_from = type, 
+              values_from = value) %>%
+  mutate_at(vars(2:4), plogis)
+
+bayes_mod_age_pruned%>% emmeans(specs = pairwise~condition)
+```
