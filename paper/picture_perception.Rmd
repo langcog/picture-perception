@@ -28,6 +28,7 @@ library(emmeans)
 library(brms)
 library(tidybayes)
 library(broom.mixed)
+library(papaja)
 
 knitr::opts_chunk$set(fig.crop = F, 
                       fig.pos = "tb", fig.path='figs/',
@@ -61,7 +62,7 @@ Moreover, previous cross-cultural work on children's picture comprehension contr
 
 
 ```{r read_data}
-d <- read_csv(here("data","kisumu vocab data.csv"))|>
+d <- read_csv(here("data","kisumu_vocab_data.csv"))|>
   mutate(condition_label = fct_recode(condition, 
                                       "Object" = "obj", 
                                         "Photo" = "photo", 
@@ -99,11 +100,9 @@ knitr::include_graphics(here("paper","fig1.png"))
 
 Using a within-subjects design, each participant completed all sixteen vocabulary trials. Across participants, each target word was presented in all four formats an equal number of items. On each trial, a local experimenter presented children with either a laminated piece of paper depicting four objects, or a tray with four objects (see Fig. 1) and prompted the participant to select one of the four items (e.g., “Nionyeshe mswaki”, meaning “Show me a toothbrush” in Swahili). Within each block, the placement of the target item was counterbalanced across trials. For a full list of target and distractor items, see Table 1.
 
-```{r}
-\usepackage{booktabs}
-\usepackage[table,xcdraw]{xcolor}
-\usepackage{colortbl}
-\begin{table}[]
+
+\begin{table*}[]
+\centering
 \begin{tabular}{@{}ccccc@{}}
 \multicolumn{1}{l}{} & \textbf{Target Item (Swahili)} & \textbf{Near Distractor} & \textbf{Random Distractor} & \textbf{Random Distractor} \\
 \rowcolor[HTML]{C0C0C0}
@@ -131,8 +130,8 @@ Using a within-subjects design, each participant completed all sixteen vocabular
                      & Sweater (Sweta)                & Skirt                    & Glasses                    & Toilet Paper               \\
                      & Pencil (Penseli)               & Pencil Sharpener         & Towel                      & Zipper
 \end{tabular}
-\end{table}
-```
+\end{table*}
+
 
 
 # Results
@@ -193,7 +192,9 @@ rtab_age <- exp(ctab_age)
 ```
 
 
-We fit generalized linear mixed-effects models to children's scores to assess the factors that influenced their response accuracy. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (B= .44, SE = 0.17, Z = 2.55, p = .01, OR: .64, 95% CI: 0.46, .90). There was no difference between children's accuracy in the object format and the photograph format (B= .001, SE = 0.18, Z = .007, p = .99, OR: .99, 95% CI: 0.71, 1.41), or in the object format and the cartoon format (B = .11, SE = 0.17, Z = .65, p = .52, OR: .89, 95% CI: 0.64, 1.26).
+We fit generalized linear mixed-effects models to children's scores to assess the factors that influenced their response accuracy. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`).
+<!-- (B= .44, SE = 0.17, Z = 2.55, p = .01, OR: .64, 95% CI: 0.46, .90).  -->
+There was no difference between children's accuracy in the object format and the photograph format (B= .001, SE = 0.18, Z = .007, p = .99, OR: .99, 95% CI: 0.71, 1.41), or in the object format and the cartoon format (B = .11, SE = 0.17, Z = .65, p = .52, OR: .89, 95% CI: 0.64, 1.26).
 
 We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (B= .58, SE = 0.10, Z = 6.03, p < .001, OR: 1.79, 95% CI: 1.48, 2.17), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (B= .48, SE = 0.18, Z = 2.74, p = .006, OR: .62, 95% CI: 0.44, .87). There was a significant interaction between the black-and-white line drawing format and age (B= .31, SE = 0.13, Z = 2.47, p = .01, OR: .73, 95% CI: .57, .94), such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children. All other main effects and interactions were not significant (all p's > .20).
 
