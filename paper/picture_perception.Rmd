@@ -90,7 +90,7 @@ Target words were selected from Swahili Communicative Development Inventory (CDI
 
 In addition to the target word, each array consisted of one near distractor and two random distractors. Near and random distractors were all artifacts that Kisumu children were relatively familiar with. Many distractors were items on the Swahili CDI (Alcock et al., 2015) or used in previous research with Kenyan preschoolers (Zhu et al, 2024). Furthermore, local SWAP employees again confirmed that all artifacts were familiar to Kisumu children. Similarity scores were calculated through correlations from the THINGS database (Hebart et al., 2019). Near distractors were conceptually similar to, and had high correlations with, target items (average correlation = 0.82, range = 0.66-0.95). Random distractors were less conceptually similar to, and had lower correlations with, target items (average correlation = 0.36, range = 0.17-0.53).
 
-```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nyoneshi mpira) across the four conditions.", out.width="6in", fig.align = "center"}
+```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial ("Show me the ball" / "Nyoneshi mpira") across the four conditions.", out.width="6in", fig.align = "center"}
 
 knitr::include_graphics(here("paper","fig1.png"))
 
@@ -113,7 +113,7 @@ ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) +
   geom_smooth(method = "lm") + 
   ggthemes::scale_color_solarized(name="Condition") + 
   ylab("Accuracy") +
-  xlab("Age (months)") + 
+  xlab("Age (Years)") + 
   theme(legend.position = "bottom")
 ```
 
@@ -183,11 +183,11 @@ ggplot(msi,
   coord_flip() + 
   ggthemes::scale_color_solarized(name = "Condition") +
   ylab("Accuracy") +
-  xlab("Age (months)") + 
+  xlab("Age (Years)") + 
   theme(legend.position = "bottom")
 ```
 
-Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package (Burkner, 2016) using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
+Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package (Burkner, 2017) using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
 
 A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats, emmeans = .03, 95% credible interval [-.82, .78], object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
 
@@ -211,11 +211,6 @@ Moreover, it is unclear whether U.S. children might perform similarly to their K
 
 Overall, the present findings contribute to more confidence in the current assessments used in global contexts, particularly contexts where children may possess highly variable amounts of picture experience. However, much more future research is required to determine in exactly which contexts picture-based assessments are valid or invalid.  Ultimately, this research will contribute to the development of more inclusive and effective curricula for children worldwide, as well as more appropriate evaluation of policies and programs to improve early child outcomes and educational trajectories.
 
-
-# Acknowledgements
-
-Place acknowledgments (including funding information) in a section at
-the end of the paper.
 
 # References 
 
