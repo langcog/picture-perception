@@ -183,7 +183,6 @@ ggplot(msi,
   coord_flip() + 
   ggthemes::scale_color_solarized(name = "Condition") +
   ylab("Accuracy") +
-  xlab("Age (Years)") + 
   theme(legend.position = "bottom")
 ```
 
