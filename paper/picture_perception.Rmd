@@ -141,10 +141,24 @@ ms <- d |>
   group_by(child, condition_label, age) |>
   summarise(accuracy = mean(accuracy)) 
 
+mss <- ms |>
+  mutate(age_group = as.factor(floor(age))) |>
+  group_by(condition_label, age_group) |>
+  summarise(se = sd(accuracy) / sqrt(n()),
+            ci = se * qt(.975, n() - 1),
+            accuracy = mean(accuracy)) |>
+  mutate(age = as.numeric(as.character(age_group)) + .5)
+
 ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) + 
-  geom_jitter(alpha = .5, height = .02, width = 0) + 
-  geom_smooth(method = "lm") + 
-  ggthemes::scale_color_solarized(name="Condition") + 
+  geom_pointrange(data = mss,
+                  aes(ymin = accuracy - ci, ymax = accuracy + ci), 
+                  position = position_dodge(width = .2)) +
+  # geom_line(data = mss, aes(y = accuracy), position = position_dodge(width = .2)) +
+  geom_jitter(alpha = .2, height = .01, width = 0) + 
+  geom_hline(yintercept = .25, lty = 2) + 
+  geom_smooth(method = "loess", span = 1, alpha = .2) + 
+  scale_color_discrete(name = "Condition") + 
+  # ggthemes::scale_color_solarized(name="Condition") + 
   ylab("Accuracy") +
   xlab("Age (Years)") + 
   theme(legend.position = "bottom")
@@ -203,18 +217,23 @@ We also ran a second preregistered mixed-effects model including child age as an
 ```{r fig3, fig.cap="Response accuracy by item and condition. Error bars are binomial 95\\% confidence intervals.", fig.env="figure*", out.width = "4in", fig.width = "4in", fig.align = "center"}
 msi <- d |>
   group_by(condition_label, target_word) |>
-  summarise(mean= mean(accuracy, na.rm=TRUE),
+  summarise(mean_accuracy = mean(accuracy, na.rm=TRUE),
             ci.lower = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$lower,
             ci.upper = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$upper) |>
-  mutate(target_word = fct_reorder(target_word, mean, .desc=TRUE))
+  ungroup() |>
+  mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
 
 ggplot(msi,
-       aes(x = target_word, y = mean, col = condition_label)) + 
+       aes(x = target_word, y = mean_accuracy , col = condition_label)) + 
   geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
-                  position = position_dodge(width = .3)) + 
+                  position = position_dodge(width = .4)) + 
+  geom_hline(yintercept = .25, lty = 2)+ 
   geom_line() + 
-  coord_flip() + 
-  ggthemes::scale_color_solarized(name = "Condition") +
+  # coord_flip() + 
+  scale_color_discrete(name = "Condition") + 
+  # ggthemes::scale_color_solarized(name = "Condition") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  xlab("Item") +
   ylab("Accuracy") +
   theme(legend.position = "bottom")
 ```
