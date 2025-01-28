@@ -238,13 +238,157 @@ ggplot(msi,
 
 Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burkner_brms_2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
 
-A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats (papaja::apa_print(emmeans_bayes_mod)$contrasts), object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
+```{r}
+#bayes_mod <- brm(formula = accuracy ~ condition + (condition | child) + (condition | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
 
-We also ran a second exploratory Bayesian mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. Once again, there was no difference in performance between object and photograph formats, emmeans = .15, 95% credible interval [-.78, .44], object and cartoon formats, emmeans = .05, 95% credible interval [-.70, .74], or object and black-and-white line drawing formats, emmeans = .62, 95% credible interval [-.07, 1.31].
+bayes_mod <- readRDS(here("cached_results/kisumu_bayes_mod_full.rds"))
 
-We then ran Bayesian analyses with the same random effects structure as the convergent preregistered models. Thus, a third exploratory Bayesian mixed effects model was fit to response scores (accurate/inaccurate), including a fixed effect for format (object/photograph/cartoon/black-and-white line drawing) and random intercepts for each child and item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference between object and photograph formats, emmeans = .0005, 95% credible interval [-.37, .34] or object and cartoon formats, emmeans = .12, 95% credible interval [-.22, .47]. However, there was a significant difference between object and black-and-white line drawing formats, emmeans = .45, 95% credible interval [.08, .80].
+emmeans_bayes_mod <- bayes_mod%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod)
 
-A fourth exploratory Bayesian mixed effects model was fit to response scores (accurate/inaccurate), including a fixed effect for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random intercepts for each child and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. There was no difference between object and photograph formats, emmeans = -.02, 95% credible interval [-.37, .34] or object and cartoon formats, emmeans = .12, 95% credible interval [-.25, .46]. However, there was a significant difference between object and black-and-white line drawing formats, emmeans = .48, 95% credible interval [.15, .84]. Consequently, the difference between children’s accuracy on objects and black-and-white line drawings is reliable, providing further support that the random effect structure changes the significance of the effect.
+#saveRDS(bayes_mod, here("cached_results/kisumu_bayes_mod_full.rds"))
+
+#get numbers for manuscript
+bayes_mod_obj_photo <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_obj_cartoon <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_obj_bw <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+
+A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats, `r bayes_mod_obj_photo$estimate_print`, object and cartoon formats. `r bayes_mod_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r bayes_mod_obj_bw$estimate_print`.
+
+```{r}
+#bayes_mod_age <- brm(formula = accuracy ~ condition * age_centered + 
+#               (condition | child) + 
+#                   (condition * age_centered | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_age <- readRDS(here("cached_results/kisumu_bayes_mod_age_full.rds"))
+
+emmeans_bayes_mod_age <- bayes_mod_age%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_age)
+
+#saveRDS(bayes_mod_age, here("cached_results/kisumu_bayes_mod_age_full.rds"))
+
+#get numbers for manuscript
+bayes_mod_age_obj_photo <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_obj_cartoon <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_obj_bw <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+
+
+We also ran a second exploratory Bayesian mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. Once again, there was no difference in performance between object and photograph formats, `r bayes_mod_age_obj_photo$estimate_print`, object and cartoon formats, `r bayes_mod_age_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r bayes_mod_age_obj_bw$estimate_print`.
+
+```{r}
+#bayes_mod_pruned <- brm(formula = accuracy ~ condition + (1 | child) + (1 | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_pruned <- readRDS(here("cached_results/kisumu_bayes_mod_pruned.rds"))
+
+emmeans_bayes_mod_pruned <- bayes_mod_pruned%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_pruned)
+
+#saveRDS(bayes_mod_pruned, here("cached_results/kisumu_bayes_mod_pruned.rds"))
+
+#get numbers for manuscript
+bayes_mod_pruned_obj_photo <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_pruned_obj_cartoon <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+   estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_pruned_obj_bw <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+```
+
+
+We then ran Bayesian analyses with the same random effects structure as the convergent preregistered models. Thus, a third exploratory Bayesian mixed effects model was fit to response scores (accurate/inaccurate), including a fixed effect for format (object/photograph/cartoon/black-and-white line drawing) and random intercepts for each child and item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference between object and photograph formats, `r bayes_mod_pruned_obj_photo$estimate_print`, or object and cartoon formats, `r bayes_mod_pruned_obj_cartoon$estimate_print`. However, there was a significant difference between object and black-and-white line drawing formats, `r bayes_mod_pruned_obj_bw$estimate_print`.
+
+```{r}
+#bayes_mod_age_pruned <-  brm(formula = accuracy ~ condition * age_centered + (1 | child) + (1 | target_word), 
+#                              family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_age_pruned <- readRDS(here("cached_results/kisumu_bayes_mod_age_pruned.rds"))
+
+emmeans_bayes_mod_age_pruned <- bayes_mod_age_pruned%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_age_pruned)
+
+#saveRDS(bayes_mod_age_pruned, here("cached_results/kisumu_bayes_mod_age_pruned.rds"))
+
+
+#get numbers for manuscript
+bayes_mod_age_pruned_obj_photo <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_pruned_obj_cartoon <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+     estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_pruned_obj_bw <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+     estimate_print = paste0("emmeans: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+```
+
+
+A fourth exploratory Bayesian mixed effects model was fit to response scores (accurate/inaccurate), including a fixed effect for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random intercepts for each child and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. There was no difference between object and photograph formats, `r bayes_mod_age_pruned_obj_photo$estimate_print`, or object and cartoon formats, `r bayes_mod_age_pruned_obj_cartoon$estimate_print`. However, there was a significant difference between object and black-and-white line drawing formats, `r bayes_mod_age_pruned_obj_bw$estimate_print`. Consequently, the difference between children’s accuracy on objects and black-and-white line drawings is reliable, providing further support that the random effect structure changes the significance of the effect.
 
 # Discussion
 
