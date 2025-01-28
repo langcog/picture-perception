@@ -130,6 +130,7 @@ Using a within-subjects design, each participant completed all sixteen vocabular
                      & Sweater (Sweta)                & Skirt                    & Glasses                    & Toilet Paper               \\
                      & Pencil (Penseli)               & Pencil Sharpener         & Towel                      & Zipper
 \end{tabular}
+\caption{Full list of stimuli.}
 \end{table*}
 
 
@@ -237,7 +238,7 @@ ggplot(msi,
 
 Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burkner_brms_2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
 
-A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats (), object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
+A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats (papaja::apa_print(emmeans_bayes_mod)$contrasts), object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
 
 We also ran a second exploratory Bayesian mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. Once again, there was no difference in performance between object and photograph formats, emmeans = .15, 95% credible interval [-.78, .44], object and cartoon formats, emmeans = .05, 95% credible interval [-.70, .74], or object and black-and-white line drawing formats, emmeans = .62, 95% credible interval [-.07, 1.31].
 

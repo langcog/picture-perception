@@ -259,6 +259,7 @@ across trials. For a full list of target and distractor items, see Table
                      & Sweater (Sweta)                & Skirt                    & Glasses                    & Toilet Paper               \\
                      & Pencil (Penseli)               & Pencil Sharpener         & Towel                      & Zipper
 \end{tabular}
+\caption{Full list of stimuli.}
 \end{table*}
 
 \section{Results}\label{results}
@@ -349,9 +350,10 @@ scores (accurate/inaccurate), including fixed effects for format
 slopes for the effect of condition on each child, and condition on each
 item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There
 was no difference in performance between object and photograph formats
-(), object and cartoon formats, emmeans = .13, 95\% credible interval
-{[}-.75, 1.10{]}, or object and black-and-white line drawing formats,
-emmeans = .54, 95\% credible interval {[}-.20, 1.35{]}.
+(papaja::apa\_print(emmeans\_bayes\_mod)\$contrasts), object and cartoon
+formats, emmeans = .13, 95\% credible interval {[}-.75, 1.10{]}, or
+object and black-and-white line drawing formats, emmeans = .54, 95\%
+credible interval {[}-.20, 1.35{]}.
 
 We also ran a second exploratory Bayesian mixed-effects model including
 child age as an additional variable. This second mixed-effects model was
