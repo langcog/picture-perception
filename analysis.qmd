@@ -19,7 +19,7 @@ library(broom.mixed)
 ```
 
 ```{r}
-d <- read_csv(here("data","kisumu vocab data.csv"))
+d <- read_csv(here("data","kisumu_vocab_data.csv"))
 ```
 # visualization
 
@@ -165,7 +165,8 @@ bayes_mod %>%
               values_from = value) %>%
   mutate_at(vars(2:4), plogis)
 
-bayes_mod%>% emmeans(specs = pairwise~condition)
+emmeans_bayes_mod <- bayes_mod%>% emmeans(specs = pairwise~condition)
+summary(emmeans_bayes_mod)
 ```
 
 Second, running exploratory Bayesian analyses with full model with age
