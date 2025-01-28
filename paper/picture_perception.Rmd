@@ -207,7 +207,7 @@ rtab_age <- exp(ctab_age)
 We fit generalized linear mixed-effects models to children's scores to assess the factors that influenced their response accuracy. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_pruned)$full_result$conditionbw`). There was no difference between children's accuracy in the object format and the photograph format (`r papaja::apa_print(mod_pruned)$full_result$conditionphoto`), or in the object format and the cartoon format (`r papaja::apa_print(mod_pruned)$full_result$conditioncartoon`).
 
 
-We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(mod_age_pruned)$full_result$age_centered`), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`). There was a significant interaction between the black-and-white line drawing format and age, such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw:age_centered`). All other main effects and interactions were not significant (all p's > .20).
+We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(mod_age_pruned)$full_result$age_centered`), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`). There was a significant interaction between the black-and-white line drawing format and age, such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw_age_centered`). All other main effects and interactions were not significant (all p's > .20).
 
 ## Exploratory Analyses
 
@@ -237,34 +237,7 @@ ggplot(msi,
 
 Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burkner_brms_2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
 
-```{r}
-bayes_mod <- brm(formula = accuracy ~ condition + (condition | child) + (condition | target_word),
-                 family=bernoulli(link="logit"), data = d, seed = 1)
-
-bayes_mod %>%
-  as_draws_df() %>%
-  select(starts_with("b_")) %>% 
-  mutate(obj = b_Intercept, 
-         bw = b_Intercept + b_conditionbw, 
-     	   cartoon = b_Intercept + b_conditioncartoon,
-         photo = b_Intercept + b_conditionphoto) %>%
-  select(obj, photo, cartoon, bw) %>%
-  mean_hdi() %>%
-  pivot_longer(cols = -c(.width:.interval),
-               names_to = "index",
-               values_to = "value") %>% 
-  select(index, value) %>% 
-  mutate(index = ifelse(str_detect(index, fixed(".")), index, str_c(index, ".mean"))) %>% 
-  separate(index, into = c("parameter", "type"), sep = "\\.") %>% 
-  pivot_wider(names_from = type, 
-              values_from = value) %>%
-  mutate_at(vars(2:4), plogis)
-
-emmeans_bayes_mod <- bayes_mod%>% emmeans(specs = pairwise~condition)
-summary(emmeans_bayes_mod)
-```
-
-A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats (`r papaja::apa_print(emmeans_bayes_mod)$contrasts$obj - photo`), object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
+A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There was no difference in performance between object and photograph formats (), object and cartoon formats, emmeans = .13, 95% credible interval [-.75, 1.10], or object and black-and-white line drawing formats, emmeans = .54, 95% credible interval [-.20, 1.35].
 
 We also ran a second exploratory Bayesian mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. This Bayesian model also converged, Gelman-Rubin statistic = 1.00. Once again, there was no difference in performance between object and photograph formats, emmeans = .15, 95% credible interval [-.78, .44], object and cartoon formats, emmeans = .05, 95% credible interval [-.70, .74], or object and black-and-white line drawing formats, emmeans = .62, 95% credible interval [-.07, 1.31].
 
