@@ -91,7 +91,7 @@ Target words were selected from Swahili Communicative Development Inventory (CDI
 
 In addition to the target word, each array consisted of one near distractor and two random distractors. Near and random distractors were all artifacts that Kisumu children were relatively familiar with. Many distractors were items on the Swahili CDI [@alcock_developmental_2015] or used in previous research with Kenyan preschoolers [@zhu_rebecca_investigating_2024]. Furthermore, local SWAP employees again confirmed that all artifacts were familiar to Kisumu children. Similarity scores were calculated through correlations from the THINGS database [@hebart_things_2019]. Near distractors were conceptually similar to, and had high correlations with, target items (average correlation = 0.82, range = 0.66-0.95). Random distractors were less conceptually similar to, and had lower correlations with, target items (average correlation = 0.36, range = 0.17-0.53).
 
-```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nyoneshi mpira) across the four conditions.", out.width="6in", fig.align = "center"}
+```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
 
 knitr::include_graphics(here("paper","fig1.png"))
 
