@@ -148,7 +148,8 @@ mss <- ms |>
   summarise(se = sd(accuracy) / sqrt(n()),
             ci = se * qt(.975, n() - 1),
             accuracy = mean(accuracy)) |>
-  mutate(age = as.numeric(as.character(age_group)) + .5)
+  mutate(age = as.numeric(as.character(age_group)) + .5, 
+         condition_label = fct_relevel(condition_label, "Object", "Photo", "Cartoon", "B&W Drawing"))
 
 ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) + 
   geom_pointrange(data = mss,
@@ -158,7 +159,12 @@ ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) +
   geom_jitter(alpha = .2, height = .01, width = 0) + 
   geom_hline(yintercept = .25, lty = 2) + 
   geom_smooth(method = "loess", span = 1, alpha = .2) + 
-  scale_color_discrete(name = "Condition") + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
   # ggthemes::scale_color_solarized(name="Condition") + 
   ylab("Accuracy") +
   xlab("Age (Years)") + 
@@ -228,12 +234,17 @@ ggplot(msi,
   geom_hline(yintercept = .25, lty = 2)+ 
   geom_line() + 
   # coord_flip() + 
-  scale_color_discrete(name = "Condition") + 
-  # ggthemes::scale_color_solarized(name = "Condition") +
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+# ggthemes::scale_color_solarized(name = "Condition") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
   xlab("Item") +
   ylab("Accuracy") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom") 
 ```
 
 Response accuracy was lowest in the black-and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., "book", “button" and "fork"; see Fig. 3). Thus, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burkner_brms_2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. 
