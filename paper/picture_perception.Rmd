@@ -93,7 +93,7 @@ In addition to the target word, each array consisted of one near distractor and 
 
 ```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
 
-knitr::include_graphics(here("paper","fig1.png"))
+knitr::include_graphics(here("paper","fig1_labeled.pdf"))
 
 ```
 
