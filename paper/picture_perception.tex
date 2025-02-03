@@ -277,9 +277,9 @@ across trials. For a full list of target and distractor items, see Table
 \subsection{Confirmatory Analyses}\label{confirmatory-analyses}
 
 We fit generalized linear mixed-effects models to children's scores to
-assess the factors that influenced their response accuracy. A first
-preregistered mixed-effects model was fit to the response scores
-(accurate/inaccurate), including fixed effects for format
+assess the factors that influenced their response accuracy (Bates,
+2010). A first preregistered mixed-effects model was fit to the response
+scores (accurate/inaccurate), including fixed effects for format
 (object/photograph/cartoon/black-and-white line drawing). We initially
 planned to include random slopes for the effect of condition on each
 child, and condition on each item. However, the model with this random
@@ -332,6 +332,8 @@ were not significant (all p's \textgreater{} .20).
 \end{figure*}
 \end{CodeChunk}
 
+\subsubsection{Item effects}\label{item-effects}
+
 Response accuracy was lowest in the black-and-white condition on only 6
 out of 16 items, with extremely low response accuracy in the
 black-and-white condition on 3 out of 16 items (i.e., ``book'',
@@ -339,61 +341,96 @@ black-and-white condition on 3 out of 16 items (i.e., ``book'',
 model using the maximal random effects structure accounting for more
 item-level variation, which did not converge in the preregistered
 regressions, we also conducted exploratory Bayesian analyses. We
-analyzed the data with the brms R package (Bürkner, 2017) using the
-default flat priors. Each model underwent a warm- up period of 1000
+analyzed the data with the \texttt{brms} R package (Bürkner, 2017) using
+the default flat priors. Each model underwent a warm- up period of 1000
 iterations, followed by four sampling chains with 2000 iterations each.
 
 A first exploratory Bayesian mixed effects model was fit to the response
 scores (accurate/inaccurate), including fixed effects for format
 (object/photograph/cartoon/black-and-white line drawing), and random
 slopes for the effect of condition on each child, and condition on each
-item. The Bayesian model converged, Gelman-Rubin statistic = 1.00. There
-was no difference in performance between object and photograph formats,
-emmeans: -0.08, 95\% credible interval {[}-0.67, 0.5{]}, object and
-cartoon formats. emmeans: 0.02, 95\% credible interval {[}-0.75,
-0.75{]}, or object and black-and-white line drawing formats, emmeans:
-0.41, 95\% credible interval {[}-0.25, 1.15{]}.
+item. We used the \texttt{brms} default prior structure, flat priors on
+fixed effects and \(t\) distributions on random effects. This model
+instantiated the preregistered maximal random effects structure that
+failed to converge. The Bayesian model converged, Gelman-Rubin statistic
+= 1.00. There was no difference in performance between object and
+photograph formats, emmeans: -0.08, 95\% credible interval {[}-0.67,
+0.5{]}, object and cartoon formats. emmeans: 0.02, 95\% credible
+interval {[}-0.75, 0.75{]}, or object and black-and-white line drawing
+formats, emmeans: 0.41, 95\% credible interval {[}-0.25, 1.15{]}.
 
 We also ran a second exploratory Bayesian mixed-effects model including
-child age as an additional variable. This second mixed-effects model was
-fit to the response scores (accurate/inaccurate), including fixed
-effects for format (object/photograph/cartoon/black-and-white line
-drawing) and age (in years), and random slopes for the effect of
-condition on each child, and the three-way interaction between
-condition, age, and item. This Bayesian model also converged,
-Gelman-Rubin statistic = 1.00. Once again, there was no difference in
-performance between object and photograph formats, emmeans: -0.15, 95\%
-credible interval {[}-0.78, 0.44{]}, object and cartoon formats,
-emmeans: 0.05, 95\% credible interval {[}-0.7, 0.74{]}, or object and
-black-and-white line drawing formats, emmeans: 0.63, 95\% credible
-interval {[}-0.07, 1.31{]}.
-
-We then ran Bayesian analyses with the same random effects structure as
-the convergent preregistered models. Thus, a third exploratory Bayesian
-mixed effects model was fit to response scores (accurate/inaccurate),
-including a fixed effect for format
-(object/photograph/cartoon/black-and-white line drawing) and random
-intercepts for each child and item. The Bayesian model converged,
-Gelman-Rubin statistic = 1.00. There was no difference between object
-and photograph formats, emmeans: 0, 95\% credible interval {[}-0.37,
-0.34{]}, or object and cartoon formats, emmeans: 0.12, 95\% credible
-interval {[}-0.22, 0.47{]}. However, there was a significant difference
-between object and black-and-white line drawing formats, emmeans: 0.45,
-95\% credible interval {[}0.08, 0.8{]}.
-
-A fourth exploratory Bayesian mixed effects model was fit to response
-scores (accurate/inaccurate), including a fixed effect for format
+child age as an additional variable, again paralleling our earlier
+analysis but with the full random effects structure. This second
+mixed-effects model was fit to the response scores
+(accurate/inaccurate), including fixed effects for format
 (object/photograph/cartoon/black-and-white line drawing) and age (in
-years), and random intercepts for each child and item. This Bayesian
-model also converged, Gelman-Rubin statistic = 1.00. There was no
-difference between object and photograph formats, emmeans: -0.02, 95\%
-credible interval {[}-0.37, 0.34{]}, or object and cartoon formats,
-emmeans: 0.12, 95\% credible interval {[}-0.25, 0.46{]}. However, there
-was a significant difference between object and black-and-white line
-drawing formats, emmeans: 0.48, 95\% credible interval {[}0.15, 0.84{]}.
-Consequently, the difference between children's accuracy on objects and
-black-and-white line drawings is reliable, providing further support
-that the random effect structure changes the significance of the effect.
+years), and random slopes for the effect of condition on each child, and
+the three-way interaction between condition, age, and item. This
+Bayesian model also converged, Gelman-Rubin statistic = 1.00. Once
+again, there was no difference in performance between object and
+photograph formats, emmeans: -0.15, 95\% credible interval {[}-0.78,
+0.44{]}, object and cartoon formats, emmeans: 0.05, 95\% credible
+interval {[}-0.7, 0.74{]}, or object and black-and-white line drawing
+formats, emmeans: 0.63, 95\% credible interval {[}-0.07, 1.31{]}.
+
+We were curious whether the difference between these Bayesian models and
+the earlier preregistered frequentist analyses was due to their
+differing random effect structures. To investigate this question, we ran
+Bayesian analyses with the same random effects structure as the
+convergent preregistered models. Thus, we fit parallel exploratory
+Bayesian mixed effects models for condition both with and without age
+interactions, in both cases omitting random condition by item slopes.
+Paralleling the preregistered analyses, there was a significant
+difference between object and black-and-white line drawing formats,
+emmeans: 0.45, 95\% credible interval {[}0.08, 0.8{]} in the condition
+model, and the same effect emerged in the model with age interactions
+emmeans: 0.48, 95\% credible interval {[}0.15, 0.84{]}. These models
+provide support for the idea that changes to the random effect structure
+were responsible for changes in the significance of the black-and-white
+line drwaing effect between the preregistered and exploratory models.
+
+\subsubsection{Error analysis}\label{error-analysis}
+
+\begin{CodeChunk}
+\begin{figure*}[tb]
+
+{\centering \includegraphics[width=6in]{figs/fig4-1} 
+
+}
+
+\caption[Error analysis showing the distribution of target and distractor choices by condition and age]{Error analysis showing the distribution of target and distractor choices by condition and age. (a) Distribution including target choices. (b) Distribution of errors, renormalized without target choices.}\label{fig:fig4}
+\end{figure*}
+\end{CodeChunk}
+
+A further signal of children's understanding across conditions comes
+from the distribution of their errors. If they had more understanding of
+the task, they might be more likely to choose near distractors over
+random (far) distractors. To explore this hypothesis, we examined the
+distribution of children's errors across ages and conditions. Figure 4a
+shows the full distribution of children's responses, while Figure 4b
+shows the same distribution renormalized without target choices.
+Especially for the youngest ages, there was some evidence of greater
+near target choices in the object condition than in the other
+conditions.
+
+We fit a frequentist mixed effects model to these data as in our
+preregistered analyses, predicting the choice of a far (as opposed to a
+near) distractor on error trials as a function of age and condition.
+This model showed main effects for the photo, cartoon, and
+black-and-white line drawing conditions as compared to the object
+condition (\(\hat{\beta} = 1.02\), 95\% CI \([0.40, 1.64]\),
+\(z = 3.22\), \(p = .001\), \(\hat{\beta} = 1.06\), 95\% CI
+\([0.45, 1.67]\), \(z = 3.39\), \(p < .001\), and
+\(\hat{\beta} = 1.98\), 95\% CI \([1.31, 2.66]\), \(z = 5.76\),
+\(p < .001\) respectively), suggesting significantly less choice of the
+near distractor overall compared with the object condition. In other
+words, errors were less random and more influenced by similarity in the
+object condition overall. There was also a significant interaction of
+age and black-and-white line drawing condition (\(\hat{\beta} = -0.68\),
+95\% CI \([-1.14, -0.22]\), \(z = -2.91\), \(p = .004\)). The lower
+accuracy on line drawing trials for older children was mirrored by a
+concomitant rise in near distractor choices.
 
 \section{Discussion}\label{discussion}
 
@@ -417,44 +454,44 @@ the capacities of Kisumu children already attending daycare or formal
 schooling, whereas cartoon- and photograph-based assessments may be
 valid assessments in this population.
 
-More data and more item diversity are required in order to conclude that
-the accuracy difference between object-based and black-and-white line
-drawing-based assessments is generalizable. It is possible that this
-accuracy difference between objects and black-and-white line drawings
-only appears for some kinds of black-and-white line drawings (e.g.,
-particularly ambiguous depictions), or that the black-and-white line
-drawings used in the present experiment were particularly difficult for
-an idiosyncratic reason. Thus, future research should attempt to
-replicate this accuracy difference between assessments involving objects
-and black-and-white line drawings with a new sample of items, to better
-understand whether the present finding is generalizable across items, or
-driven by stimulus specificity effects.
+Exploratory analyses examining children's error patterns allow for
+another view of the present data, beyond binary correct/incorrect
+scoring. Specifically, if children's errors consist primarily of near
+distractors, they may still have some degree of understanding of the
+task at hand. Preliminary error analyses suggested that children tended
+to make more near distractor errors than random distractor errors when
+presented with objects, potentially suggesting a greater degree of
+understanding in the object condition than the picture conditions.
+However, this exploratory result was modest in size and should be
+interpreted with caution.
 
-Furthermore, what variables might account for the differences between
-our present findings that Kisumu preschoolers perform equally accurately
-on object-, photograph-, and cartoon-based assessments, compared to
-previous findings that Mombasa preschoolers, as well as toddlers and
+More data and more item diversity are also required in order to conclude
+that the specific accuracy difference between object-based and
+black-and-white line drawing-based assessments is generalizable. It is
+possible that this difference only appears for some kinds of
+black-and-white line drawings (e.g., particularly ambiguous depictions),
+or that the line drawings used in the present experiment were
+particularly difficult for an idiosyncratic reason. Thus, future
+research should attempt to replicate this effect with a new sample of
+items.
+
+Prior studies showed that Mombasa preschoolers, as well as toddlers and
 preschoolers in other global contexts, perform more accurately on
 object- than photograph- and cartoon-based assessments (Walker et al.,
-2013; Zhu et al., 2024)? One possibility is that formal schooling may
-drive the discrepancy between our present findings and previous
-findings. Many of the children in the present study already attend
-daycares and schools, and these additional learning contexts may provide
-children with more opportunities to access picture books and other kinds
-of visual media, or to discuss pictures and other kinds of visual media
-with teachers or peers.
-
-Another possibility is that the children in the present study are simply
-older than in previous studies. Specifically, we worked with 3- to
-7-year-olds, (average age of approximately 5.5 years), whereas other
-studies worked with 2-year-olds (Walker et al., 2013) and 2- to
+2013; Zhu et al., 2024). What variables might account for the
+differences between our present findings and these prior studies? One
+possibility is that formal schooling may drive the discrepancy between
+our present findings and previous findings. Many of the children in the
+present studyalready attend daycares and schools, and these additional
+learning contexts may provide children with more opportunities to access
+picture books and other kinds of visual media. Another possibility is
+that the children in the present study are simply older: we worked with
+3- to 7-year-olds, (average age of approximately 5.5 years), whereas
+other studies worked with 2-year-olds (Walker et al., 2013) and 2- to
 7-year-olds, with an average age of approximately 4.5 years (Zhu et al.,
-2024). Older children may have more experiences with pictures overall,
-and thus perform more accurately on picture-based assessments.
-
-A third possibility is that there is something distinct about Kisumu,
-such that work from other Kenyan contexts (i.e., Mombasa County) does
-not generalize to Kisumu. Indeed, Kisumu is substantially more urban
+2024). A final possibility is that there is something distinct about
+Kisumu, such that work from other Kenyan contexts (i.e., Mombasa County)
+does not generalize to there. Indeed, Kisumu is substantially more urban
 than some, though not all, previously researched global contexts, such
 as rural India and Peru (Callaghan et al., 2011) and rural Tanzania
 (Walker et al., 2013). In general, we caution that not all global
@@ -463,30 +500,23 @@ Instead, it is more fruitful to articulate specific variables which may
 vary across and within contexts, and thus drive variation in behavior
 (Bohn, Fong, Pope-Caldwell, Stengelin, \& Haun, 2024).
 
-Thus, while the present research suggests that picture-based assessments
-are indeed valid measurements in some global contexts, future work
-should search for more detailed mechanistic explanations about the
-development of picture comprehension. Specifically, it is still unknown
-what quality and quantity of picture experience training facilitates the
-development of picture comprehension.
-
 Moreover, it is unclear whether U.S. children might perform similarly to
 their Kisumu counterparts across object- and picture-based conditions.
 Indeed, while previous research with toddlers and preschoolers in
 Berkeley, California suggest that high-income U.S. children perform
 equally accurately on vocabulary assessments involving objects and
-cartoons (Zhu et al., 2024), it is unclear whether high-income U.S.
-children also show no performance difference across other kinds of
-picture formats. Thus, more research on picture comprehension, and
-possible differences in performance across picture- and object-based
-tasks, is required not only in understudied global contexts, but also
-Western convenience samples.
+cartoons (Zhu et al., 2024), it is unclear whether U.S. children in
+general show no performance difference across other kinds of picture
+formats, especially across all ages. Thus, more research on picture
+comprehension, and possible differences in performance across picture-
+and object-based tasks, is required not only in understudied global
+contexts, but also Western convenience samples.
 
-Overall, the present findings contribute to more confidence in the
-current assessments used in global contexts, particularly contexts where
+Overall, the present findings contribute to an exploration of
+assessments used in global contexts, particularly contexts where
 children may possess highly variable amounts of picture experience.
-However, much more future research is required to determine in exactly
-which contexts picture-based assessment tools are valid or invalid.
+However, more future research is required to determine in exactly which
+contexts picture-based assessment tools are valid or invalid.
 Ultimately, this research will contribute to the development of more
 inclusive and effective curricula for children worldwide, as well as
 more appropriate evaluation of policies and programs to improve early
@@ -508,6 +538,9 @@ illiterate parents as informants: {Communicative} {Development}
 {Inventory} ({CDI}) adaptation for two {Kenyan} languages. \emph{Journal
 of Child Language}, \emph{42}(4), 763--785.
 http://doi.org/\href{https://doi.org/10.1017/S0305000914000403}{10.1017/S0305000914000403}
+
+\bibitem[\citeproctext]{ref-lme4}
+Bates, D. M. (2010). lme4: Mixed-effects modeling with r. Springer.
 
 \bibitem[\citeproctext]{ref-bohn_understanding_2024}
 Bohn, M., Fong, F. T. K., Pope-Caldwell, S., Stengelin, R., \& Haun, D.
