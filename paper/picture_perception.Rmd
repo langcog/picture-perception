@@ -5,9 +5,12 @@ csl: apa6.csl
 document-params: "10pt, letterpaper"
 
 author-information: > 
-  \author{{\large \bf Morton Ann Gernsbacher (MAG@Macc.Wisc.Edu)} \\ Department of Psychology, 1202 W. Johnson Street \\ Madison, WI 53706 USA
-    \AND {\large \bf Sharon J.~Derry (SDJ@Macc.Wisc.Edu)} \\ Department of Educational Psychology, 1025 W. Johnson Street \\ Madison, WI 53706 USA}
-    
+  \author{ {\large \bf Rebecca Zhu (ryz@stanford.edu)}\textsuperscript{1}, {\large \bf Tabitha Nduku Kilonzo (tnduku@rti.org)}\textsuperscript{2}, \\
+  {\large \bf Joab Ochieng Arieda (joab@swapkenya.org)}\textsuperscript{3},  {\large \bf Arnav Verma (arnavv@stanford.edu)}\textsuperscript{1}, \\
+  {\large \bf Judith E. Fan (jefan@stanford.edu)}\textsuperscript{1}, {\large \bf Michael C. Frank (mcfrank@stanford.edu)}\textsuperscript{1}
+   \\ \textsuperscript{1}Department of Psychology, Stanford University, \textsuperscript{2}International Education, RTI International Nairobi,
+   \textsuperscript{3}Safe Water and AIDS Project}
+   
 abstract: >
     Assessments of early cognitive and linguistic abilities typically involve picture stimuli. As these assessments spread worldwide, researchers make an implicit assumption: that children across contexts understand pictures in the same way, at the same developmental timepoint. What if this assumption does not hold for some or all kinds of pictures? In the present research, a preregistered sample of 128 3- to 7-year- olds from Kisumu, Kenya participated in a Swahili vocabulary assessment. Using a within-subjects design, each participant completed vocabulary trials in four formats (i.e., objects, photographs, cartoons, black-and-white line drawings). Preregistered analyses showed that children performed equally accurately across object, photograph, and cartoon formats, but less accurately in the line drawing format. However, exploratory analyses suggested that a subset of line drawings drove this difference. These findings suggest that caution is necessary in the use of picture stimuli and that assessments involving line drawings may sometimes underestimate children’s capacities.
     
@@ -15,7 +18,8 @@ keywords: >
     cognitive development, picture comprehension, cross-cultural research, measurement
 
 output: cogsci2024::cogsci_paper
-#final-submission: \cogscifinalcopy
+header-includes: \cogscifinalcopy
+
 ---
 
 
@@ -53,7 +57,7 @@ While many cognitive scientists argue that some kind of experience with pictures
 
 Moreover, the most widely used learning materials (e.g. books, posters) and assessments of early cognitive and linguistic abilities use picture stimuli [@fernald_lia_toolkit_2017]. As these materials and assessments spread across the world, researchers make the implicit assumption that children across contexts understand pictures in the same way, at the same developmental time point. What if this assumption does not hold? Differences in picture comprehension can change the efficacy of learning materials and the validity of assessments [@draper_publishing_2022; @jukes_principles_2024]. Thus, it is also important to investigate when and how children understand pictures across cultures and contexts to determine how to appropriately translate learning materials and assessments globally.
 
-Indeed, there is already some evidence that picture-based assessments may underestimate children's capacities, in some global contexts [@callaghan_early_2011; @walker_role_2013;@zhu_rebecca_investigating_2024]. For example, preschoolers living in rural environments in India (i.e., a village 70 kilometers from Vijayawada, Andhra Pradesh) and Peru (i.e., a village in the rural Montaro Valley area of the Central Highlands) performed more accurately on a false belief task when the task was presented using objects rather than black-and-white line drawings [@callaghan_early_2011]. Similarly, young toddlers living in a rural village in the Kibaha-Pwani District of Tanzania's Coast Region do not map a novel word to a novel photograph, but succeed in mapping a novel word onto a novel object [@walker_role_2013]. Moreover, low- to middle-income 2- to 7-year-olds in their first month of formal schooling living in Mombasa County, Kenya (i.e., a mix of urban and rural areas) performed significantly more accurately on an object-based vocabulary assessment than on a cartoon-based vocabulary assessment. In contrast, high-income urban and suburban 2- and 3-year-olds living in the San Francisco Bay Area, U.S. performed equally accurately on object-based and cartoon-based vocabulary assessments [@zhu_rebecca_investigating_2024]. Furthermore,  in a sample of toddlers living in urban Kisumu, Kenya, variation in toddlers' early picture experience is related to variation in toddlers' ability to learn from pictures[@zhu_development_2025]. Thus, this data suggests that assessments involving pictures may underestimate children's capacities in some global contexts.
+Indeed, there is already some evidence that picture-based assessments may underestimate children's capacities, in some global contexts [@callaghan_early_2011; @walker_role_2013;@zhu_rebecca_investigating_2024]. For example, preschoolers living in rural environments in India (i.e., a village 70 kilometers from Vijayawada, Andhra Pradesh) and Peru (i.e., a village in the rural Montaro Valley area of the Central Highlands) performed more accurately on a false belief task when the task was presented using objects rather than black-and-white line drawings [@callaghan_early_2011]. Similarly, young toddlers living in a rural village in the Kibaha-Pwani District of Tanzania's Coast Region do not map a novel word to a novel photograph, but succeed in mapping a novel word onto a novel object [@walker_role_2013]. Moreover, low- to middle-income 2- to 7-year-olds in their first month of formal schooling living in Mombasa County, Kenya (i.e., a mix of urban and rural areas) performed significantly more accurately on an object-based vocabulary assessment than on a cartoon-based vocabulary assessment. In contrast, high-income urban and suburban 2- and 3-year-olds living in the San Francisco Bay Area, U.S. performed equally accurately on object-based and cartoon-based vocabulary assessments [@zhu_rebecca_investigating_2024]. Furthermore,  in a sample of toddlers living in urban Kisumu, Kenya, variation in toddlers' early picture experience is related to variation in toddlers' ability to learn from pictures [@zhu_development_2025]. Thus, this data suggests that assessments involving pictures may underestimate children's capacities in some global contexts.
 
 However, more work is necessary to investigate the generalizability of these initial findings. For example, it is unclear if these initial findings, which were either conducted with young toddlers and preschoolers [@callaghan_early_2011; @walker_role_2013; @zhu_development_2025] or children in their very first month of formal schooling [@zhu_rebecca_investigating_2024], might generalize to older children with more formal schooling experience, and thus likely also more picture experience. Determining whether assessments involving pictures are appropriate for children who have already completed some formal schooling will provide insight into whether researchers and policy-makers need to adapt assessment tools for many children in global contexts, or perhaps only the youngest learners. 
 
@@ -73,8 +77,7 @@ d <- read_csv(here("data","kisumu_vocab_data.csv"))|>
 
 ## Open Science Statement
 
-Preregistration, materials, deidentified data, and analysis scripts are publicly available.
-<!-- ^[Link: [https://osf.io/dgz9w/?view_only=dcd0620a803b4ab6ae6080650f11bcbf]()] -->
+Preregistration, materials, deidentified data, and analysis scripts are publicly available at https://osf.io/dgz9w/.
 
 ## Participants
 
@@ -400,7 +403,7 @@ bayes_mod_age_pruned_obj_bw <- emmeans_bayes_mod_age_pruned$contrasts %>% as.dat
 ```
 
 
-We were curious whether the difference between these Bayesian models and the earlier preregistered frequentist analyses was due to their differing random effect structures. To investigate this question, we ran Bayesian analyses with the same random effects structure as the convergent preregistered models. Thus, we fit parallel exploratory Bayesian mixed effects models for condition both with and without age interactions, in both cases omitting random condition by item slopes. Paralleling the preregistered analyses, there was a significant difference between object and black-and-white line drawing formats, `r bayes_mod_pruned_obj_bw$estimate_print` in the condition model, and the same effect emerged in the model with age interactions `r bayes_mod_age_pruned_obj_bw$estimate_print`. These models provide support for the idea that changes to the random effect structure were responsible for changes in the significance of the black-and-white line drwaing effect between the preregistered and exploratory models.
+We were curious whether the difference between these Bayesian models and the earlier preregistered frequentist analyses was due to their differing random effect structures. To investigate this question, we ran Bayesian analyses with the same random effects structure as the convergent preregistered models. Thus, we fit parallel exploratory Bayesian mixed effects models for condition both with and without age interactions, in both cases omitting random condition by item slopes. Paralleling the preregistered analyses, there was a difference between object and black-and-white line drawing formats, `r bayes_mod_pruned_obj_bw$estimate_print` in the condition model, and the same effect emerged in the model with age interactions `r bayes_mod_age_pruned_obj_bw$estimate_print`. These models provide support for the idea that changes to the random effect structure were responsible for changes in the significance of the black-and-white line drawing effect between the preregistered and exploratory models.
 
 ### Error analysis
 
