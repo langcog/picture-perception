@@ -268,6 +268,7 @@ joint_tests(bayes_mod_age_pruned)
 ```
 
 Get posterior estimates and 95% credible intervals
+
 ```{r}
 bayes_mod_age_pruned %>%
   as_draws_df() %>%
@@ -290,3 +291,37 @@ bayes_mod_age_pruned %>%
 
 bayes_mod_age_pruned%>% emmeans(specs = pairwise~condition)
 ```
+
+Running exploratory individual differences analyses - effect of picture experience on accuracy
+
+```{r}
+
+mod_pic <- glm(accuracy ~ pic_interact + play + talk + toy_num + maternal_ed,
+              data = d, family = "binomial")
+summary(mod_pic)
+#all null effects
+
+mod_pic_age <- glm(accuracy ~ pic_interact * age_centered + play + talk + toy_num + maternal_ed,
+              data = d, family = "binomial")
+summary(mod_pic_age)
+#large main effect of age
+#marginal effect of pic interaction x age! p = .07
+
+#now run the analyses on only picture conditions (remove object condition)
+
+library(dplyr)
+agg <- group_by(d, super_condition)
+pic_condition <- subset(agg, super_condition == "pic")
+
+mod_pic_only <- glm(accuracy ~ pic_interact + play + talk + toy_num + maternal_ed,
+              data = pic_condition, family = "binomial")
+summary(mod_pic_only)
+#all null effects
+
+mod_pic_only_age <- glm(accuracy ~ pic_interact * age_centered + play + talk + toy_num + maternal_ed,
+              data = pic_condition, family = "binomial")
+summary(mod_pic_only_age)
+#main effect of age, but pic interaction x age effect goes away...
+
+```
+
