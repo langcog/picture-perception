@@ -296,16 +296,17 @@ Running exploratory individual differences analyses - effect of picture experien
 
 ```{r}
 
-mod_pic <- glmer(accuracy ~ pic_interact + play + talk + toy_num + maternal_ed + (1 | target_word),
+mod_pic <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = d, family = "binomial")
 summary(mod_pic)
 #all null effects
 
-mod_pic_age <- glmer(accuracy ~ pic_interact * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+mod_pic_age <- glmer(accuracy ~ pic_interact * condition * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = d, family = "binomial")
 summary(mod_pic_age)
 #large main effect of age
-#effect of pic interaction x age! p = .03
+#effect of pic interaction x age - p = .01
+#though note warning - "model failed to converge with max|grad| = 0.0364136 (tol = 0.002, component 1)"
 
 #now run the analyses on only picture conditions (remove object condition)
 
@@ -313,12 +314,12 @@ library(dplyr)
 agg <- group_by(d, super_condition)
 pic_condition <- subset(agg, super_condition == "pic")
 
-mod_pic_only <- glmer(accuracy ~ pic_interact + play + talk + toy_num + maternal_ed + (1 | target_word),
+mod_pic_only <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = pic_condition, family = "binomial")
 summary(mod_pic_only)
 #all null effects
 
-mod_pic_only_age <- glmer(accuracy ~ pic_interact * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+mod_pic_only_age <- glmer(accuracy ~ pic_interact * condition * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = pic_condition, family = "binomial")
 summary(mod_pic_only_age)
 #main effect of age, but pic interaction x age effect goes away...
@@ -369,5 +370,96 @@ mod_bw_age <- glmer(accuracy ~ pic_interact * age_centered + play + talk + toy_n
               data = bw, family = "binomial")
 summary(mod_bw_age)
 
+```
+
+Can rerun these analyses with a different picture experience variable - i.e., number of picture books in the home
+
+```{r}
+mod_pic_num <- glmer(accuracy ~ pic_num * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = d, family = "binomial")
+summary(mod_pic_num)
+#all null effects
+
+mod_pic_num_age <- glmer(accuracy ~ pic_num * condition * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = d, family = "binomial")
+summary(mod_pic_num_age)
+#large main effect of age
+#nothing else
+
+#now run the analyses on only picture conditions (remove object condition)
+
+library(dplyr)
+agg <- group_by(d, super_condition)
+pic_condition <- subset(agg, super_condition == "pic")
+
+mod_pic_num_only <- glmer(accuracy ~ pic_num * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = pic_condition, family = "binomial")
+summary(mod_pic_num_only)
+#all null effects
+
+mod_pic_num_only_age <- glmer(accuracy ~ pic_num * condition * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = pic_condition, family = "binomial")
+summary(mod_pic_num_only_age)
+#effect of photo condition and age?
+```
+
+Can rerun these analyses with a different picture experience variable - i.e., number of picture books in the home - separated by condition
+
+```{r}
+
+#all null
+#except for main effect of age
+
+mod_obj_num <- glmer(accuracy ~ pic_num + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = obj, family = "binomial")
+summary(mod_obj_num)
+
+mod_obj_num_age <- glmer(accuracy ~ pic_num * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = obj, family = "binomial")
+summary(mod_obj_num_age)
+#age x pic interaction effect
+
+mod_photo_num <- glmer(accuracy ~ pic_num + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = photo, family = "binomial")
+summary(mod_photo_num)
+
+mod_photo_num_age <- glmer(accuracy ~ pic_num * age_centered + play + talk + toy_num + maternal_ed +  (1 | target_word),
+              data = photo, family = "binomial")
+summary(mod_photo_num_age)
+
+mod_cartoon_num <- glmer(accuracy ~ pic_num + play + talk + toy_num + maternal_ed +  (1 | target_word),
+              data = cartoon, family = "binomial")
+summary(mod_cartoon_num)
+
+mod_cartoon_num_age <- glmer(accuracy ~ pic_num * age_centered + play + talk + toy_num + maternal_ed +  (1 | target_word),
+              data = cartoon, family = "binomial")
+summary(mod_cartoon_num_age)
+
+mod_bw_num <- glmer(accuracy ~ pic_num + play + talk + toy_num + maternal_ed +  (1 | target_word),
+              data = bw, family = "binomial")
+summary(mod_bw_num)
+
+mod_bw_num_age <- glmer(accuracy ~ pic_num * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+              data = bw, family = "binomial")
+summary(mod_bw_num_age)
+
+```
+
+Full Bayesian model for exploratory analyses?
+
+```{r}
+#keep getting errors in the bayesian models
+#Error in solve.default(zcov, z) : 
+#system is computationally singular: reciprocal condition number = 3.5628e-17
+
+bayes_mod_pic <- brm(formula = accuracy ~ pic_interact + play + talk + toy_num + maternal_ed + (condition | target_word),
+                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+joint_tests(bayes_mod_pic)
+
+bayes_mod_pic_only <- brm(formula = accuracy ~ pic_interact + play + talk + toy_num + maternal_ed + (condition | target_word),
+                 family=bernoulli(link="logit"), data = pic_condition, seed = 1)
+
+joint_tests(bayes_mod_pic)
 ```
 
