@@ -8,6 +8,7 @@ install.packages("emmeans")
 install.packages("brms")
 install.packages("tidybayes")
 install.packages("broom.mixed")
+install.packages("psych")
 
 library(here)
 library(tidyverse)
@@ -16,6 +17,7 @@ library(emmeans)
 library(brms)
 library(tidybayes)
 library(broom.mixed)
+library(psych)
 ```
 
 ```{r}
@@ -582,3 +584,47 @@ bayes_mod_pic_only <- brm(formula = accuracy ~ pic_interact + play + talk + toy_
 joint_tests(bayes_mod_pic)
 ```
 
+Exploratory factor analysis on caregiver questionnaire variables
+
+```{r}
+
+View(d)
+
+d2 <- select(d, pic_interact, pic_num, draw_num, poster_num, tv_num) 
+
+ev <- eigen(cor(d2)) # get eigenvalues
+ev$values
+
+scree(d2, pc=FALSE) 
+
+fa.parallel(d2, fa="fa")
+#Parallel analysis suggests that the number of factors =  3  and the number of components =  NA 
+#but fit 2 factors because 3 factors are too many for 5 variables
+
+#assume correlation between variables
+Nfacs <- 2
+fit <- factanal(d2, Nfacs, rotation="promax")
+print(fit, digits=2, cutoff=0.3, sort=TRUE)
+
+#Loadings:
+#             Factor1 Factor2
+#draw_num      1.00          
+#poster_num            0.87  
+#pic_interact          0.32  
+#pic_num       0.36          
+#tv_num                0.34  
+
+#assume independence between variables
+Nfacs <- 2
+fit <- factanal(d2, Nfacs, rotation="varimax")
+print(fit, digits=2, cutoff=0.3, sort=TRUE)
+
+#Loadings:
+#             Factor1 Factor2
+#draw_num     1.00           
+#poster_num           0.83   
+#pic_interact                
+#pic_num      0.40           
+#tv_num               0.32   
+
+```
