@@ -301,7 +301,7 @@ mod_pic <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + m
 summary(mod_pic)
 #all null effects
 
-mod_pic_age <- glmer(accuracy ~ pic_interact * condition * age_centered + play + talk + toy_num + maternal_ed + (1 | target_word),
+mod_pic_age <- glmer(accuracy ~ pic_interact * age_centered * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = d, family = "binomial")
 summary(mod_pic_age)
 #large main effect of age
@@ -371,6 +371,125 @@ mod_bw_age <- glmer(accuracy ~ pic_interact * age_centered + play + talk + toy_n
 summary(mod_bw_age)
 
 ```
+```{r}
+
+```
+
+Some data viz
+
+```{r}
+#plot all data
+
+ms2 <- d |>
+  group_by(child, condition, age, pic_interact, pic_num) |>
+  summarise(accuracy = mean(accuracy))
+
+ggplot(ms2, aes(x=pic_interact, y = accuracy, col = condition)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Interact with Picture Books")
+
+ms_obj <- obj |>
+  group_by(child, condition, age, pic_interact, pic_num) |>
+  summarise(accuracy = mean(accuracy))
+
+ms_photo <- photo |>
+  group_by(child, condition, age, pic_interact, pic_num) |>
+  summarise(accuracy = mean(accuracy))
+
+ms_cartoon <- cartoon |>
+  group_by(child, condition, age, pic_interact, pic_num) |>
+  summarise(accuracy = mean(accuracy))
+
+ms_bw <- bw |>
+  group_by(child, condition, age, pic_interact, pic_num) |>
+  summarise(accuracy = mean(accuracy))
+
+obj_plot <- ggplot(ms_obj, aes(x=pic_interact, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Interact") +
+  theme(legend.position = "bottom") +
+  ggtitle("Obj") +
+  ylim(0,1)
+
+photo_plot <- ggplot(ms_photo, aes(x=pic_interact, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Interact") +
+  theme(legend.position = "bottom") +
+  ggtitle("Photo") +
+  ylim(0,1)
+
+cartoon_plot <- ggplot(ms_cartoon, aes(x=pic_interact, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Interact") +
+  theme(legend.position = "bottom") +
+  ggtitle("Cartoon") +
+  ylim(0,1)
+
+bw_plot <- ggplot(ms_bw, aes(x=pic_interact, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Interact") +
+  theme(legend.position = "bottom") +
+  ggtitle("Bw") +
+  ylim(0,1)
+
+require(gridExtra)
+grid.arrange(obj_plot, photo_plot, cartoon_plot, bw_plot, ncol=4)
+
+```
+
+More data viz with a different picture experience variable - i.e., number of picture books in the home
+
+```{r}
+obj_plot2 <- ggplot(ms_obj, aes(x=pic_num, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Book Number") +
+  theme(legend.position = "bottom") +
+  ggtitle("Obj") +
+  ylim(0,1)
+
+photo_plot2 <- ggplot(ms_photo, aes(x=pic_num, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Book Number") +
+  theme(legend.position = "bottom") +
+  ggtitle("Photo") +
+  ylim(0,1)
+
+cartoon_plot2 <- ggplot(ms_cartoon, aes(x=pic_num, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Book Number") +
+  theme(legend.position = "bottom") +
+  ggtitle("Cartoon") +
+  ylim(0,1)
+
+bw_plot2 <- ggplot(ms_bw, aes(x=pic_num, y = accuracy, col = age)) + 
+  geom_jitter(alpha = .5, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  ylab("Accuracy") +
+  xlab("Pic Book Number") +
+  theme(legend.position = "bottom") +
+  ggtitle("Bw") +
+  ylim(0,1)
+
+require(gridExtra)
+grid.arrange(obj_plot2, photo_plot2, cartoon_plot2, bw_plot2, ncol=4)
+```
+
 
 Can rerun these analyses with a different picture experience variable - i.e., number of picture books in the home
 
