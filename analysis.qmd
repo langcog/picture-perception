@@ -9,6 +9,7 @@ install.packages("brms")
 install.packages("tidybayes")
 install.packages("broom.mixed")
 install.packages("psych")
+install.packages("lavaan")
 
 library(here)
 library(tidyverse)
@@ -18,6 +19,7 @@ library(brms)
 library(tidybayes)
 library(broom.mixed)
 library(psych)
+library(lavaan)
 ```
 
 ```{r}
@@ -588,8 +590,6 @@ Exploratory factor analysis on caregiver questionnaire variables
 
 ```{r}
 
-View(d)
-
 d2 <- select(d, pic_interact, pic_num, draw_num, poster_num, tv_num) 
 
 ev <- eigen(cor(d2)) # get eigenvalues
@@ -628,3 +628,38 @@ print(fit, digits=2, cutoff=0.3, sort=TRUE)
 #tv_num               0.32   
 
 ```
+
+Confirmatory factor analysis
+
+```{r}
+all_mod <- 'all_items =~ draw_num + pic_num + poster_num + tv_num + pic_interact'
+num_mod <- 'num_items =~ draw_num + pic_num + poster_num + tv_num'
+
+all_fit <- cfa(all_mod, data = d2)
+summary(all_fit, fit.measures = TRUE)
+#RMSEA = 0.159
+
+num_fit <- cfa(num_mod, data = d2)
+summary(num_fit, fit.measures = TRUE)
+#RMSEA = 0.182
+
+#get alphas too
+ 
+psych::alpha(d2[c("draw_num", "pic_num", "poster_num", "tv_num")])
+ 
+psych::alpha(d2)
+
+two_mod <- 'kid_items =~ draw_num + pic_num
+            wall_items =~ poster_num + tv_num'
+
+two_fit <- cfa(two_mod, data = d2)
+summary(two_fit, fit.measures = TRUE)
+
+psych::alpha(d2[c("draw_num", "pic_num")])
+psych::alpha(d2[c("poster_num", "tv_num")])
+
+#two factor model isn't great either though
+
+
+```
+
