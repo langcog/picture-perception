@@ -660,6 +660,28 @@ psych::alpha(d2[c("poster_num", "tv_num")])
 
 #two factor model isn't great either though
 
+```
+
+Histograms of variable distributions
+
+```{r}
+
+ggplot(d2, aes(x = pic_interact)) + 
+  geom_histogram(binwidth = 1)
+
+ggplot(d2, aes(x = pic_num)) + 
+  geom_histogram(binwidth = 1)
+
+ggplot(d2, aes(x = draw_num)) + 
+  geom_histogram(binwidth = 1)
+
+ggplot(d2, aes(x = poster_num)) + 
+  geom_histogram(binwidth = 1)
+
+ggplot(d2, aes(x = tv_num)) + 
+  geom_histogram(binwidth = 1)
+
+
 
 ```
 
