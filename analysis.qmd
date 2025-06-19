@@ -414,36 +414,36 @@ obj_plot <- ggplot(ms_obj, aes(x=pic_interact, y = accuracy, col = age)) +
   geom_jitter(alpha = .5, height = .02, width = 0) + 
   geom_smooth(method = "lm") + 
   ylab("Accuracy") +
-  xlab("Pic Interact") +
+  xlab("Pic Interaction Freq") +
   theme(legend.position = "bottom") +
-  ggtitle("Obj") +
+  ggtitle("Objects") +
   ylim(0,1)
 
 photo_plot <- ggplot(ms_photo, aes(x=pic_interact, y = accuracy, col = age)) + 
   geom_jitter(alpha = .5, height = .02, width = 0) + 
   geom_smooth(method = "lm") + 
   ylab("Accuracy") +
-  xlab("Pic Interact") +
+  xlab("Pic Interaction Freq") +
   theme(legend.position = "bottom") +
-  ggtitle("Photo") +
+  ggtitle("Photographs") +
   ylim(0,1)
 
 cartoon_plot <- ggplot(ms_cartoon, aes(x=pic_interact, y = accuracy, col = age)) + 
   geom_jitter(alpha = .5, height = .02, width = 0) + 
   geom_smooth(method = "lm") + 
   ylab("Accuracy") +
-  xlab("Pic Interact") +
+  xlab("Pic Interaction Freq") +
   theme(legend.position = "bottom") +
-  ggtitle("Cartoon") +
+  ggtitle("Cartoons") +
   ylim(0,1)
 
 bw_plot <- ggplot(ms_bw, aes(x=pic_interact, y = accuracy, col = age)) + 
   geom_jitter(alpha = .5, height = .02, width = 0) + 
   geom_smooth(method = "lm") + 
   ylab("Accuracy") +
-  xlab("Pic Interact") +
+  xlab("Pic Interaction Freq") +
   theme(legend.position = "bottom") +
-  ggtitle("Bw") +
+  ggtitle("B&W Drawings") +
   ylim(0,1)
 
 require(gridExtra)
