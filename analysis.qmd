@@ -682,6 +682,92 @@ ggplot(d2, aes(x = tv_num)) +
   geom_histogram(binwidth = 1)
 
 
+```
+
+Log transform and z-score variables
+
+```{r}
+log_draw_num <- log(d2$draw_num+.01)
+log_poster_num <- log(d2$poster_num+.01)
+log_pic_num <- log(d2$pic_num+.01)
+
+z_log_draw_num <- (log_draw_num - mean(log_draw_num))/sd(log_draw_num)
+z_log_poster_num <- (log_poster_num - mean(log_poster_num))/sd(log_poster_num)
+z_log_pic_num <- (log_pic_num - mean(log_pic_num))/sd(log_pic_num)
+z_pic_interact <-(d2$pic_interact - mean(d2$pic_interact))/sd(d2$pic_interact)
+z_tv_num <-(d2$tv_num - mean(d2$tv_num))/sd(d2$tv_num)
+
+```
+
+Repeat factor analyses with z-scored variables
+
+```{r}
+
+d3 <- data.frame(z_log_draw_num, z_log_poster_num, z_log_pic_num, z_pic_interact, z_tv_num)
+
+ev <- eigen(cor(d3)) # get eigenvalues
+ev$values
+#2 factors are sufficient
+
+fa.parallel(d3, fa="fa")
+#Parallel analysis suggests that the number of factors =  0 (??)  and the number of components =  NA 
+
+#assume correlation between variables
+Nfacs <- 2
+fit <- factanal(d3, Nfacs, rotation="promax")
+print(fit, digits=2, cutoff=0.3, sort=TRUE)
+
+#Loadings:
+#                 Factor1 Factor2
+#z_log_draw_num    1.01          
+#z_log_poster_num          0.74  
+#z_log_pic_num                   
+#z_pic_interact            0.34  
+#z_tv_num    
+
+#assume independence between variables
+Nfacs <- 2
+fit <- factanal(d3, Nfacs, rotation="varimax")
+print(fit, digits=2, cutoff=0.3, sort=TRUE)
+
+#Loadings:
+#                 Factor1 Factor2
+#z_log_draw_num   1.00           
+#z_log_poster_num         0.72   
+#z_log_pic_num                   
+#z_pic_interact           0.33   
+#z_tv_num           
+
+```
+
+Confirmatory Analyses
+
+```{r}
+
+z_all_mod <- 'all_items =~ z_log_draw_num + z_log_poster_num + z_log_pic_num + z_tv_num + z_pic_interact'
+z_num_mod <- 'num_items =~ z_log_draw_num + z_log_poster_num + z_log_pic_num + z_tv_num'
+
+z_all_fit <- cfa(z_all_mod, data = d3)
+summary(z_all_fit, fit.measures = TRUE)
+#RMSEA = 0.079
+
+z_num_fit <- cfa(z_num_mod, data = d3)
+summary(z_num_fit, fit.measures = TRUE)
+#RMSEA = 0.072
+
+#get alphas too
+ 
+psych::alpha(d3[c("z_log_draw_num", "z_log_pic_num", "z_log_poster_num", "z_tv_num")])
+ 
+psych::alpha(d3)
+
+z_two_mod <- 'factor 1 =~ z_log_draw_num 
+            factor 2 =~ z_log_poster_num + z_pic_interact'
+
+z_two_fit <- cfa(z_two_mod, data = d3)
+summary(z_two_fit, fit.measures = TRUE)
+
+psych::alpha(d3[c("z_log_poster_num", "z_tv_num")])
 
 ```
 
