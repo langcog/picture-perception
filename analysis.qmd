@@ -296,6 +296,113 @@ bayes_mod_age_pruned %>%
 bayes_mod_age_pruned%>% emmeans(specs = pairwise~condition)
 ```
 
+Similar analyses with US data - start by visualizing the data
+
+```{r}
+
+us_d <- read_csv(here("data","us_vocab_data.csv"))
+
+ms <- us_d |>
+  group_by(child, condition_label, age) |>
+  summarise(accuracy = mean(accuracy)) 
+
+mss <- ms |>
+  mutate(age_group = as.factor(floor(age))) |>
+  group_by(condition_label, age_group) |>
+  summarise(se = sd(accuracy) / sqrt(n()),
+            ci = se * qt(.975, n() - 1),
+            accuracy = mean(accuracy)) |>
+  mutate(age = as.numeric(as.character(age_group)) + .5, 
+         condition_label = fct_relevel(condition_label, "Object", "Photo", "Cartoon", "B&W Drawing"))
+
+ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) + 
+  geom_pointrange(data = mss,
+                  aes(ymin = accuracy - ci, ymax = accuracy + ci), 
+                  position = position_dodge(width = .2)) +
+  # geom_line(data = mss, aes(y = accuracy), position = position_dodge(width = .2)) +
+  geom_jitter(alpha = .2, height = .01, width = 0) + 
+  geom_hline(yintercept = .25, lty = 2) + 
+  geom_smooth(method = "loess", span = 1, alpha = .2) + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+  # ggthemes::scale_color_solarized(name="Condition") + 
+  ylab("Accuracy") +
+  xlab("Age (Years)") + 
+  theme(legend.position = "bottom")
+
+```
+
+Pre-registered analysis - first model
+```{r}
+us_d$condition <- relevel(factor(us_d$condition), ref = "obj")
+us_d$age_centered <- scale(us_d$age, scale = FALSE, center = TRUE)[,1]
+
+us_mod <- glmer(accuracy ~ condition + (condition | child) + (condition | target_word),
+             data = us_d, family = "binomial")
+summary(us_mod)
+#failure to converge - check that this is still true with all data
+```
+
+Pruned model with age
+
+```{r}
+us_mod_age_pruned <- glm(accuracy ~ condition * age_centered,
+              data = us_d, family = "binomial")
+summary(us_mod_age_pruned)
+```
+
+More data viz
+```{r}
+
+us_ms <- us_ms |>
+  group_by(child) |>
+  mutate(effect = accuracy - accuracy[condition == "obj"])
+
+ggplot(filter(us_ms, condition != "obj"),
+       aes(x = age, y = effect)) + 
+  geom_jitter(alpha = .3, height = .02, width = 0) + 
+  geom_smooth(method = "lm") + 
+  geom_hline(yintercept = 0, lty = 2) + 
+  facet_wrap(~condition) + 
+  ylab("Accuracy compared to object") +
+  xlab("Age (months)")
+
+```
+```{r}
+
+msi <- us_d |>
+  group_by(condition_label, target_word) |>
+  summarise(mean_accuracy = mean(accuracy, na.rm=TRUE),
+            ci.lower = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$lower,
+            ci.upper = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$upper) |>
+  ungroup() |>
+  mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
+
+ggplot(msi,
+       aes(x = target_word, y = mean_accuracy , col = condition_label)) + 
+  geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
+                  position = position_dodge(width = .4)) + 
+  geom_hline(yintercept = .25, lty = 2)+ 
+  geom_line() + 
+  # coord_flip() + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+# ggthemes::scale_color_solarized(name = "Condition") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+  xlab("Item") +
+  ylab("Accuracy") +
+  theme(legend.position = "bottom") 
+```
+
+
 Running exploratory individual differences analyses - effect of picture experience on accuracy
 
 ```{r}
