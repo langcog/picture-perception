@@ -169,6 +169,7 @@ ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) +
                     "Cartoon" = "#66C2A5" ,
                     "Photo" = "#3288BD" ,
                     "Object" = "#5E4FA2" )) + 
+  ylim(0, 1)  + 
   # ggthemes::scale_color_solarized(name="Condition") + 
   ylab("Accuracy") +
   xlab("Age (Years)") + 

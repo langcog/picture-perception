@@ -330,6 +330,7 @@ ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) +
                     "Photo" = "#3288BD" ,
                     "Object" = "#5E4FA2" )) + 
   # ggthemes::scale_color_solarized(name="Condition") + 
+    ylim(0, 1)  +
   ylab("Accuracy") +
   xlab("Age (Years)") + 
   theme(legend.position = "bottom")
