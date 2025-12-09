@@ -4,13 +4,13 @@ format: html
 ---
 
 ```{r}
-install.packages("emmeans")
-install.packages("brms")
-install.packages("tidybayes")
-install.packages("broom.mixed")
-install.packages("psych")
-install.packages("lavaan")
-install.packages("gridExtra")
+# install.packages("emmeans")
+# install.packages("brms")
+# install.packages("tidybayes")
+# install.packages("broom.mixed")
+# install.packages("psych")
+# install.packages("lavaan")
+# install.packages("gridExtra")
 
 library(here)
 library(tidyverse)
@@ -1087,10 +1087,111 @@ summary(full_mod_no_interaction)
 ```
 
 
-Running exploratory individual differences analyses - effect of picture experience on accuracy
+Running exploratory individual differences analyses - effect of picture experience on accuracy. Start with a bare model without control variables
+
+```{r}
+mod_bare <- glmer(accuracy ~ pic_interact * condition + (condition | child) + (condition | target_word),
+              data = d, family = "binomial")
+summary(mod_bare)
+#doesn't converge
+```
+
+Try a pruned bare model
+
+```{r}
+mod_bare_pruned <- glmer(accuracy ~ pic_interact * condition + (1 | child) + (1 | target_word),
+              data = d, family = "binomial")
+summary(mod_bare_pruned)
+#no effects
+```
+
+What about a model with control variables?
+
+```{r}
+mod_full <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (condition | child) + (condition | target_word),
+              data = d, family = "binomial")
+summary(mod_full)
+#this doesn't converge either
+```
+
+Pruned version of the model with control variables?
+
+```{r}
+mod_full_pruned <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1| child) + (1 | target_word),
+              data = d, family = "binomial")
+summary(mod_full_pruned)
+#this also fails to converge
+```
+
+Prune the full model further
+
+```{r}
+mod_full_pruned2 <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1| child),
+              data = d, family = "binomial")
+summary(mod_full_pruned2)
+#model still not converging
+```
+
+Continue pruning!
+
+```{r}
+mod_full_pruned3 <- glm(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed,
+              data = d, family = "binomial")
+summary(mod_full_pruned3)
+#no effects
+```
+
+Now try it with the two-factor variables (kid items and wall items)? Start with the bare model
+
+```{r}
+mod_bare_factor <- glmer(accuracy ~ kid_items * wall_items * condition + (condition | child) + (condition | target_word),
+              data = d, family = "binomial")
+summary(mod_bare_factor)
+#doesn't converge
+```
+
+Prune for convergence
+
+```{r}
+mod_bare_factor_pruned <- glmer(accuracy ~ kid_items * wall_items * condition + (1 | child) + (1 | target_word),
+              data = d, family = "binomial")
+summary(mod_bare_factor_pruned)
+#still doesn't converge
+```
+
+Keep pruning
+
+```{r}
+mod_bare_factor_pruned2 <- glmer(accuracy ~ kid_items * wall_items * condition + (1 | child),
+              data = d, family = "binomial")
+summary(mod_bare_factor_pruned2)
+#still not converging
+```
+
+Keep pruning...
+
+```{r}
+mod_bare_factor_pruned3 <- glm(accuracy ~ kid_items * wall_items * condition,
+              data = d, family = "binomial")
+summary(mod_bare_factor_pruned3)
+#nothing significant except main effect of object type
+```
+
+Now with the full model
 
 ```{r}
 
+mod_full_pruned_factor <- glm(accuracy ~ kid_items * wall_items * condition + play + talk + toy_num + maternal_ed,
+              data = d, family = "binomial")
+summary(mod_full_pruned_factor)
+#still nothing
+```
+
+
+
+
+
+```{r}
 mod_pic <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
               data = d, family = "binomial")
 summary(mod_pic)
@@ -1386,6 +1487,8 @@ bayes_mod_pic_only <- brm(formula = accuracy ~ pic_interact + play + talk + toy_
 joint_tests(bayes_mod_pic_only)
 ```
 
+# Factor analysis
+
 Exploratory factor analysis on caregiver questionnaire variables
 
 ```{r}
@@ -1561,13 +1664,30 @@ psych::alpha(d3[c("z_log_draw_num", "z_log_pic_num", "z_log_poster_num", "z_tv_n
  
 psych::alpha(d3)
 
-z_two_mod <- 'factor 1 =~ z_log_draw_num 
-            factor 2 =~ z_log_poster_num + z_pic_interact'
+
+# two_mod <- 'kid_items =~ draw_num + pic_num
+#             wall_items =~ poster_num + tv_num'
+
+z_two_mod <- 'kid_items =~ z_log_draw_num + z_log_pic_num
+            wall_items =~ z_log_poster_num + z_tv_num'
 
 z_two_fit <- cfa(z_two_mod, data = d3)
 summary(z_two_fit, fit.measures = TRUE)
 
 psych::alpha(d3[c("z_log_poster_num", "z_tv_num")])
+
+two_factor <- predict(z_two_fit)
+
+```
+
+Run exploratory analysis with two factors
+
+```{r}
+mod_two_factor <- glmer(accuracy ~ kid_items * wall_items * age_centered * condition + play + talk + toy_num + maternal_ed + (1 | child),
+              data = d, family = "binomial")
+summary(mod_two_factor)
+
+
 
 ```
 
