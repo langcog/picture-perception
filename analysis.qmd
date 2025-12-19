@@ -1,6 +1,8 @@
 ---
 title: "Picture perception analysis"
 format: html
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -11,6 +13,8 @@ format: html
 # install.packages("psych")
 # install.packages("lavaan")
 # install.packages("gridExtra")
+# install.packages("papaja")
+# install.packages("tinytex")
 
 library(here)
 library(tidyverse)
@@ -24,7 +28,10 @@ library(lavaan)
 library(dplyr)
 library(ggplot2)
 library(gridExtra)
+library(papaja)
+`
 ```
+
 
 ```{r}
 d <- read_csv(here("data","kisumu_vocab_data.csv"))
@@ -140,6 +147,12 @@ mod_age_pruned <- glmer(accuracy ~ condition * age_centered +
                    (1 | target_word), 
               data = d, family = "binomial")
 summary(mod_age_pruned)
+
+apa_lm <- apa_print(mod_age_pruned)
+apa_lm
+
+table <- apa_table(apa_lm$table)
+table
 
 #get confidence intervals
 cc_age <- confint(mod_age_pruned,parm="beta_",method="Wald")
@@ -1096,7 +1109,7 @@ summary(mod_bare)
 #doesn't converge
 ```
 
-Try a pruned bare model
+Try a pruned bare model - doesn't converge
 
 ```{r}
 mod_bare_pruned <- glmer(accuracy ~ pic_interact * condition + (1 | child) + (1 | target_word),
@@ -1104,6 +1117,23 @@ mod_bare_pruned <- glmer(accuracy ~ pic_interact * condition + (1 | child) + (1 
 summary(mod_bare_pruned)
 #no effects
 ```
+
+Keep pruning
+
+```{r}
+mod_bare_pruned2 <- glmer(accuracy ~ pic_interact * condition + (1 | child),
+              data = d, family = "binomial")
+summary(mod_bare_pruned2)
+```
+
+Keep pruning!
+
+```{r}
+mod_bare_pruned3 <- glm(accuracy ~ pic_interact * condition,
+              data = d, family = "binomial")
+summary(mod_bare_pruned3)
+```
+
 
 What about a model with control variables?
 
@@ -1187,9 +1217,7 @@ summary(mod_full_pruned_factor)
 #still nothing
 ```
 
-
-
-
+These are extra individual differences analyses - just playing around now; the null result seems pretty robust
 
 ```{r}
 mod_pic <- glmer(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed + (1 | target_word),
