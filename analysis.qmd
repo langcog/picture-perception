@@ -604,7 +604,8 @@ msi <- d |>
   mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
 
 plot <- ggplot(msi,
-       aes(x = target_word, y = mean_accuracy , col = condition_label)) + 
+       aes(x = factor(target_word, level=c('scissors', 'pencil', 'shirt', 'ball', 'shoe', 'sweater', 'cup', 'book', 'comb', 'box', 'bowl', 'toothbrush', 'fork', 'button', 'chalk', 'shorts')), 
+            y = mean_accuracy , col = condition_label)) + 
   geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
                   position = position_dodge(width = .4)) + 
   geom_hline(yintercept = .25, lty = 2)+ 
@@ -640,7 +641,8 @@ us_msi <- us_d |>
   mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
 
 us_plot <- ggplot(us_msi,
-       aes(x = target_word, y = mean_accuracy , col = condition_label)) + 
+        aes(x = factor(target_word, level=c('scissors', 'pencil', 'shirt', 'ball', 'shoe', 'sweater', 'cup', 'book', 'comb', 'box', 'bowl', 'toothbrush', 'fork', 'button', 'chalk', 'shorts')),    
+              y = mean_accuracy , col = condition_label)) + 
   geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
                   position = position_dodge(width = .4)) + 
   geom_hline(yintercept = .25, lty = 2)+ 
@@ -838,7 +840,7 @@ summary(emmeans_kenya_error_mod_age)
 #errors in all picture conditions different from object condition - credible intervals do not pass through zero
 ```
 
-Visualize error analyses for both Kenya 
+Visualize error analyses for Kenya 
 
 ```{r}
 kenya_respplot <- ggplot(kenya, aes(x = condition, fill = response_type)) +

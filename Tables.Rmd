@@ -86,7 +86,11 @@ descriptives <- home %>% group_by(Country) %>%
              min(pic_book_num), min(draw_num), min(poster_num), min(toy_num), min(tv_num), min(maternal_ed)),
     Maximum = c(max(pic_freq), max(play_freq), max(talk_freq), max(draw_freq), max(other_draw_freq), 
              max(pic_book_num), max(draw_num), max(poster_num), max(toy_num), max(tv_num), max(maternal_ed)),
-  )
+  ) %>% 
+  pivot_wider(names_from = Country,
+              names_sep = "-",
+              values_from = c(Mean, SD, Minimum, Maximum),
+              names_vary = 'slowest')
 
 apa_table(
   descriptives

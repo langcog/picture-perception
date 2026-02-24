@@ -11,7 +11,7 @@
 
 <meta name="author" content="Rebecca Zhu" />
 
-<meta name="date" content="2025-12-18" />
+<meta name="date" content="2026-02-23" />
 
 <title>Untitled</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Untitled</h1>
 <h4 class="author">Rebecca Zhu</h4>
-<h4 class="date">2025-12-18</h4>
+<h4 class="date">2026-02-23</h4>
 
 </div>
 
@@ -578,7 +578,7 @@ of the time, 5 = all of the time).</p>
 <p> </p>
 <p>Home Environment Descriptive Table</p>
 <pre class="r"><code>home &lt;- read_csv(here(&quot;data&quot;,&quot;caregiver_questionnaire.csv&quot;))</code></pre>
-<pre><code>## Rows: 147 Columns: 13
+<pre><code>## Rows: 167 Columns: 13
 ## ── Column specification ────────────────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
 ## chr  (1): Country
@@ -607,7 +607,11 @@ of the time, 5 = all of the time).</p>
              min(pic_book_num), min(draw_num), min(poster_num), min(toy_num), min(tv_num), min(maternal_ed)),
     Maximum = c(max(pic_freq), max(play_freq), max(talk_freq), max(draw_freq), max(other_draw_freq), 
              max(pic_book_num), max(draw_num), max(poster_num), max(toy_num), max(tv_num), max(maternal_ed)),
-  )</code></pre>
+  ) %&gt;% 
+  pivot_wider(names_from = Country,
+              names_sep = &quot;-&quot;,
+              values_from = c(Mean, SD, Minimum, Maximum),
+              names_vary = &#39;slowest&#39;)</code></pre>
 <pre><code>## Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in
 ## dplyr 1.1.0.
 ## ℹ Please use `reframe()` instead.
@@ -626,200 +630,142 @@ of the time, 5 = all of the time).</p>
 <caption>(#tab:unnamed-chunk-3)</caption>
 <thead>
 <tr class="header">
-<th align="left">Country</th>
 <th align="left">Question</th>
-<th align="left">Mean</th>
-<th align="left">SD</th>
-<th align="left">Minimum</th>
-<th align="left">Maximum</th>
+<th align="left">Mean-Kenya</th>
+<th align="left">SD-Kenya</th>
+<th align="left">Minimum-Kenya</th>
+<th align="left">Maximum-Kenya</th>
+<th align="left">Mean-US</th>
+<th align="left">SD-US</th>
+<th align="left">Minimum-US</th>
+<th align="left">Maximum-US</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q1. In the past month, how often did you look at
 picture books with your child?</td>
 <td align="left">3.48</td>
 <td align="left">1.00</td>
 <td align="left">1.00</td>
 <td align="left">5.00</td>
+<td align="left">4.28</td>
+<td align="left">0.79</td>
+<td align="left">2.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="even">
-<td align="left">Kenya</td>
 <td align="left">Q2. In the past month, how often did you play with your
 child?</td>
 <td align="left">3.72</td>
 <td align="left">0.96</td>
 <td align="left">1.00</td>
 <td align="left">5.00</td>
+<td align="left">4.21</td>
+<td align="left">0.77</td>
+<td align="left">3.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q3. In the past month, how often did you talk with your
 child, even when you were busy?</td>
 <td align="left">4.20</td>
 <td align="left">0.72</td>
 <td align="left">2.00</td>
 <td align="left">5.00</td>
+<td align="left">4.67</td>
+<td align="left">0.58</td>
+<td align="left">3.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="even">
-<td align="left">Kenya</td>
 <td align="left">Q4. In the past month, how often did your child draw
 using pens, pencils, crayons, or markers?</td>
 <td align="left">3.82</td>
 <td align="left">0.98</td>
 <td align="left">1.00</td>
 <td align="left">5.00</td>
+<td align="left">3.87</td>
+<td align="left">0.86</td>
+<td align="left">2.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q5. In the past month, how often did your child draw
 using other materials?</td>
 <td align="left">2.14</td>
 <td align="left">1.11</td>
 <td align="left">1.00</td>
 <td align="left">5.00</td>
+<td align="left">2.97</td>
+<td align="left">1.01</td>
+<td align="left">1.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="even">
-<td align="left">Kenya</td>
 <td align="left">Q6. How many picture books are in your home</td>
 <td align="left">3.10</td>
 <td align="left">1.97</td>
 <td align="left">0.00</td>
 <td align="left">10.00</td>
+<td align="left">111.08</td>
+<td align="left">84.30</td>
+<td align="left">2.00</td>
+<td align="left">300.00</td>
 </tr>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q7. How many drawing materials (i.e., pens, pencils,
 crayons, markers) are in your home?</td>
 <td align="left">9.80</td>
 <td align="left">8.82</td>
 <td align="left">0.00</td>
 <td align="left">48.00</td>
+<td align="left">55.87</td>
+<td align="left">38.96</td>
+<td align="left">5.00</td>
+<td align="left">150.00</td>
 </tr>
 <tr class="even">
-<td align="left">Kenya</td>
 <td align="left">Q8. How many posters are in your home?</td>
 <td align="left">3.20</td>
 <td align="left">2.02</td>
 <td align="left">0.00</td>
 <td align="left">10.00</td>
+<td align="left">19.33</td>
+<td align="left">20.61</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
 </tr>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q9. How many toys are in your home?</td>
 <td align="left">6.23</td>
 <td align="left">7.22</td>
 <td align="left">0.00</td>
 <td align="left">50.00</td>
+<td align="left">104.05</td>
+<td align="left">70.14</td>
+<td align="left">8.00</td>
+<td align="left">300.00</td>
 </tr>
 <tr class="even">
-<td align="left">Kenya</td>
 <td align="left">Q10. How many televisions are in your home?</td>
 <td align="left">0.91</td>
 <td align="left">0.49</td>
 <td align="left">0.00</td>
 <td align="left">3.00</td>
+<td align="left">1.41</td>
+<td align="left">1.12</td>
+<td align="left">0.00</td>
+<td align="left">5.00</td>
 </tr>
 <tr class="odd">
-<td align="left">Kenya</td>
 <td align="left">Q11. What is the child’s mother’s education level?</td>
 <td align="left">3.03</td>
 <td align="left">1.73</td>
 <td align="left">1.00</td>
 <td align="left">6.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q1. In the past month, how often did you look at
-picture books with your child?</td>
-<td align="left">4.42</td>
-<td align="left">0.69</td>
-<td align="left">3.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="odd">
-<td align="left">US</td>
-<td align="left">Q2. In the past month, how often did you play with your
-child?</td>
-<td align="left">4.37</td>
-<td align="left">0.76</td>
-<td align="left">3.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q3. In the past month, how often did you talk with your
-child, even when you were busy?</td>
-<td align="left">4.79</td>
-<td align="left">0.42</td>
-<td align="left">4.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="odd">
-<td align="left">US</td>
-<td align="left">Q4. In the past month, how often did your child draw
-using pens, pencils, crayons, or markers?</td>
-<td align="left">3.89</td>
-<td align="left">0.88</td>
-<td align="left">2.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q5. In the past month, how often did your child draw
-using other materials?</td>
-<td align="left">3.05</td>
-<td align="left">0.85</td>
-<td align="left">2.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="odd">
-<td align="left">US</td>
-<td align="left">Q6. How many picture books are in your home</td>
-<td align="left">117.63</td>
-<td align="left">81.96</td>
-<td align="left">30.00</td>
-<td align="left">300.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q7. How many drawing materials (i.e., pens, pencils,
-crayons, markers) are in your home?</td>
-<td align="left">52.26</td>
-<td align="left">46.84</td>
-<td align="left">5.00</td>
-<td align="left">150.00</td>
-</tr>
-<tr class="odd">
-<td align="left">US</td>
-<td align="left">Q8. How many posters are in your home?</td>
-<td align="left">23.11</td>
-<td align="left">24.56</td>
-<td align="left">0.00</td>
-<td align="left">100.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q9. How many toys are in your home?</td>
-<td align="left">132.53</td>
-<td align="left">87.52</td>
-<td align="left">8.00</td>
-<td align="left">300.00</td>
-</tr>
-<tr class="odd">
-<td align="left">US</td>
-<td align="left">Q10. How many televisions are in your home?</td>
-<td align="left">1.42</td>
-<td align="left">1.39</td>
-<td align="left">0.00</td>
-<td align="left">5.00</td>
-</tr>
-<tr class="even">
-<td align="left">US</td>
-<td align="left">Q11. What is the child’s mother’s education level?</td>
-<td align="left">6.68</td>
-<td align="left">0.58</td>
+<td align="left">6.90</td>
+<td align="left">0.68</td>
 <td align="left">6.00</td>
 <td align="left">8.00</td>
 </tr>

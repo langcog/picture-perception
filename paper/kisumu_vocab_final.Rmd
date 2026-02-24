@@ -1,0 +1,187 @@
+---
+title             : "Measuring U.S. and Kenyan children’s vocabularies using object, photograph, cartoon, and line drawing stimuli"
+shorttitle        : "Measuring U.S. and Kenyan vocabularies"
+
+author: 
+  - name          : "Rebecca Zhu"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    email         : "ryz@stanford.edu"
+    address       : "450 Jane Stanford Way, Building 420, Stanford, CA 94301, USA"
+  - name          : "Maya Martinez-Krams"
+    affiliation   : "1"
+  - name          : "Joab Ochieng Arieda"
+    affiliation   : "2"
+  - name          : "Tabitha Nduku Kilonzo"
+    affiliation   : "3"
+  - name          : "Judith E. Fan"
+    affiliation   : "1"
+  - name          : "Michael C. Frank"
+    affiliation   : "1"
+  
+
+affiliation:
+  - id            : "1"
+    institution   : "Department of Psychology, Stanford University, United States"
+  - id            : "2"
+    institution   : "International Education, RTI International Nairobi, Kenya"
+  - id            : "3"
+    institution   : "Safe Water and AIDS Project, Kenya"
+
+
+author_note: |
+  \
+ 
+  Conflicts of Interest. The authors declare that there is no conflict of interest.
+  
+  Acknowledgments. We are grateful to Elizabeth Osore, Gabriel Ochieng Mange, and Dena Kumsa for assistance with data collection, as well as to the children, parents, and teachers who made this research possible. A special thank you to Dan Werthimer and Gloria for making this collaboration possible.
+  
+  Data Availability Statement. Preregistration, materials, deidentified data, and analysis scripts for both experiments are publicly available at https://osf.io/dgz9w/.
+  
+  Ethics Approval Statement. Data collection in Kenya was approved by the Kenya Medical Research Institute (KEMRI), the National Commission for Science, Technology, and Innovation (NACOSTI), the local Kisumu County government, and Stanford University’s Institutional Review Board. Data collection in the U.S. was approved by Stanford University’s Institutional Review Board.
+  
+  Funding Statement. This work was supported by a Lorraine D. Eyde Grant from the American Psychological Foundation and a SSHRC Postdoctoral Fellowship to RZ. 
+
+
+abstract: |
+  INSERT
+  
+keywords          : "cross-cultural research; cognitive development; picture comprehension"
+
+bibliography      : ["r-references.bib"]
+csl               : "apa6.csl"
+
+figsintext        : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : yes
+mask              : no
+
+always_allow_html : yes
+class             : "apa7"
+output:
+  papaja::apa6_word: default
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding,
+  output_format = "all") })
+---
+
+```{r load-packages, include = FALSE}
+
+library(here)
+library(tidyverse)
+library(lme4)
+library(emmeans)
+library(brms)
+library(tidybayes)
+library(broom.mixed)
+library(psych)
+library(lavaan)
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(papaja)
+```
+
+# Introduction
+
+Insert introduction
+
+```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
+
+knitr::include_graphics(here("paper","fig1_labeled.pdf"))
+
+```
+
+
+
+```{r}
+home <- read_csv(here("data","caregiver_questionnaire.csv"))
+
+descriptives <- home %>% group_by(Country) %>% 
+  summarize(
+    Question = c("Q1. In the past month, how often did you look at picture books with your child?", 
+                 "Q2. In the past month, how often did you play with your child?", 
+                 "Q3. In the past month, how often did you talk with your child, even when you were busy?", 
+                 "Q4. In the past month, how often did your child draw using pens, pencils, crayons, or markers?", 
+                 "Q5. In the past month, how often did your child draw using other materials?", 
+                 "Q6. How many picture books are in your home", 
+                 "Q7. How many drawing materials (i.e., pens, pencils, crayons, markers) are in your home?", 
+                 "Q8. How many posters are in your home?", 
+                 "Q9. How many toys are in your home?", 
+                 "Q10. How many televisions are in your home?",
+                 "Q11. What is the child's mother's education level?"),
+    Mean = c(mean(pic_freq), mean(play_freq), mean(talk_freq), mean(draw_freq), mean(other_draw_freq), 
+             mean(pic_book_num), mean(draw_num), mean(poster_num), mean(toy_num), mean(tv_num), mean(maternal_ed)),
+    SD = c(sd(pic_freq), sd(play_freq), sd(talk_freq), sd(draw_freq), sd(other_draw_freq), 
+             sd(pic_book_num), sd(draw_num), sd(poster_num), sd(toy_num), sd(tv_num), sd(maternal_ed)),
+    Minimum = c(min(pic_freq), min(play_freq), min(talk_freq), min(draw_freq), min(other_draw_freq), 
+             min(pic_book_num), min(draw_num), min(poster_num), min(toy_num), min(tv_num), min(maternal_ed)),
+    Maximum = c(max(pic_freq), max(play_freq), max(talk_freq), max(draw_freq), max(other_draw_freq), 
+             max(pic_book_num), max(draw_num), max(poster_num), max(toy_num), max(tv_num), max(maternal_ed)),
+  ) %>% 
+  pivot_wider(names_from = Country,
+              names_sep = "-",
+              values_from = c(Mean, SD, Minimum, Maximum),
+              names_vary = 'slowest')
+
+apa_table(
+  descriptives
+  , note = "Table 2. Descriptive statistics across home environments in Kisumu, Kenya and the San Francisco Bay Area, U.S.A. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time). Question 11 was answered on a 8-point ordinal scale (1 = primary school or below, 2 = junior secondary school or below, 3 = senior secondary school or below, 4 = vocational training, 5 = polytechnic, 6 = university degree, 7 = master's or professional degree, 8 = doctoral degree).",
+  font_size = 9
+)
+```
+
+
+\newpage
+
+# References
+
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
+
+# Appendix
+
+```{r}
+teacher <- read_csv(here("data","teacher_questionnaire.csv"))
+
+descriptives <- teacher %>% 
+  summarize(
+    Question = c("Q1. In the past month, how often did you look at picture books with the children in your classroom?", 
+                 "Q2. In the past month, how often did you play with the children in your classroom?", 
+                 "Q3. In the past month, how often did you talk with the children in your classroom, even when you were busy?", 
+                 "Q4. In the past month, how often did the children in your classroom draw using pens, pencils, crayons, or markers?", 
+                 "Q5. In the past month, how often did the children in your classroom draw using other materials?", 
+                 "Q6. How many picture books are in your classroom?", 
+                 "Q7. How many drawing materials (i.e., pens, pencils, crayons, markers) are in your classroom?", 
+                 "Q8. How many posters are in your classroom?", 
+                 "Q9. How many toys are in your classroom?", 
+                 "Q10. How many televisions are in your classroom?"),
+    Mean = c(mean(pic_freq), mean(play_freq), mean(talk_freq), mean(draw_freq), mean(other_draw_freq), 
+             mean(pic_book_num), mean(draw_num), mean(poster_num), mean(toy_num), mean(tv_num)),
+    SD = c(sd(pic_freq), sd(play_freq), sd(talk_freq), sd(draw_freq), sd(other_draw_freq), 
+             sd(pic_book_num), sd(draw_num), sd(poster_num), sd(toy_num), sd(tv_num)),
+    Minimum = c(min(pic_freq), min(play_freq), min(talk_freq), min(draw_freq), min(other_draw_freq), 
+             min(pic_book_num), min(draw_num), min(poster_num), min(toy_num), min(tv_num)),
+    Maximum = c(max(pic_freq), max(play_freq), max(talk_freq), max(draw_freq), max(other_draw_freq), 
+             max(pic_book_num), max(draw_num), max(poster_num), max(toy_num), max(tv_num)),
+  )
+
+
+apa_table(
+  descriptives
+  , note = "Table 3. Descriptive statistics across five preschool classrooms in the San Francisco Bay Area. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time).",
+  , escape = TRUE
+)
+
+```
