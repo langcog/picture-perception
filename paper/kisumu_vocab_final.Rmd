@@ -88,6 +88,8 @@ library(papaja)
 
 Insert introduction
 
+Moreover, the most widely used learning materials (e.g. books, posters) and assessments of early cognitive and linguistic abilities use picture stimuli [@fernaldToolkitMeasuringEarly]. 
+
 ```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
 
 knitr::include_graphics(here("paper","fig1_labeled.pdf"))
