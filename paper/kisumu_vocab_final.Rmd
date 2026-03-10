@@ -6,7 +6,7 @@ author:
   - name          : "Rebecca Zhu"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
-    email         : "ryz@stanford.edu"
+    email         : "ryz@stanford.edu; ORCID: https://orcid.org/0000-0003-0957-5962"
     address       : "450 Jane Stanford Way, Building 420, Stanford, CA 94301, USA"
   - name          : "Maya Martinez-Krams"
     affiliation   : "1"
@@ -44,9 +44,10 @@ author_note: |
 
 
 abstract: |
-  INSERT
+
+  Early childhood assessments typically involve picture stimuli. As these assessments spread worldwide, researchers make an implicit assumption: that children across contexts understand pictures in the same way, at the same developmental timepoint. What if this assumption does not hold for some or all kinds of pictures? In the present research, preregistered samples of 128 3- to 7-year-olds from Kisumu, Kenya (Experiment 1) and 64 3- to 4-year-olds from the San Francisco Bay Area, U.S.A. (Experiment 2) participated in a vocabulary assessment in four formats (i.e., objects, photographs, cartoons, black-and-white line drawings). Preregistered analyses showed that children from both contexts performed similarly across object, photograph, and cartoon formats, though additional exploratory analyses suggested that Kisumu children may perform less accurately in the line drawing format, at least for ambiguous stimuli. Moreover, exploratory error analyses revealed that the children from Kisumu made different kinds of errors in the object format than in the picture formats, whereas the children from the San Francisco Bay Area made more similar kinds of errors across object and picture formats. These findings tentatively bring more confidence to the existing use of photograph- and cartoon-based assessments in global contexts, though more research is necessary to replicate the current findings, and to determine in exactly which contexts picture-based assessments are appropriate or inappropriate.
   
-keywords          : "cross-cultural research; cognitive development; picture comprehension"
+keywords          : "cross-cultural research; cognitive development; picture comprehension; vocabulary; measurement; education"
 
 bibliography      : ["r-references.bib"]
 csl               : "apa6.csl"
@@ -55,7 +56,7 @@ figsintext        : yes
 figurelist        : no
 tablelist         : no
 footnotelist      : no
-lineno            : yes
+lineno            : no
 mask              : no
 
 always_allow_html : yes
@@ -68,6 +69,8 @@ knit: (function(inputFile, encoding) {
 ---
 
 ```{r load-packages, include = FALSE}
+
+knitr::opts_chunk$set(echo=FALSE, message = FALSE, warning=FALSE)
 
 library(here)
 library(tidyverse)
@@ -82,23 +85,662 @@ library(dplyr)
 library(ggplot2)
 library(gridExtra)
 library(papaja)
+library(ggpubr)
 ```
-
 # Introduction
 
-Insert introduction
+Humans possess remarkable capacities to understand and use various kinds of visual media (e.g., pictures, videos, scale models, maps). In particular, previous research shows that high-income children growing up in Western contexts understand pictures early in development. For example, high-income U.S. toddlers know that pictures refer to actual objects in the world [@preisslerBothPicturesWords2004] and appreciate the role of intention when interpreting pictures [@gelmanShapeRepresentationalStatus1998]. Moreover, children in these settings can learn novel concepts from picture books and apply these concepts to actual entities [@ganeaYoungChildrensLearning2011a] But how do these abilities develop?
 
-Moreover, the most widely used learning materials (e.g. books, posters) and assessments of early cognitive and linguistic abilities use picture stimuli [@fernaldToolkitMeasuringEarly]. 
+While many cognitive scientists argue that some kind of experience with pictures is necessary for picture comprehension [@deloacheOriginsPictorialCompetence2003; @zhuCrosscontextualVariabilityChildrens2025], it is unclear exactly what quality and quantity of picture experience facilitates this development. One possibility is that only minimal picture experience is necessary for the development of full comprehension, and thus that children across diverse environments understand pictures in similar ways, at similar developmental timepoints. Another possibility is that more extensive picture experience (e.g., being surrounded by picture books, television screens, billboards, posters) is necessary for the development of full comprehension, and thus that children living in environments without many picture books or other visual media understand pictures at a later timepoint than their counterparts living in environments with an abundance of pictures. Since children growing up in high-income, urban contexts typically all possess extensive picture experience, cognitive scientists must work with global populations to explore possible consistency or diversity in children’s developing capacities to understand and learn from pictures.
 
-```{r figure1, fig.env="figure*", fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
+Moreover, the most widely used learning materials (e.g., books, posters) and assessments of early cognitive and linguistic abilities use picture stimuli [@fernaldToolkitMeasuringEarly2017]. As these materials and assessments spread across the world, researchers make the implicit assumption that children across contexts understand pictures in the same way, at the same developmental time point. What if this assumption does not hold? Differences in picture com- prehension can change the efficacy of learning materials and the validity of assessments [@draperPublishingChildDevelopment2022a; @jukesPrinciplesAdaptingAssessments2024]. Thus, it is also important to investigate when and how children understand pictures across cultures and contexts to determine how to appropriately translate learning materials and assessments globally.
+
+Indeed, there is already some evidence that picture-based assessments may underestimate children’s capacities, in some global contexts [@callaghanEarlySocialCognition2011; @walkerRoleSymbolbasedExperience2013a; @zhuInvestigatingValidityPicturebased2025]. For example, preschoolers living in rural environments in India (i.e., a village 70 kilometers from Vijayawada, Andhra Pradesh) and Peru (i.e., a village in the rural Montaro Valley area of the Central Highlands) performed more accurately on a false belief task when the task was presented using objects rather than black-and-white line drawings [@callaghanEarlySocialCognition2011]. Similarly, young toddlers living in a rural village in the Kibaha-Pwani District of Tanzania’s Coast Region do not map a novel word to a novel photograph, but succeed in mapping a novel word onto a novel object [@walkerRoleSymbolbasedExperience2013a]. Moreover, low- to middle-income 2- to 7-year-olds in their first month of formal schooling living in Mombasa County, Kenya (i.e., a mix of urban and rural areas) performed more accurately on an object-based vocabulary assessment than on a cartoon-based vocabulary assessment. In contrast, high-income urban and suburban 2- and 3-year-olds living in the San Francisco Bay Area, U.S. performed similarly on object-based and cartoon-based vocabulary assessments [@zhuInvestigatingValidityPicturebased2025]. Furthermore, in a sample of toddlers living in urban Kisumu, Kenya, variation in toddlers’ early picture experience is related to variation in toddlers’ ability to learn from pictures [@zhuDevelopmentPictureComprehension2025a]. Together, these results suggest that assessments involving pictures may underestimate children’s capacities in some global contexts [@zhuCrosscontextualVariabilityChildrens2025].
+
+However, more work is necessary to investigate the generalizability of these initial findings across age ranges. For example, it is unclear if these initial findings, which were either conducted with young toddlers and preschoolers  [@callaghanEarlySocialCognition2011; @walkerRoleSymbolbasedExperience2013a; @zhuDevelopmentPictureComprehension2025a] or children in their very first month of formal schooling [@zhuInvestigatingValidityPicturebased2025], might generalize to older children with more formal schooling experience, and thus likely also more picture experience. Determining whether assessments involving pictures are appropriate for children who have already completed some formal schooling will provide insight into whether researchers and policy-makers need to adapt assessment tools for many children in global contexts, or perhaps only the youngest learners. Thus, the present experiment investigates whether older children growing up in a relatively picture-sparse environment, like their younger counterparts, show performance differences between object- and picture-based tasks.
+
+Similarly, more work is necessary to investigate the generalizability of these initial findings across picture formats (i.e., photographs, cartoons, black-and-white line drawings). Previous cross-cultural experiments compared children’s task performance across objects and only one picture format [@callaghanEarlySocialCognition2011; @walkerRoleSymbolbasedExperience2013a; @zhuInvestigatingValidityPicturebased2025], rather than systematically comparing children’s performance across objects and multiple picture formats. Different kinds of picture stimuli may pose distinct challenges for young children’s understanding of pictures [@pierroutsakosInfantsManualExploration2003; @simcockGetPictureEffects2006]. For example, color photographs or cartoons may be easier for children to understand and learn from, because they are more perceptually similar to objects than black-and-white line drawings [@zhuCrosscontextualVariabilityChildrens2025]. However, black-and-white line drawings might be interpretable in a broader range of contexts than color photographs or cartoons, owing to the omission of color and texture cues that might only apply in some contexts but not others (e.g., lighter skin tones). Thus, the present experiment contrasts objects with three common picture formats (i.e., photographs, cartoons, black-and-white line drawings), to explore whether possible differences between object and picture stimuli hold for multiple kinds of picture formats.
+
+The current research examines Kenyan and U.S. children’s performance on object- and picture-based vocabulary assessments, across picture formats and age ranges. A previous study found that a sample of low-to-middle-income Mombasa County 2- to 7-year-olds (average age of 4.5 years) in their first month of formal schooling performed more accurately on object- than cartoon-based vocabulary assessments [@zhuInvestigatingValidityPicturebased2025]. Experiment 1 builds on these findings by investigating whether an older sample of low-to-middle-income Kisumu 3- to 7-year-olds (average age of 5.4 years) with some formal schooling may perform more accurately on object- than picture-based vocabulary assessments. Experiment 2 investigates whether a sample of middle-to-high-income San Francisco Bay Area 3- and 4-year-olds (average age of 4.0 years) attending preschool may perform more accurately on object- than picture-based vocabulary assessments. As in prior work [@zhuInvestigatingValidityPicturebased2025], we worked with only the youngest part of the age range in the middle-to-high income U.S. sample in order to avoid ceiling effects. Overall, the present experiments provide more insight into the appropriateness of picture-based measurements across contexts.
+
+# Experiment 1
+
+In Experiment 1, we investigated whether Kisumu children with some formal schooling perform more accurately on object- than on picture-based vocabulary assessments. Kisumu is the third largest city in Kenya, and a relatively small urban metro region containing a population of approximately one million individuals. The majority of Kisumu households are classified as low or middle socioeconomic status, with substantial variation in income levels and access to basic household assets [@wereComparisonHouseholdSocioeconomic2022a]. Thus, there is likely to be more variation in how much prior experience with pictures Kisumu children have had by comparison with U.S. convenience samples [@zhuDevelopmentPictureComprehension2025a]. If Kisumu children perform more accurately on object- than picture-based vocabulary assessments, then picture-based assessments might underestimate children’s linguistic capacities in some global contexts. If Kisumu children perform similarly on object- and picture-based vocabulary assessments, then picture-based assessments may be appropriate even in global contexts where there is substantial variation in early picture experience.
+
+## Methods
+
+### Transparency and Openness
+
+Preregistration, materials, deidentified data, and analysis scripts for both experiments are publicly available on OSF (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf).
+```{r}
+d <- read_csv(here("data","kisumu_vocab_data.csv"))|>
+  mutate(condition_label = fct_recode(condition, 
+                                      "Object" = "obj", 
+                                        "Photo" = "photo", 
+                                        "Cartoon" = "cartoon", 
+                                        "B&W Drawing" = "bw"))
+```
+### Participants
+
+A preregistered sample of `r length(unique(d$child))` Kisumu children (M = `r mean(d$age)` years; range = `r min(d$age)`-`r max(d$age)` years; 58 girls, 70 boys; 92% attending daycare/school; M = 2.48 years in daycare/school, range = 0-7 years in daycare/school) participated in a Swahili vocabulary assessment. Researchers tested two additional children whose data were excluded due to fussiness (one child) or experimenter error (one child).
+
+Kisumu children typically hear either Swahili or Luo as their first language, and they also begin to learn English at an early age (e.g., when they begin formal schooling). During recruitment, we confirmed that all participants were fluent in Swahili. Children were recruited from a local database maintained by a local non-profit organization, the Safe Water and AIDS Project (SWAP), and participated in the experiment in a quiet room at the SWAP office. The experiment was approved by a U.S. university’s Committee for the Protection of Human Subjects, as well as by the Kenya Medical Research Institute (KEMRI), the National Commission for Science, Technology, and Innovation (NACOSTI), and the local Kisumu County government. All parents of child participants provided informed consent. All data were collected in August and September 2024.
+
+### Stimuli & Procedure
+
+We designed a Swahili vocabulary task involving four blocks, each presented in a different format (e.g., objects, photographs, cartoons, black-and-white line drawings). Each block consisted of four trials, leading to a total of sixteen trials. The order of the blocks, as well as the order of the trials within each block, was semi-randomized across participants.
+Target words were selected from Swahili Communicative Development Inventory (CDI) production data from two communities in Coastal Kenya [@alcockDevelopmentalInventoriesUsing2015]. We used CDI production data, rather than comprehension data, because the former dataset contained a larger number of items and was less noisy. We found approximately 76 viable words (i.e., typically artifact nouns) in the Swahili CDI. We split these words into four quartiles by age of acquisition. Each block included one target word from each of the four quartiles, ensuring that the four blocks were relatively similar in difficulty.
+
+In addition to the target word, each array consisted of one near distractor and two random distractors. Near and random distractors were artifacts that Kisumu children are generally familiar with. Many distractors were items on the Swahili CDI [@alcockDevelopmentalInventoriesUsing2015] or used in previous research with Kenyan preschoolers [@zhuInvestigatingValidityPicturebased2025]. Furthermore, local community researchers and parents again confirmed that all artifacts were familiar to Kisumu children. Similarity scores between items were calculated using the THINGS database [@hebartTHINGSDatabase18542019], which provided Pearson correlation coefficients between pairs of concepts expressed as vectors in semantic space. Near distractors were semantically similar to, and had high correlations with, target items (average correlation = 0.82, range = 0.66-0.95). Random distractors were less conceptually similar to, and had lower correlations with, target items (average correlation = 0.36, range = 0.17-0.53).
+
+Using a within-subjects design, each participant completed all sixteen vocabulary trials. Across participants, each target word was presented in each of the four formats an equal number of times. On each trial, a local experimenter presented children with either a laminated piece of paper depicting four objects or a tray with four objects (see Fig. 1) and prompted the participant to select one of the four items (e.g., “Nionyeshe mswaki”, meaning “Show me a toothbrush” in Swahili). Within each block, the placement of the target item was counterbalanced across trials. For a full list of target and distractor items, see Table 1.
+
+### Caregiver Questionnaire
+
+Each child’s caregiver completed a brief questionnaire through a 15-minute in-person interview in Swahili with a local researcher. Caregivers answered a question about children’s interactions with pictures (e.g., “In the past month, how often did you look at picture books with your child?” on a 5-point Likert scale from 1 = never to 5 = all of the time) as well as four questions about the presence of visual media in the home (i.e., “Do you have picture books / posters / drawing materials / televisions in your home? If yes, how many?”). Caregivers also provided information about other home environment variables, relating to the number of toys (i.e., “Does your child have toys in the home? If yes, how many?”), frequency of caregiver play (i.e., “In the past month, how often did you play with your child?” on a 5-point Likert scale from 1 = never to 5 = all of the time), and frequency of caregiver talk (i.e., In the past month, how often did you talk to your child, even when you were busy?” on a 5-point Likert scale from 1 = never to 5 = all of the time), and maternal education level (i.e., “What is the child’s mother’s highest level of education?” on an 8-point categorical scale from 1 = primary school or below to 8 = doctoral degree). These questions were adapted from a previous caregiver questionnaire used in Kisumu [@zhuDevelopmentPictureComprehension2025a], as well as a standardized demographic reporting tool meant for use across cultures [@singhUnifiedApproachDemographic2024]. The full caregiver questionnaire can be found on OSF (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf).
+
+```{r fig1, fig.cap="Stimuli for a noun trial (Show me the ball / Nionyeshe mpira) across the four conditions.", out.width="6in", fig.align = "center"}
 
 knitr::include_graphics(here("paper","fig1_labeled.pdf"))
+
+```
+
+```{r fig2, fig.cap="Table 1. Full list of stimuli", out.width="7in", fig.align = "center"}
+
+knitr::include_graphics(here("paper","stim_table.pdf"))
+
+```
+
+## Results
+
+### Confirmatory Analyses
+```{r}
+d$condition <- relevel(factor(d$condition), ref = "obj")
+d$age_centered <- scale(d$age, scale = FALSE, center = TRUE)[,1]
+
+# mod <- glmer(accuracy ~ condition + (condition | child) + (condition | target_word),
+# data = d, family = "binomial")
+mod_pruned <- glmer(accuracy ~ condition + (1 | child) + (1 | target_word), 
+                    data = d, family = "binomial")
+#summary(mod_pruned)
+
+cc <- confint(mod_pruned,parm="beta_",method="Wald")
+ctab <- cbind(est=fixef(mod_pruned),cc)
+rtab <- exp(ctab)
+#print(rtab,digits=3)
+```
+We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_pruned)$full_result$conditionbw`). There was no difference between children's accuracy in the object format and the photograph format (`r papaja::apa_print(mod_pruned)$full_result$conditionphoto`), or in the object format and the cartoon format (`r papaja::apa_print(mod_pruned)$full_result$conditioncartoon`) (see Fig. 2).
+
+```{r fig3, fig.env="figure*", fig.cap="Proportion of accurate responses across conditions and age in Kenya and the U.S.",out.width = "8in", fig.align = "center"}
+ms <- d |>
+  group_by(child, condition_label, age) |>
+  summarise(accuracy = mean(accuracy)) 
+
+mss <- ms |>
+  mutate(age_group = as.factor(floor(age))) |>
+  group_by(condition_label, age_group) |>
+  summarise(se = sd(accuracy) / sqrt(n()),
+            ci = se * qt(.975, n() - 1),
+            accuracy = mean(accuracy)) |>
+  mutate(age = as.numeric(as.character(age_group)) + .5, 
+         condition_label = fct_relevel(condition_label, "Object", "Photo", "Cartoon", "B&W Drawing"))
+
+kenya_plot <- ggplot(ms, aes(x = age, y = accuracy, col = condition_label)) + 
+  geom_pointrange(data = mss,
+                  aes(ymin = accuracy - ci, ymax = accuracy + ci), 
+                  position = position_dodge(width = .2)) +
+  # geom_line(data = mss, aes(y = accuracy), position = position_dodge(width = .2)) +
+  geom_jitter(alpha = .2, height = .01, width = 0) + 
+  geom_hline(yintercept = .25, lty = 2) + 
+  geom_smooth(method = "loess", span = 1, alpha = .2) + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+    ggtitle("Kisumu, Kenya") +
+  # ggthemes::scale_color_solarized(name="Condition") + 
+    ylim(0, 1)  +
+  ylab("Accuracy") +
+  xlab("Age (Years)") +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+us_d <- read_csv(here("data","us_vocab_data.csv"))
+
+us_ms <- us_d |>
+  group_by(child, condition_label, age) |>
+  summarise(accuracy = mean(accuracy)) 
+
+us_mss <- us_ms |>
+  mutate(age_group = as.factor(floor(age))) |>
+  group_by(condition_label, age_group) |>
+  summarise(se = sd(accuracy) / sqrt(n()),
+            ci = se * qt(.975, n() - 1),
+            accuracy = mean(accuracy)) |>
+    mutate(age = as.numeric(as.character(age_group)) + .5, 
+         condition_label = fct_relevel(condition_label, "Object", "Photo", "Cartoon", "B&W Drawing"))
+
+us_plot <- ggplot(us_ms, aes(x = age, y = accuracy, col = condition_label)) + 
+  geom_pointrange(data = us_mss,
+                  aes(ymin = accuracy - ci, ymax = accuracy + ci), 
+                  position = position_dodge(width = .2)) +
+  # geom_line(data = mss, aes(y = accuracy), position = position_dodge(width = .2)) +
+  geom_jitter(alpha = .2, height = .01, width = 0) + 
+  geom_hline(yintercept = .25, lty = 2) + 
+  geom_smooth(method = "loess", span = 1, alpha = .2) + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+  scale_x_continuous(breaks=c(3,4,5),limits = c(3,5)) +
+  ggtitle("San Francisco Bay Area, U.S.A.") +
+  # ggthemes::scale_color_solarized(name="Condition") + 
+    ylim(0, 1)  +
+  ylab("Accuracy") +
+  xlab("Age (Years)") +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+fig2 <- ggarrange(kenya_plot, us_plot, nrow = 1, common.legend = TRUE, legend = "bottom")
+
+ggsave("fig2.pdf", plot = fig2, path = here("paper/figs"), width = 8, height = 3, units = "in")
+
+knitr::include_graphics(here("paper/figs","fig2.pdf"))
+
+```
+
+
+```{r}
+mod_age_pruned <- glmer(accuracy ~ condition * age_centered + 
+                          (1 | child) + 
+                          (1 | target_word), 
+                        data = d, family = "binomial")
+# summary(mod_age_pruned)
+
+cc_age <- confint(mod_age_pruned,parm="beta_",method="Wald")
+ctab_age <- cbind(est=fixef(mod_age_pruned),cc_age)
+rtab_age <- exp(ctab_age)
+#print(rtab_age,digits=3)
+```
+We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(mod_age_pruned)$full_result$age_centered`), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`). There was a significant interaction between the black-and-white line drawing format and age, such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw_age_centered`). All other main effects and interactions were not significant (all p's > .20).
+
+### Exploratory Analyses
+Response accuracy was lowest in the black- and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., “book”, “button” and “fork”; see Fig. 3). To explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burknerBrmsPackageBayesian2017] using the default flat priors. Each model underwent a warm-up period of 1000 iterations, followed by four sampling chains with 2000 iterations each.
+
+```{r fig4, fig.env="figure*", fig.cap="Response accuracy by item and condition in Kenya and the U.S. Error bars are binomial 95% confidence intervals.", fig.align = "center"}
+msi <- d |>
+  group_by(condition_label, target_word) |>
+  summarise(mean_accuracy = mean(accuracy, na.rm=TRUE),
+            ci.lower = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$lower,
+            ci.upper = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$upper) |>
+  ungroup() |>
+  mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
+
+kenya_item_plot <- ggplot(msi,
+       aes(x = factor(target_word, level=c('scissors', 'pencil', 'shirt', 'ball', 'shoe', 'sweater', 'cup', 'book', 'comb', 'box', 'bowl', 'toothbrush', 'fork', 'button', 'chalk', 'shorts')), 
+            y = mean_accuracy , col = condition_label)) + 
+  geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
+                  position = position_dodge(width = .4)) + 
+  geom_hline(yintercept = .25, lty = 2)+ 
+  geom_line() + 
+  # coord_flip() + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+# ggthemes::scale_color_solarized(name = "Condition") +
+  theme(axis.text.x = element_text(size = 12, angle = 90, hjust = 1, vjust = 0.5)) +
+  xlab("Item") +
+  ylab("Accuracy") +
+  theme(legend.position = "bottom") +
+  theme(panel.background = element_rect(fill = "white")) +
+  theme(axis.line.x.bottom=element_line(color="black")) +
+  theme(axis.line.y = element_line(color = "black")) +
+   ggtitle("Kisumu, Kenya") +
+  theme(plot.title = element_text(size = 15, hjust = 0.5)) +
+  theme(legend.text = element_text(size = 13))
+
+us_msi <- us_d |>
+  group_by(condition_label, target_word) |>
+  summarise(mean_accuracy = mean(accuracy, na.rm=TRUE),
+            ci.lower = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$lower,
+            ci.upper = binom::binom.confint(sum(accuracy), n = n(), method = "bayes")$upper) |>
+  ungroup() |>
+  mutate(target_word = fct_reorder(target_word, mean_accuracy , .fun = median, .desc=TRUE))
+
+us_item_plot <- ggplot(us_msi,
+        aes(x = factor(target_word, level=c('scissors', 'pencil', 'shirt', 'ball', 'shoe', 'sweater', 'cup', 'book', 'comb', 'box', 'bowl', 'toothbrush', 'fork', 'button', 'chalk', 'shorts')),    
+              y = mean_accuracy , col = condition_label)) + 
+  geom_pointrange(aes(ymin = ci.lower, ymax = ci.upper), 
+                  position = position_dodge(width = .4)) + 
+  geom_hline(yintercept = .25, lty = 2)+ 
+  geom_line() + 
+  # coord_flip() + 
+  scale_color_manual(name = "Condition", 
+                     values = c(
+                    "B&W Drawing" = "#ABDDA4",
+                    "Cartoon" = "#66C2A5" ,
+                    "Photo" = "#3288BD" ,
+                    "Object" = "#5E4FA2" )) + 
+# ggthemes::scale_color_solarized(name = "Condition") +
+  theme(axis.text.x = element_text(size = 12, angle = 90, hjust = 1, vjust = 0.5)) +
+  xlab("Item") +
+  ylab("Accuracy") +
+  theme(legend.position = "bottom") +
+  theme(panel.background = element_rect(fill = "white")) +
+  theme(axis.line.x.bottom=element_line(color="black")) +
+  theme(axis.line.y = element_line(color = "black")) +
+  expand_limits(y=0) +
+  ggtitle("San Francisco Bay Area, U.S.A.") +
+  theme(plot.title = element_text(size = 15, hjust = 0.5))  +
+  theme(legend.text = element_text(size = 13))
+
+fig3 <- ggarrange(kenya_item_plot, us_item_plot, nrow = 1, common.legend = TRUE, legend = "bottom")
+
+ggsave("fig3.pdf", plot = fig3, path = here("paper/figs"), width = 10, height = 5, units = "in")
+
+knitr::include_graphics(here("paper/figs","fig3.pdf"))
+
+```
+
+```{r}
+#bayes_mod <- brm(formula = accuracy ~ condition + (condition | child) + (condition | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod <- readRDS(here("cached_results/kisumu_bayes_mod_full.rds"))
+
+emmeans_bayes_mod <- bayes_mod%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod)
+
+#saveRDS(bayes_mod, here("cached_results/kisumu_bayes_mod_full.rds"))
+
+#get numbers for manuscript
+bayes_mod_obj_photo <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, ", 95% credible interval [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_obj_cartoon <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_obj_bw <- emmeans_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+A first exploratory Bayesian mixed effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. We used the `brms` default prior structure, flat priors on fixed effects and $t$ distributions on random effects. This model instantiated the preregistered maximal random effects structure that failed to converge. There was no difference in performance between object and photograph formats, `r bayes_mod_obj_photo$estimate_print`, object and cartoon formats, `r bayes_mod_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r bayes_mod_obj_bw$estimate_print`.
+```{r}
+#bayes_mod_age <- brm(formula = accuracy ~ condition * age_centered + 
+#               (condition | child) + 
+#                   (condition * age_centered | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_age <- readRDS(here("cached_results/kisumu_bayes_mod_age_full.rds"))
+
+emmeans_bayes_mod_age <- bayes_mod_age%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_age)
+
+#saveRDS(bayes_mod_age, here("cached_results/kisumu_bayes_mod_age_full.rds"))
+
+#get numbers for manuscript
+bayes_mod_age_obj_photo <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_obj_cartoon <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_obj_bw <- emmeans_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+We also ran a second exploratory Bayesian mixed-effects model including child age as an additional variable, again paralleling our earlier analysis but with the full random effects structure. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. Once again, there was no difference in performance between object and photograph formats, `r bayes_mod_age_obj_photo$estimate_print`, object and cartoon formats, `r bayes_mod_age_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r bayes_mod_age_obj_bw$estimate_print`.
+```{r}
+#bayes_mod_pruned <- brm(formula = accuracy ~ condition + (1 | child) + (1 | target_word),
+#                 family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_pruned <- readRDS(here("cached_results/kisumu_bayes_mod_pruned.rds"))
+
+emmeans_bayes_mod_pruned <- bayes_mod_pruned%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_pruned)
+
+#saveRDS(bayes_mod_pruned, here("cached_results/kisumu_bayes_mod_pruned.rds"))
+
+#get numbers for manuscript
+bayes_mod_pruned_obj_photo <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_pruned_obj_cartoon <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+   estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_pruned_obj_bw <- emmeans_bayes_mod_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+#bayes_mod_age_pruned <-  brm(formula = accuracy ~ condition * age_centered + (1 | child) + (1 | target_word), 
+#                              family=bernoulli(link="logit"), data = d, seed = 1)
+
+bayes_mod_age_pruned <- readRDS(here("cached_results/kisumu_bayes_mod_age_pruned.rds"))
+
+emmeans_bayes_mod_age_pruned <- bayes_mod_age_pruned%>% emmeans(specs = pairwise~condition)
+#summary(emmeans_bayes_mod_age_pruned)
+
+#saveRDS(bayes_mod_age_pruned, here("cached_results/kisumu_bayes_mod_age_pruned.rds"))
+
+#get numbers for manuscript
+bayes_mod_age_pruned_obj_photo <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_pruned_obj_cartoon <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+     estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+bayes_mod_age_pruned_obj_bw <- emmeans_bayes_mod_age_pruned$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+     estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+```
+We explored whether the difference between these Bayesian models and the earlier preregistered frequentist analyses was due to their differing random-effect structures. To investigate this question, we ran Bayesian analyses with the same random effects structure as the convergent preregistered models. Thus, we fit parallel exploratory Bayesian mixed effects models for condition both with and without age interactions, in both cases omitting random condition-by-item slope terms. Paralleling the preregistered analyses, there was a difference between object and black-and-white line drawing formats, `r bayes_mod_pruned_obj_bw$estimate_print` in the condition model, and the same effect emerged in the model with age interactions `r bayes_mod_age_pruned_obj_bw$estimate_print`. These models provide support for the idea that changes to the random effect structure were responsible for changes in the significance of the black-and-white line drawing effect between the preregistered and exploratory models.
+
+### Error Analyses
+
+To more fully characterize children’s behavior across conditions, we also analyzed the pattern of errors they produced. For example, if children err by selecting near, conceptual distractors, then they may still have some degree of understanding of the task at hand. However, if children err by selecting random, far distractors, then they may have a substantial amount of difficulty with either the target word, the assessment format, or both. 
+```{r}
+error_d <- read_csv(here("data","error_analyses.csv"))
+error_d$condition <- relevel(factor(error_d$condition), ref = "obj")
+error_d$age_centered <- scale(error_d$age, scale = FALSE, center = TRUE)[,1]
+
+error_d <- error_d %>% 
+              mutate(rounded_age = factor(round(age))) %>% # bin age in two ways 
+              mutate(floored_age = factor(floor(age))) %>%
+              mutate(response_type = fct_recode(response_type, # also recode response type
+                                   "near" = "Near Distractor",
+                                   "far" = "Random",
+                                   "target" = "Target")) %>%
+              mutate(response_type = factor(response_type,
+                                            levels = c("far", "near","target"),
+                                            ordered = TRUE)) %>%
+              mutate(condition = fct_recode(factor(condition), # recode condition and set levels
+                                 "b&w" = "bw",
+                                 "object" = "obj",
+                                 "photo" = "photo",
+                                 "cartoon" = "cartoon")) %>% 
+              mutate(condition = factor(condition,
+                                        levels = c("object", "photo","cartoon", "b&w"),
+                                        ordered = FALSE))
+
+agg <-group_by(error_d, context)
+kenya <-subset(agg, context == "kenya")
+us <-subset(agg, context == "usa")
+
+kenya_errors <- kenya %>%
+    filter(response_type %in% c("near","far")) %>% 
+    mutate(is_far = response_type=="far")
+
+us_errors <- us %>%
+    filter(response_type %in% c("near","far")) %>% 
+    mutate(is_far = response_type=="far")
+
+freq_kenya_error_mod_pruned <- glmer(is_far ~ condition + (1 | child) + (1| target_word),
+              data = kenya_errors, family = "binomial")
+
+cc <- confint(freq_kenya_error_mod_pruned,parm="beta_",method="Wald")
+ctab <- cbind(est=fixef(freq_kenya_error_mod_pruned),cc)
+rtab <- exp(ctab)
+```
+We examined the distribution of children’s errors across conditions (see Fig. 4 for full distribution of children’s responses, and the same distribution renormalized without target choices). A first exploratory mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge, so we report results from the model that used the maximal random-effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children made more near errors in the object format than the photograph format
+(`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionb_w`).
+
+```{r fig5, fig.env="figure*", fig.cap="Error analysis showing the distribution of target and distractor choices by condition and age. Distribution including target choices in Kisumu, Kenya children (A) and San Francisco Bay Area, U.S.A. children (B). Distribution of errors, renormalized without target choices, in Kisumu, Kenya children (C) and San Francisco Bay Area, U.S.A. children (D).", fig.align = "center"} 
+
+kenya_respplot <- ggplot(kenya, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) +
+      geom_hline(yintercept = 0.25, linetype = "dashed", color = "black") +
+     theme_minimal() +
+     theme(
+       axis.text = element_text(size = 11),  
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2") +
+  ggtitle("A - Kenya") +
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+us_respplot <- ggplot(us, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) +  
+    geom_hline(yintercept = 0.25, linetype = "dashed", color = "black") +
+     theme_minimal() +
+     theme(
+       axis.text = element_text(size = 11),  
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2") +
+  ggtitle("B - U.S.A.") +
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+kenya_errplot <- ggplot(kenya_errors, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) + 
+  geom_hline(yintercept = 0.33, linetype = "dashed", color = "black") +
+     theme_minimal() +
+       theme(
+        axis.text = element_text(size = 11),  
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2") +
+  ggtitle("C - Kenya") +
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+us_errplot <- ggplot(us_errors, aes(x = condition, fill = response_type)) +
+        geom_bar(position = "fill") +
+        facet_wrap(~floored_age, nrow = 1) +
+        scale_y_continuous(labels = scales::percent) +
+        labs(
+         x = "condition",
+         y = "proportion of responses",
+         fill = "response type"
+     ) + 
+  geom_hline(yintercept = 0.33, linetype = "dashed", color = "black") +
+     theme_minimal() +
+       theme(
+       axis.text = element_text(size = 11),     # Axis labels
+       axis.text.x = element_text(angle = 90, hjust = 1)
+     ) +
+     scale_fill_brewer(palette="Dark2") +
+  ggtitle("D - U.S.A.") +
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+fig4 <- ggarrange(kenya_respplot, us_respplot, kenya_errplot, us_errplot, 
+          ncol = 2, nrow = 2,
+          widths = c(1, .4, 1, .4), 
+          font.label=list(size=10),
+          align = c("v"), 
+          common.legend = TRUE, legend = "bottom")
+
+ggsave("fig4.pdf", plot = fig4, path = here("paper/figs"), width = 10, height = 5, units = "in")
+
+knitr::include_graphics(here("paper/figs","fig4.pdf"))
 
 ```
 
 
 
 ```{r}
+freq_kenya_error_mod_age_pruned <- glmer(is_far ~ condition*age_centered + (1| child) + (1 | target_word),
+              data = kenya_errors, family = "binomial")
+
+#get confidence intervals
+cc <- confint(freq_kenya_error_mod_age_pruned,parm="beta_",method="Wald")
+ctab <- cbind(est=fixef(freq_kenya_error_mod_age_pruned),cc)
+rtab <- exp(ctab)
+```
+We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Similar to the first model, this model also yielded a main effect of format, such that children made more near errors in the object format than the photograph format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w`). There was a significant interaction between the black-and-white line drawing format and age (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w_age_centered`). All other main effects and interactions were not significant (all p-values > .24).
+```{r}
+#kenya_bayes_error_mod <- brm(formula = is_far ~ condition + (condition | child) + (condition | target_word),
+#                 family=bernoulli(link="logit"), data = kenya_errors, seed = 1)
+
+#saveRDS(kenya_bayes_error_mod, here("cached_results/kenya_bayes_error_mod.rds"))
+
+kenya_bayes_error_mod <- readRDS(here("cached_results/kenya_bayes_error_mod.rds"))
+
+emmeans_kenya_bayes_error_mod <- kenya_bayes_error_mod%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+kenya_bayes_error_mod_obj_photo <- emmeans_kenya_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_mod_obj_cartoon <- emmeans_kenya_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_mod_obj_bw <- emmeans_kenya_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - b&w") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_mod_photo_bw <- emmeans_kenya_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "photo - b&w") %>% 
+  mutate(
+        estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+```
+Moreover, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the frequentist regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burknerBrmsPackageBayesian2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. A first exploratory Bayesian mixed effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. We used the brms default prior structure, flat priors on fixed effects and t distributions on random effects. This Bayesian model instantiated the maximal random effects structure that failed to converge in the frequentist model. The results of the Bayesian model converge with the results of the frequentist model: children made more near errors in the object format than the photograph format, `r kenya_bayes_error_mod_obj_photo$estimate_print` the cartoon format, `r kenya_bayes_error_mod_obj_cartoon$estimate_print`, and the black-and-white line drawing format, `r kenya_bayes_error_mod_obj_bw$estimate_print`. Children also made more near errors in the photograph format than the black-and-white line drawing format, `r kenya_bayes_error_mod_photo_bw$estimate_print`.
+```{r}
+#kenya_bayes_error_age_mod <- brm(formula = is_far ~ condition*age_centered + (condition | child) + (condition | target_word),
+#                 family=bernoulli(link="logit"), data = kenya_errors, seed = 1)
+
+#saveRDS(kenya_bayes_error_age_mod, here("cached_results/kenya_bayes_error_age_mod.rds"))
+
+kenya_bayes_error_age_mod <- readRDS(here("cached_results/kenya_bayes_error_age_mod.rds"))
+
+emmeans_kenya_bayes_error_age_mod <- kenya_bayes_error_age_mod%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+kenya_bayes_error_age_mod_obj_photo <- emmeans_kenya_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_age_mod_obj_cartoon <- emmeans_kenya_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_age_mod_obj_bw <- emmeans_kenya_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - b&w") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+kenya_bayes_error_age_mod_photo_bw <- emmeans_kenya_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "photo - b&w") %>% 
+  mutate(
+        estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+We also fit a second exploratory Bayesian mixed-effects model including child age as an additional variable, again paralleling our earlier analysis but with the full random effects structure. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. The results of the Bayesian model again converge with the results of the frequentist model: children made more near errors in the object format than the photograph format, `r kenya_bayes_error_age_mod_obj_photo$estimate_print`, the cartoon format, `r kenya_bayes_error_age_mod_obj_cartoon$estimate_print`, and the black-and-white line drawing format, `r kenya_bayes_error_age_mod_obj_bw$estimate_print`. Children also made more near errors in the photograph format than the black-and-white line drawing format, `r kenya_bayes_error_age_mod_photo_bw$estimate_print`. 
+
+Overall, both exploratory frequentist and Bayesian error analyses suggest that children made more near (i.e., conceptual) errors and less far (i.e., random) errors in the object format than in the three picture formats. These results tentatively suggest that Kisumu children may still have a greater degree of understanding of the task at hand when completing the task in the object format. In contrast, Kisumu children may still have some degree of difficulty with picture-based assessment formats, as they commit random errors more frequently in the three picture formats.
+
+### Individual Differences Analyses
+
+Data from the caregiver questionnaire showed substantial variation in children’s picture experience and other home environment variables (see Table 2). Consequently, we investigated whether children’s picture experiences related to their performance on the vocabulary task, controlling for other home environment variables. We used the frequency of looking at picture books with their caregiver as the picture experience variable, since previous research with Kisumu toddlers suggested that this particular picture experience variable was related to performance on picture-based tasks [@zhuDevelopmentPictureComprehension2025a]. 
+```{r}
+mod_full_pruned3 <- glm(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed,
+              data = d, family = "binomial")
+```
+We fit an exploratory mixed-effects model fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and frequency of looking at picture books, and the interaction between the two, as well as fixed effects for frequency of caregiver talk, frequency of caregiver play, number of toys in the home, and maternal education. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model yielded no relation between children’s accuracy and any of the variables (all p-values > .44).
+```{r}
+mod_bare <- glm(accuracy ~ pic_interact * condition,
+              data = d, family = "binomial")
+```
+We also fit an exploratory mixed-effects model without any control variables. A mixed-effects model was fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing) and frequency of looking at picture books, and the interaction between the two. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model again yielded no relation between children’s accuracy and any of the variables (all p-values > .52).
+
+Additionally, we ran individual differences analyses using other picture experience variables (e.g., aggregated picture experience variables broken down into two factors via factor analysis). These additional individual differences analyses also yielded null results. See supplementary materials on OSF for additional analytic code and results (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf).
+
+```{r fig6, fig.env="figure*", fig.cap="Table 2. Descriptive statistics across home environments in Kisumu, Kenya and the San Francisco Bay Area.", fig.align = "center"} 
+
 home <- read_csv(here("data","caregiver_questionnaire.csv"))
 
 descriptives <- home %>% group_by(Country) %>% 
@@ -128,16 +770,246 @@ descriptives <- home %>% group_by(Country) %>%
               values_from = c(Mean, SD, Minimum, Maximum),
               names_vary = 'slowest')
 
-apa_table(
+table2  <- apa_table(
   descriptives
   , note = "Table 2. Descriptive statistics across home environments in Kisumu, Kenya and the San Francisco Bay Area, U.S.A. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time). Question 11 was answered on a 8-point ordinal scale (1 = primary school or below, 2 = junior secondary school or below, 3 = senior secondary school or below, 4 = vocational training, 5 = polytechnic, 6 = university degree, 7 = master's or professional degree, 8 = doctoral degree).",
+  landscape = TRUE,
   font_size = 9
 )
+
+table2
+
 ```
 
 
-\newpage
+# Experiment 2
 
+Experiment 1 found that Kisumu children performed similarly on object-, photograph-, and cartoon-based assessments, but possibly less accurately on black-and-white line drawing-based assessments. Experiment 2 investigated whether U.S. children might perform similarly to their Kisumu counterparts across object- and picture-based conditions. While previous research with toddlers and preschoolers in the San Francisco Bay Area suggest that high-income U.S. children perform similarly on vocabulary assessments involving objects and cartoons [@zhuInvestigatingValidityPicturebased2025], it is unclear whether U.S. children might also show no performance difference across other kinds of picture formats (i.e., photographs, black-and-white line drawings). To avoid a ceiling effect in the U.S. sample, we focused on the youngest part of the age range (i.e., the Kisumu sample involved 3- to 7-year-olds, and the U.S. sample involved 3- and 4-year-olds). 
+
+Critically, we note that these data are not useful for comparisons of overall accuracy across U.S. and Kenyan contexts, because of multiple confounding factors (e.g., including but not limited to translation of task instructions, task pragmatics, socioeconomic status), which tend differ across geographically disparate communities [@jukesPrinciplesAdaptingAssessments2024]. Rather, the present data is useful for comparing potential differences between object- and picture-based assessment performance across contexts. 
+
+## Methods
+
+### Participants
+```{r}
+us_d <- read_csv(here("data","us_vocab_data.csv"))
+```
+A preregistered sample of `r length(unique(us_d$child))` middle-to-high-income San Francisco Bay Area preschoolers (M = `r mean(us_d$age)` years; range = `r min(us_d$age)`-`r max(us_d$age)`, 30 girls, 34 boys; 100% attending preschool) participated in an English vocabulary assessment. Researchers tested seven additional children whose data were excluded due to fussiness (one child) or experimenter error (six children). U.S. participants were primarily Asian (17 participants), White (12 participants), White-Asian (9 participants), and Middle Eastern (7 participants), with the remainder of the participants identifying as White-Black (2 participants), Asian-Latina (1 participant), Asian-Middle Eastern (1 participant), Black (1 participant), Latina (1 participant), White-Asian-Latina (1 participant), White-Latina (1 participant), White-Middle Eastern (1 participant), and White-Middle Eastern-Latina (1 participant). Nine participants chose not to provide an ethnicity.
+
+While the San Francisco Bay Area is highly multilingual, all children in the sample attended an English-speaking preschool and were fluent in English. Children were recruited from a local suburban preschool and participated in the experiment in a quiet room in their preschool. The experiment was approved by a U.S. university’s Committee for the Protection of Human Subjects, and all parents of child participants provided informed consent. All data was collected between February and October 2025.
+
+### Stimuli & Procedure 
+Experiment 2’s stimuli and procedure was identical to Experiment 1’s stimuli and procedure, except that U.S. children completed the vocabulary assessment in English rather than Swahili.
+
+### Caregiver Questionnaire
+Caregivers in Experiment 2 completed the same questionnaire as in Experiment 1, except that U.S. caregivers completed the questionnaire in an English online Qualtrics survey rather than a Swahili in-person interview. Since data collection for Experiments 1 and 2 occurred in lab-based and preschool-based settings respectively, caregivers were physically present in Experiment 1 but not Experiment 2. Thus, the caregiver questionnaire response rate was substantially higher in Experiment 1 (100% response rate; 128 out of 128 caregivers) than Experiment 2 (61% response rate; 39 out of 64 caregivers). 
+
+### Teacher Questionnaire
+Since Experiment 2 occurred in a preschool-based setting, we also collected a brief teacher questionnaire. One teacher from each of the five classrooms responded to questions about children’s preschool-based picture experience (i.e., “Do you have picture books / posters / drawing materials / televisions in your classroom? If yes, how many?”), as well as questions about other classroom environment variables, for example relating to the number of toys (i.e., “Do you have toys in your classroom? If yes, how many?”), frequency of teacher play (i.e., “In the past month, how often did you play with the children in your classroom?” on a 5-point Likert scale from 1 = never to 5 = all of the time), and frequency of teacher talk (i.e., In the past month, how often did you talk to the children in your classroom, even when you were busy?” on a 5-point Likert scale from 1 = never to 5 = all of the time). The full teacher questionnaire can be found on OSF (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf)..
+
+## Results
+
+### Confirmatory Analyses
+```{r}
+us_d$condition <- relevel(factor(us_d$condition), ref = "obj")
+us_d$age_centered <- scale(us_d$age, scale = FALSE, center = TRUE)[,1]
+
+us_mod_pruned <- glmer(accuracy ~ condition + (1 | child) + (1 | target_word), 
+             data = us_d, family = "binomial")
+
+#get confidence intervals
+cc <- confint(us_mod_pruned,parm="beta_",method="Wald")
+ctab <- cbind(est=fixef(us_mod_pruned),cc)
+rtab <- exp(ctab)
+```
+We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Although there was a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_pruned)$full_result$conditionbw`), overall the model yielded no difference between children’s accuracy in the object format and any of the three picture conditions (all other p-values > .11).
+```{r}
+us_mod_age_pruned <- glmer(accuracy ~ condition * age_centered + 
+                   (1 | child) + 
+                   (1 | target_word), 
+              data = us_d, family = "binomial")
+#main effect of age, marginal effect of object vs. black-and-white line drawings
+
+#get confidence intervals
+cc <- confint(us_mod_age_pruned,parm="beta_",method="Wald")
+ctab <- cbind(est=fixef(us_mod_age_pruned),cc)
+rtab <- exp(ctab)
+```
+We also fit a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(us_mod_age_pruned)$full_result$age_centered`). Although there was again a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_age_pruned)$full_result$conditionbw`), overall all other main effects and interactions were not significant (all other p-values > .16).
+
+### Exploratory Analyses
+
+As in Experiment 1, in order to explore the model using the maximal random effects structure, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burknerBrmsPackageBayesian2017] using the default flat priors. Each model underwent a warm- up period of 1000 iterations, followed by four sampling chains with 2000 iterations each.
+```{r}
+#us_bayes_mod <- brm(formula = accuracy ~ condition + (condition | child) + (condition | target_word),
+#              family=bernoulli(link="logit"), data = us_d, seed = 1)
+
+#saveRDS(bayes_mod, here("cached_results/us_bayes_mod.rds"))
+
+us_bayes_mod <- readRDS(here("cached_results/us_bayes_mod.rds"))
+
+emmeans_us_bayes_mod <- us_bayes_mod%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+us_bayes_mod_obj_photo <- emmeans_us_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_mod_obj_cartoon <- emmeans_us_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_mod_obj_bw <- emmeans_us_bayes_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+A first exploratory Bayesian mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. We used the brms default prior structure, flat priors on fixed effects and t distributions on random effects. This model instantiated the preregistered maximal random effects structure that failed to converge. Similarly to the preregistered model, the Bayesian model showed no difference in performance between object and photograph formats, `r us_bayes_mod_obj_photo$estimate_print`, object and cartoon formats, `r us_bayes_mod_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r us_bayes_mod_obj_bw$estimate_print`.
+```{r}
+#us_bayes_mod_age <- brm(formula = accuracy ~ condition * age_centered + 
+#                   (condition | child) + 
+#                   (condition * age_centered | target_word),
+#                 family=bernoulli(link="logit"), data = us_d, seed = 1)
+
+#saveRDS(bayes_mod, here("cached_results/us_bayes_mod_age.rds"))
+
+us_bayes_mod_age <- readRDS(here("cached_results/us_bayes_mod_age.rds"))
+
+emmeans_us_bayes_mod_age <- us_bayes_mod_age%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+us_bayes_mod_age_obj_photo <- emmeans_us_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_mod_age_obj_cartoon <- emmeans_us_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_mod_age_obj_bw <- emmeans_us_bayes_mod_age$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "obj - bw") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+We also fit a second exploratory Bayesian mixed-effects model including child age as an additional variable, again paralleling our earlier analysis but with the full random effects structure. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. Once again, there was no difference in performance between object and photograph formats, `r us_bayes_mod_age_obj_photo$estimate_print`, object and cartoon formats, `r us_bayes_mod_age_obj_cartoon$estimate_print`, or object and black-and-white line drawing formats, `r us_bayes_mod_age_obj_bw$estimate_print`. 
+Thus, preregistered frequentist analyses and parallel exploratory Bayesian analyses provide converging support for the idea that San Francisco Bay Area children perform similarly across object, photograph, cartoon, and black-and-white line drawing formats.
+
+### Error Analyses
+```{r}
+us_errors$condition <- relevel(factor(us_errors$condition), ref = "object")
+us_errors$age_centered <- scale(us_errors$age, scale = FALSE, center = TRUE)[,1]
+
+freq_us_error_mod_pruned <- glmer(is_far ~ condition + (1 | child) + (1 | target_word) ,
+              data = us_errors, family = "binomial")
+```
+We examined the distribution of children’s errors across conditions. A first exploratory mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded no difference between children’s errors in the object format and any of the three picture formats (all p-values > .52).
+```{r}
+freq_us_error_mod_age_pruned <- glmer(is_far ~ condition*age_centered + (1 | child),
+              data = us_errors, family = "binomial")
+```
+We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included a random intercepts for each child. Although there was a marginal difference in errors between the object condition and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon`) and a marginal interaction between age and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon_age_centered`), overall the model yielded no significant main effects or interactions (all other p-values > .10).
+```{r}
+#us_bayes_error_mod <- brm(formula = is_far ~ condition + (condition | child) + (condition | target_word),
+ #               family=bernoulli(link="logit"), data = us_errors, seed = 1)
+
+#saveRDS(us_bayes_error_mod, here("cached_results/us_bayes_error_mod.rds"))
+
+us_bayes_error_mod <- readRDS(here("cached_results/us_bayes_error_mod.rds"))
+
+emmeans_us_bayes_error_mod <- us_bayes_error_mod%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+us_bayes_error_mod_obj_photo <- emmeans_us_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_error_mod_obj_cartoon <- emmeans_us_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_error_mod_obj_bw <- emmeans_us_bayes_error_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - b&w") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+Moreover, in order to explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the frequentist regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burknerBrmsPackageBayesian2017] using the default flat priors. Each model underwent a warm-up period of 1000 iterations, followed by four sampling chains with 2000 iterations each. A first exploratory Bayesian mixed effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing), and random slopes for the effect of condition on each child, and condition on each item. We used the brms default prior structure, flat priors on fixed effects and t distributions on random effects. This Bayesian model instantiated the maximal random effects structure that failed to converge in the frequentist model. The results of the Bayesian model converge with the results of the frequentist model, showing no difference in U.S. children’s error types between the object format and the photograph format, `r us_bayes_error_mod_obj_photo$estimate_print`, the cartoon format, `r us_bayes_error_mod_obj_cartoon$estimate_print`, and the black-and-white line drawing format, `r us_bayes_error_mod_obj_bw$estimate_print`.
+```{r}
+#us_bayes_error_age_mod <- brm(formula = is_far ~ condition*age_centered + (condition | child) + (condition | target_word),
+ #                family=bernoulli(link="logit"), data = us_errors, seed = 1)
+
+#saveRDS(us_bayes_error_age_mod, here("cached_results/us_bayes_error_age_mod.rds"))
+
+us_bayes_error_age_mod <- readRDS(here("cached_results/us_bayes_error_age_mod.rds"))
+
+emmeans_us_bayes_error_age_mod <- us_bayes_error_age_mod%>% emmeans(specs = pairwise~condition)
+
+#get numbers for manuscript
+us_bayes_error_age_mod_obj_photo <- emmeans_us_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - photo") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_error_age_mod_obj_cartoon <- emmeans_us_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - cartoon") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+
+us_bayes_error_age_mod_obj_bw <- emmeans_us_bayes_error_age_mod$contrasts %>% as.data.frame() %>% 
+  mutate_if(is.numeric, round, 2) %>% 
+  filter(contrast == "object - b&w") %>% 
+  mutate(
+    estimate_print = paste0("estimated marginal means: ", estimate, " [", lower.HPD, ", ", upper.HPD, "]")
+  )
+```
+We also fit a second exploratory Bayesian mixed-effects model including child age as an additional variable, again paralleling our earlier analysis but with the full random effects structure. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item, showing no difference in U.S. children’s error types between the object format and the photograph format, `r us_bayes_error_age_mod_obj_photo$estimate_print`, the cartoon format, `r us_bayes_error_age_mod_obj_cartoon$estimate_print`, and the black-and-white line drawing format, `r us_bayes_error_age_mod_obj_bw$estimate_print`. Overall, exploratory frequentist and Bayesian analyses consistently show that U.S. children make the same types of errors across object and picture formats.
+
+### Individual Differences Analyses
+
+We did not run individual differences analyses in the U.S. sample, which had higher absolute levels of, and less variability in, picture experience variables, relative to the Kenyan sample (see Table 2 for the U.S. and Kenyan caregiver questionnaire data, and Table 3 in the Appendix for the U.S. teacher questionnaire data).
+
+# General Discussion
+
+The present experiments investigated whether young children in Kisumu, Kenya, and the San Francisco Bay Area, U.S.A., performed similarly on vocabulary assessments involving objects and three kinds of pictures (i.e., photographs, cartoons, black-and-white line drawings). Preregistered analyses suggest that young children in both contexts perform similarly on vocabulary assessments involving objects, photographs, and cartoons, though Kisumu children performed less accurately on assessments involving black-and-white line drawings. However, further exploratory Bayesian analyses with a full random effects model did not find significant differences in Kisumu children’s response accuracy between vocabulary assessments involving objects, photographs, cartoons, and black-and-white line drawings. These exploratory analyses may suggest that the accuracy difference between object-based and black-and-white line drawing-based assessments in Kisumu children was not consistent across items, but rather driven by specific items. Overall, these findings suggest that cartoon- and photograph-based assessments are appropriate for Kisumu children, but black-and-white line drawing-based assessments should be used with some caution. In contrast, black-and-white line drawing-, cartoon-, and photograph-based assessments are all appropriate for San Francisco Bay Area children.
+
+Exploratory analyses examining Kisumu children’s error patterns allow for another view of the present data, beyond binary correct/incorrect scoring. Specifically, if children’s errors consist primarily of near, conceptual distractors, they may hold a greater degree of understanding of the task than if their errors consist primarily of far, random distractors. Exploratory analyses suggested that Kisumu children tended to make more near distractor errors than random distractor errors when presented with objects, potentially suggesting a greater degree of understanding in the object condition than the picture conditions. In contrast, exploratory analyses showed no difference in San Francisco Bay Area children’s errors across object and picture formats, perhaps because children were close to ceiling performance across all ages tested. These exploratory results should be interpreted with caution, but may tentatively suggest that there are still some differences in Kisumu and San Francisco Bay Area children’s underlying picture comprehension capacities that require further exploration.
+
+More data and more item diversity are also required in order to conclude that the specific accuracy difference between object-based and black-and-white line drawing-based assessments is generalizable. It is possible that this difference only appears for some kinds of black-and-white line drawings (e.g., particularly ambiguous depictions), or that the line drawings used in the present experiment were particularly difficult for an idiosyncratic reason. Thus, future research should attempt to replicate this effect with a new sample of items.
+
+Prior studies showed that Mombasa preschoolers, as well as toddlers and preschoolers in other global contexts, perform more accurately on object- than photograph- and cartoon- based assessments [@walkerRoleSymbolbasedExperience2013a; @zhuInvestigatingValidityPicturebased2025]. What variables might account for the differences between our present findings and these prior studies? One possibility is that formal schooling may drive the discrepancy between our present findings and previous findings. Many of the children in the present study already attend daycares and schools, and these additional learning contexts may provide children with more opportunities to access picture books and other kinds of visual media. Another possibility is that the children in the present study are simply older: we worked with 3- to 7- year-olds (average age of approximately 5.5 years), whereas other studies worked with 2-year-olds [@walkerRoleSymbolbasedExperience2013a] and 2- to 7-year-olds, with an average age of approximately 4.5 years [@zhuInvestigatingValidityPicturebased2025]. A final possibility is that there is something distinct about Kisumu, such that work from other Kenyan contexts (i.e., Mombasa County) does not generalize to there. Indeed, Kisumu is substantially more urban than some, though not all, previously researched global contexts, such as rural India and Peru [@callaghanEarlySocialCognition2011] and rural Tanzania [@walkerRoleSymbolbasedExperience2013a]. In general, we caution that not all global contexts are the same, and do not readily generalize to each other. Instead, it is more fruitful to articulate specific variables which may vary across and within contexts, and thus drive variation in behavior [@bohnUnderstandingCulturalVariation2024].
+
+Notably, individual differences analyses in Experiment 1 did not find a significant relation between picture experience and performance on the picture vocabulary task. While previous research with Kisumu toddlers demonstrated a positive relation between their picture experience and their performance on a picture-based word learning task [@zhuDevelopmentPictureComprehension2025a], the current research cannot demonstrate an explicit relation between children’s picture experience and their performance on picture-based assessments. It is possible that this relation between picture experience and picture-based task performance exists only in younger Kisumu children (i.e., who may show performance differences between objects and pictures) but not in Kisumu children (i.e., who may perform similarly on object, photograph, and cartoon assessments).
+
+Overall, the present findings contribute to an exploration of assessments used in global contexts, particularly contexts where children may possess highly variable amounts of picture experience. However, more research is required to determine in exactly which contexts picture-based assessment tools are appropriate or inappropriate. By gathering additional data to address this knowledge gap, researchers and educators help ensure that potential variation in children’s performance across visual formats does not negatively impact children’s learning experiences or underestimate their cognitive and linguistic competencies. Ultimately, this research will contribute to the development of more effective educational tools, as well as more appropriate evaluation of policies and programs, to improve early child outcomes and educational trajectories.
+
+\newpage
 # References
 
 ```{r create_r-references}
@@ -152,6 +1024,7 @@ r_refs(file = "r-references.bib")
 <div id = "refs"></div>
 \endgroup
 
+\newpage
 # Appendix
 
 ```{r}
@@ -178,7 +1051,6 @@ descriptives <- teacher %>%
     Maximum = c(max(pic_freq), max(play_freq), max(talk_freq), max(draw_freq), max(other_draw_freq), 
              max(pic_book_num), max(draw_num), max(poster_num), max(toy_num), max(tv_num)),
   )
-
 
 apa_table(
   descriptives
