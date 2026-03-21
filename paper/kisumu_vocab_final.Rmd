@@ -34,7 +34,7 @@ author_note: |
  
   Conflicts of Interest. The authors declare that there is no conflict of interest.
   
-  Acknowledgments. We are grateful to Elizabeth Osore, Gabriel Ochieng Mange, and Dena Kumsa for assistance with data collection, as well as to the children, parents, and teachers who made this research possible. A special thank you to Dan Werthimer and Gloria for making this collaboration possible.
+  Acknowledgments. We are grateful to Elizabeth Osore, Gabriel Ochieng Mange, and Dena Kumsa for assistance with data collection, as well as to the children, parents, and teachers who made this research possible. A special thank you to Dan Werthimer and Gloria for making this collaboration possible. Data from Experiment 1 were published previously in the Cognitive Science Society's conference proceedings.
   
   Data Availability Statement. Preregistration, materials, deidentified data, and analysis scripts for both experiments are publicly available at https://osf.io/dgz9w/.
   
@@ -86,6 +86,8 @@ library(ggplot2)
 library(gridExtra)
 library(papaja)
 library(ggpubr)
+library(kableExtra)
+library(corrplot)
 ```
 # Introduction
 
@@ -111,7 +113,7 @@ In Experiment 1, we investigated whether Kisumu children with some formal school
 
 ### Transparency and Openness
 
-Preregistration, materials, deidentified data, and analysis scripts for both experiments are publicly available on OSF (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf).
+Transparency and Openness. We report how we determined our sample size, all data exclusions, all manipulations, and all measures in the study, and we follow Journal Article Reporting Standards for quantitative research in psychology [@appelbaumJournalArticleReporting2018]. We preregistered the design and analyses for both studies at https://aspredicted.org/. All preregistrations, data, analysis code, and research materials are available on the Open Science Framework (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf). Data were analyzed using R Version 2024.12.1+563 [@RStudioIntegratedDevelopment2025].
 ```{r}
 d <- read_csv(here("data","kisumu_vocab_data.csv"))|>
   mutate(condition_label = fct_recode(condition, 
@@ -169,7 +171,7 @@ ctab <- cbind(est=fixef(mod_pruned),cc)
 rtab <- exp(ctab)
 #print(rtab,digits=3)
 ```
-We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_pruned)$full_result$conditionbw`). There was no difference between children's accuracy in the object format and the photograph format (`r papaja::apa_print(mod_pruned)$full_result$conditionphoto`), or in the object format and the cartoon format (`r papaja::apa_print(mod_pruned)$full_result$conditioncartoon`) (see Fig. 2).
+We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_pruned)$full_result$conditionbw`). There was no difference between children's accuracy in the object format and the photograph format (`r papaja::apa_print(mod_pruned)$full_result$conditionphoto`), or in the object format and the cartoon format (`r papaja::apa_print(mod_pruned)$full_result$conditioncartoon`) (see Fig. 2 for data visualization and Table B1 in the Appendix for full results).
 
 ```{r fig3, fig.env="figure*", fig.cap="Proportion of accurate responses across conditions and age in Kenya and the U.S.",out.width = "8in", fig.align = "center"}
 ms <- d |>
@@ -266,7 +268,7 @@ ctab_age <- cbind(est=fixef(mod_age_pruned),cc_age)
 rtab_age <- exp(ctab_age)
 #print(rtab_age,digits=3)
 ```
-We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(mod_age_pruned)$full_result$age_centered`), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`). There was a significant interaction between the black-and-white line drawing format and age, such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw_age_centered`). All other main effects and interactions were not significant (all p's > .20).
+We also ran a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(mod_age_pruned)$full_result$age_centered`), and a main effect of format, such that children were more accurate in the object format than the black-and-white line drawing format (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw`). There was a significant interaction between the black-and-white line drawing format and age, such that the accuracy difference between the object and black-and-white line drawing formats was greater for older than younger children (`r papaja::apa_print(mod_age_pruned)$full_result$conditionbw_age_centered`). All other main effects and interactions were not significant (all p's > .20; see Table B2 in the Appendix for full results).
 
 ### Exploratory Analyses
 Response accuracy was lowest in the black- and-white condition on only 6 out of 16 items, with extremely low response accuracy in the black-and-white condition on 3 out of 16 items (i.e., “book”, “button” and “fork”; see Fig. 3). To explore the model using the maximal random effects structure accounting for more item-level variation, which did not converge in the preregistered regressions, we also conducted exploratory Bayesian analyses. We analyzed the data with the brms R package [@burknerBrmsPackageBayesian2017] using the default flat priors. Each model underwent a warm-up period of 1000 iterations, followed by four sampling chains with 2000 iterations each.
@@ -534,7 +536,7 @@ ctab <- cbind(est=fixef(freq_kenya_error_mod_pruned),cc)
 rtab <- exp(ctab)
 ```
 We examined the distribution of children’s errors across conditions (see Fig. 4 for full distribution of children’s responses, and the same distribution renormalized without target choices). A first exploratory mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge, so we report results from the model that used the maximal random-effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of format, such that children made more near errors in the object format than the photograph format
-(`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionb_w`).
+(`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_pruned)$full_result$conditionb_w`). (See Table B3 in the Appendix for full results).
 
 ```{r fig5, fig.env="figure*", fig.cap="Error analysis showing the distribution of target and distractor choices by condition and age. Distribution including target choices in Kisumu, Kenya children (A) and San Francisco Bay Area, U.S.A. children (B). Distribution of errors, renormalized without target choices, in Kisumu, Kenya children (C) and San Francisco Bay Area, U.S.A. children (D).", fig.align = "center"} 
 
@@ -638,7 +640,7 @@ cc <- confint(freq_kenya_error_mod_age_pruned,parm="beta_",method="Wald")
 ctab <- cbind(est=fixef(freq_kenya_error_mod_age_pruned),cc)
 rtab <- exp(ctab)
 ```
-We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Similar to the first model, this model also yielded a main effect of format, such that children made more near errors in the object format than the photograph format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w`). There was a significant interaction between the black-and-white line drawing format and age (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w_age_centered`). All other main effects and interactions were not significant (all p-values > .24).
+We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Similar to the first model, this model also yielded a main effect of format, such that children made more near errors in the object format than the photograph format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionphoto`), the cartoon format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditioncartoon`), and the black-and-white line drawing format (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w`). There was a significant interaction between the black-and-white line drawing format and age (`r apa_print(freq_kenya_error_mod_age_pruned)$full_result$conditionb_w_age_centered`). All other main effects and interactions were not significant (all p-values > .24; see Table B4 in the Appendix for full results).
 ```{r}
 #kenya_bayes_error_mod <- brm(formula = is_far ~ condition + (condition | child) + (condition | target_word),
 #                 family=bernoulli(link="logit"), data = kenya_errors, seed = 1)
@@ -730,12 +732,12 @@ Data from the caregiver questionnaire showed substantial variation in children�
 mod_full_pruned3 <- glm(accuracy ~ pic_interact * condition + play + talk + toy_num + maternal_ed,
               data = d, family = "binomial")
 ```
-We fit an exploratory mixed-effects model fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and frequency of looking at picture books, and the interaction between the two, as well as fixed effects for frequency of caregiver talk, frequency of caregiver play, number of toys in the home, and maternal education. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model yielded no relation between children’s accuracy and any of the variables (all p-values > .44).
+We fit an exploratory mixed-effects model fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and frequency of looking at picture books, and the interaction between the two, as well as fixed effects for frequency of caregiver talk, frequency of caregiver play, number of toys in the home, and maternal education. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model yielded no relation between children’s accuracy and any of the variables (all p-values > .44; see Tables B5 and B6 in the Appendix for full results and correlation matrix of all predictor variables respectively).
 ```{r}
 mod_bare <- glm(accuracy ~ pic_interact * condition,
               data = d, family = "binomial")
 ```
-We also fit an exploratory mixed-effects model without any control variables. A mixed-effects model was fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing) and frequency of looking at picture books, and the interaction between the two. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model again yielded no relation between children’s accuracy and any of the variables (all p-values > .52).
+We also fit an exploratory mixed-effects model without any control variables. A mixed-effects model was fit to response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing) and frequency of looking at picture books, and the interaction between the two. We initially planned to include random slopes for the effect of condition on each child, and condition on each item, but a model with this random effects structure failed to converge; the reported model used the maximal random effects structure that did converge, which included all of the fixed effects but no random slopes or intercepts. The model again yielded no relation between children’s accuracy and any of the variables (all p-values > .52; see Table B7 in the Appendix for full results).
 
 Additionally, we ran individual differences analyses using other picture experience variables (e.g., aggregated picture experience variables broken down into two factors via factor analysis). These additional individual differences analyses also yielded null results. See supplementary materials on OSF for additional analytic code and results (https://osf.io/dgz9w/overview?view_only=dcd0620a803b4ab6ae6080650f11bcbf).
 
@@ -744,7 +746,7 @@ Additionally, we ran individual differences analyses using other picture experie
 home <- read_csv(here("data","caregiver_questionnaire.csv"))
 
 descriptives <- home %>% group_by(Country) %>% 
-  summarize(
+  reframe(
     Question = c("Q1. In the past month, how often did you look at picture books with your child?", 
                  "Q2. In the past month, how often did you play with your child?", 
                  "Q3. In the past month, how often did you talk with your child, even when you were busy?", 
@@ -772,9 +774,7 @@ descriptives <- home %>% group_by(Country) %>%
 
 table2  <- apa_table(
   descriptives
-  , note = "Table 2. Descriptive statistics across home environments in Kisumu, Kenya and the San Francisco Bay Area, U.S.A. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time). Question 11 was answered on a 8-point ordinal scale (1 = primary school or below, 2 = junior secondary school or below, 3 = senior secondary school or below, 4 = vocational training, 5 = polytechnic, 6 = university degree, 7 = master's or professional degree, 8 = doctoral degree).",
-  landscape = TRUE,
-  font_size = 9
+  , note = "Table 2. Descriptive statistics across home environments in Kisumu, Kenya and the San Francisco Bay Area, U.S.A. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time). Question 11 was answered on a 8-point ordinal scale (1 = primary school or below, 2 = junior secondary school or below, 3 = senior secondary school or below, 4 = vocational training, 5 = polytechnic, 6 = university degree, 7 = master's or professional degree, 8 = doctoral degree)."
 )
 
 table2
@@ -822,7 +822,7 @@ cc <- confint(us_mod_pruned,parm="beta_",method="Wald")
 ctab <- cbind(est=fixef(us_mod_pruned),cc)
 rtab <- exp(ctab)
 ```
-We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Although there was a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_pruned)$full_result$conditionbw`), overall the model yielded no difference between children’s accuracy in the object format and any of the three picture conditions (all other p-values > .11).
+We fit generalized linear mixed-effects models to children’s scores to assess the factors that influenced their response accuracy [@batesLme4MixedeffectsModeling2010]. A first preregistered mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. Although there was a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_pruned)$full_result$conditionbw`), overall the model yielded no difference between children’s accuracy in the object format and any of the three picture conditions (all other p-values > .11; see Table B8 in the Appendix for full results).
 ```{r}
 us_mod_age_pruned <- glmer(accuracy ~ condition * age_centered + 
                    (1 | child) + 
@@ -835,7 +835,7 @@ cc <- confint(us_mod_age_pruned,parm="beta_",method="Wald")
 ctab <- cbind(est=fixef(us_mod_age_pruned),cc)
 rtab <- exp(ctab)
 ```
-We also fit a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(us_mod_age_pruned)$full_result$age_centered`). Although there was again a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_age_pruned)$full_result$conditionbw`), overall all other main effects and interactions were not significant (all other p-values > .16).
+We also fit a second preregistered mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to the response scores (accurate/inaccurate), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. We initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded a main effect of age, such that older children were more accurate (`r papaja::apa_print(us_mod_age_pruned)$full_result$age_centered`). Although there was again a marginal difference between the object and black-and-white line drawing formats (`r papaja::apa_print(us_mod_age_pruned)$full_result$conditionbw`), overall all other main effects and interactions were not significant (all other p-values > .16; see Table B9 in the Appendix for full results).).
 
 ### Exploratory Analyses
 
@@ -918,12 +918,12 @@ us_errors$age_centered <- scale(us_errors$age, scale = FALSE, center = TRUE)[,1]
 freq_us_error_mod_pruned <- glmer(is_far ~ condition + (1 | child) + (1 | target_word) ,
               data = us_errors, family = "binomial")
 ```
-We examined the distribution of children’s errors across conditions. A first exploratory mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded no difference between children’s errors in the object format and any of the three picture formats (all p-values > .52).
+We examined the distribution of children’s errors across conditions. A first exploratory mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black- and-white line drawing). We initially planned to include random slopes for the effect of condition on each child, and condition on each item. However, the model with this random effects structure failed to converge; per lab standard operating procedures, the reported model used the maximal random effects structure that did converge, which included random intercepts for each child and item. The model yielded no difference between children’s errors in the object format and any of the three picture formats (all p-values > .52; see Table B10 in the Appendix for full results).
 ```{r}
 freq_us_error_mod_age_pruned <- glmer(is_far ~ condition*age_centered + (1 | child),
               data = us_errors, family = "binomial")
 ```
-We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included a random intercepts for each child. Although there was a marginal difference in errors between the object condition and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon`) and a marginal interaction between age and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon_age_centered`), overall the model yielded no significant main effects or interactions (all other p-values > .10).
+We also fit a second exploratory mixed-effects model including child age as an additional variable. This second mixed-effects model was fit to error types (far/near), including fixed effects for format (object/photograph/cartoon/black-and-white line drawing) and age (in years), and the interactions between format and age. Again, we initially planned to include random slopes for the effect of condition on each child, and the three-way interaction between condition, age, and item. However, the model with this random effects structure again failed to converge, and the reported model used the maximal random effects structure that did converge, which included a random intercepts for each child. Although there was a marginal difference in errors between the object condition and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon`) and a marginal interaction between age and the cartoon condition (`r papaja::apa_print(freq_us_error_mod_age_pruned)$full_result$conditioncartoon_age_centered`), overall the model yielded no significant main effects or interactions (all other p-values > .10; see Table B11 in the Appendix for full results).
 ```{r}
 #us_bayes_error_mod <- brm(formula = is_far ~ condition + (condition | child) + (condition | target_word),
  #               family=bernoulli(link="logit"), data = us_errors, seed = 1)
@@ -993,7 +993,7 @@ We also fit a second exploratory Bayesian mixed-effects model including child ag
 
 ### Individual Differences Analyses
 
-We did not run individual differences analyses in the U.S. sample, which had higher absolute levels of, and less variability in, picture experience variables, relative to the Kenyan sample (see Table 2 for the U.S. and Kenyan caregiver questionnaire data, and Table 3 in the Appendix for the U.S. teacher questionnaire data).
+We did not run individual differences analyses in the U.S. sample, which had higher absolute levels of, and less variability in, picture experience variables, relative to the Kenyan sample (see Table 2 for the U.S. and Kenyan caregiver questionnaire data, and Table B12 in the Appendix for the U.S. teacher questionnaire data).
 
 # General Discussion
 
@@ -1028,10 +1028,179 @@ r_refs(file = "r-references.bib")
 # Appendix
 
 ```{r}
+tidy(mod_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B1. Coeffecients of a mixed-effects model fit to Kenyan children's response accuracy, including fixed effects for formats (with the object condition as the reference level).", format="markdown")
+
+```
+
+```{r}
+tidy(mod_age_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="age_centered" ~ "Age",
+  term=="conditionbw:age_centered" ~ "Black-and-White Line Drawings x Age",
+  term=="conditioncartoon:age_centered" ~ "Cartoons x Age",
+  term=="conditionphoto:age_centered" ~ "Photographs x Age",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B2. Coeffecients of a mixed-effects model fit to Kenyan children's response accuracy, including fixed effects for age and formats (with the object condition as the reference level), and the interaction between age and formats.", format="markdown")
+```
+
+```{r}
+tidy(freq_kenya_error_mod_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionb&w" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B3. Coeffecients of a mixed-effects model fit to Kenyan children's error types, including fixed effects for formats (with the object condition as the reference level).", format="markdown")
+```
+
+```{r}
+tidy(freq_kenya_error_mod_age_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionb&w" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="age_centered" ~ "Age",
+  term=="conditionb&w:age_centered" ~ "Black-and-White Line Drawings x Age",
+  term=="conditioncartoon:age_centered" ~ "Cartoons x Age",
+  term=="conditionphoto:age_centered" ~ "Photographs x Age",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B4. Coeffecients of a mixed-effects model fit to Kenyan children's error types, including fixed effects for age and formats (with the object condition as the reference level), and the interaction between age and formats.", format="markdown")
+```
+
+```{r}
+tidy(mod_full_pruned3) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="pic_interact" ~ "Picture Experience",
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="play" ~ "Play Frequency",
+  term=="talk" ~ "Talk Frequency",
+  term=="toy_num" ~ "Number of Toys",
+  term=="maternal_ed" ~ "Maternal Education",
+  term=="pic_interact:conditionbw" ~ "Picture Experience x Black-and-White Line Drawings",
+  term=="pic_interact:conditioncartoon" ~ "Picture Experience x Cartoons",
+  term=="pic_interact:conditionphoto" ~ "Picture Experience x Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B6. Coeffecients of a logistic regression fit to Kenyan children's response accuracy, including fixed effects for picture experience and formats (with the object condition as the reference level), and the interaction between picture experience and formats, controlling for play, talk, number of toys, and maternal education.", format="markdown")
+```
+
+```{r}
+corr_data <- select(d, pic_interact, play, talk, toy_num, maternal_ed)
+correlation <- cor(corr_data, use="pairwise.complete.obs")
+
+new_labels <- c("Picture Experience", "Play Frequency", "Talk Frequency", 
+                    "Number of Toys", "Maternal Education")
+
+colnames(correlation) <- new_labels
+rownames(correlation) <- new_labels
+
+correlation_plot <- corrplot(correlation, method = "circle", tl.col = "black",addCoef.col = 'black')
+
+correlation_plot
+```
+
+
+```{r}
+tidy(mod_bare) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="pic_interact" ~ "Picture Experience",
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="pic_interact:conditionbw" ~ "Picture Experience x Black-and-White Line Drawings",
+  term=="pic_interact:conditioncartoon" ~ "Picture Experience x Cartoons",
+  term=="pic_interact:conditionphoto" ~ "Picture Experience x Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B7. Coeffecients of a logistic regression fit to Kenyan children's response accuracy, including fixed effects for picture experience and formats (with the object condition as the reference level), and the interaction between picture experience and formats.", format="markdown")
+```
+
+
+```{r}
+tidy(us_mod_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B8. Coeffecients of a mixed-effects model fit to U.S. children's response accuracy, including fixed effects for formats (with the object condition as the reference level).", format="markdown")
+
+```
+
+```{r}
+tidy(us_mod_age_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionbw" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="age_centered" ~ "Age",
+  term=="conditionbw:age_centered" ~ "Black-and-White Line Drawings x Age",
+  term=="conditioncartoon:age_centered" ~ "Cartoons x Age",
+  term=="conditionphoto:age_centered" ~ "Photographs x Age",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B9. Coeffecients of a mixed-effects model fit to U.S. children's response accuracy, including fixed effects for age and formats (with the object condition as the reference level), and the interaction between age and formats.", format="markdown")
+```
+
+```{r}
+tidy(freq_us_error_mod_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionb&w" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B10. Coeffecients of a mixed-effects model fit to U.S. children's error types, including fixed effects for formats (with the object condition as the reference level).", format="markdown")
+```
+
+```{r}
+tidy(freq_us_error_mod_age_pruned) %>% select(-effect, -group) %>%
+  drop_na()%>%
+ mutate(term=case_when(
+  term=="conditionb&w" ~ "Black-and-White Line Drawings",
+  term=="conditioncartoon" ~ "Cartoons",
+  term=="conditionphoto" ~ "Photographs",
+  term=="age_centered" ~ "Age",
+  term=="conditionb&w:age_centered" ~ "Black-and-White Line Drawings x Age",
+  term=="conditioncartoon:age_centered" ~ "Cartoons x Age",
+  term=="conditionphoto:age_centered" ~ "Photographs x Age",
+  T ~ term
+)) %>% rename(Estimate=estimate, Term=term, `Standard Error`=std.error, `Z Value`=statistic, `P Value`=p.value) %>% 
+  kable(digits=3, align = 'c', table.env="table*", caption = "Table B11. Coeffecients of a mixed-effects model fit to U.S. children's error types, including fixed effects for age and formats (with the object condition as the reference level), and the interaction between age and formats.", format="markdown")
+```
+
+
+
+```{r}
 teacher <- read_csv(here("data","teacher_questionnaire.csv"))
 
 descriptives <- teacher %>% 
-  summarize(
+  reframe(
     Question = c("Q1. In the past month, how often did you look at picture books with the children in your classroom?", 
                  "Q2. In the past month, how often did you play with the children in your classroom?", 
                  "Q3. In the past month, how often did you talk with the children in your classroom, even when you were busy?", 
@@ -1054,7 +1223,7 @@ descriptives <- teacher %>%
 
 apa_table(
   descriptives
-  , note = "Table 3. Descriptive statistics across five preschool classrooms in the San Francisco Bay Area. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time).",
+  , note = "Table B12. Descriptive statistics across five preschool classrooms in the San Francisco Bay Area. Questions 1-5 were answered on a 5-point Likert scale (1 = never, 2 = rarely, 3 = sometimes, 4 = most of the time, 5 = all of the time).",
   , escape = TRUE
 )
 
